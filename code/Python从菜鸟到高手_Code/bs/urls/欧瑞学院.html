@@ -1,0 +1,758 @@
+﻿<!DOCTYPE html>
+<html>
+<html xmlns:wb="http://open.weibo.com/wb">
+ <head> 
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+  <meta charset="utf-8" /> 
+  <title>欧瑞学院</title> 
+  <link rel="stylesheet" href="css/index.css" type="text/css" /> 
+  <script type="text/javascript"> 
+        //平台、设备和操作系统 
+        var system = { 
+            win: false, 
+            mac: false, 
+            xll: false, 
+            ipad:false 
+        }; 
+        //检测平台 
+        var p = navigator.platform; 
+        system.win = p.indexOf("Win") == 0; 
+        system.mac = p.indexOf("Mac") == 0; 
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0); 
+        system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false; 
+        //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面 
+        if (system.win || system.mac || system.xll||system.ipad) { 
+ 
+        } else { 
+ 
+            window.location.href = "https://geekori.com/weixin/orishop/index.php"; 
+        } 
+</script> 
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+ </head> 
+ <body id="index"> 
+  <div id="header"> 
+   <div class="page-container" id="nav" style="z-index: 1000;"> 
+    <div id="logo" class="logo">
+     <a href="http://geekori.com" target="_self" class="hide-text" title="首页">欧瑞学院</a>
+    </div> 
+    <button type="button" class="navbar-toggle visible-xs-block js-show-menu"> <i class="icon-menu"></i> </button> 
+    <ul class="nav-item"> 
+     <li class="set-btn visible-xs-block"></li> 
+     <li><a href="https://geekori.com/" target="_blank">问答社区</a></li> 
+     <li><a href="https://geekori.com/" target="_blank">博客</a></li>
+     <li><a href="field.php?v=combo" target="_blank">套餐</a></li>
+     <li><a href="field.php?v=member" target="_blank">会员</a></li>
+    </ul> 
+    <div id="login-area"> 
+     <ul class="header-unlogin clearfix"> 
+             <li class="shop-cart" id="shop-cart"> <a class="shop-cart-icon cart-c" target="_blank"><span>去购物车</span> </a></li>
+                <li class="header-signin"> <a href="#" id="js-signin-btn">登录</a> </li> 
+      <li class="header-signup"> <a href="#" id="js-signup-btn">注册</a> </li>     
+      
+      
+     </ul> 
+    </div> 
+    <div class="search-warp clearfix" style="min-width: 32px; height: 60px;"> 
+     <div class="pa searchTags"> 
+		<!-- 搜索在这里 -->
+     </div> 
+     <div class="search-area" data-search="top-banner"> 
+      <input class="search-input" type="text" style="width:80%;" /> 
+      <input class="btn_search" style="width:20%;color:#fff;background-color:rgba(0,0,0,.2);" type="button" value="搜索"/> 
+     </div> 
+     <div class="showhide-search" data-show="no">
+      
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+   
+  <div id="main"> 
+   <div class="bk"></div> 
+   <div class="g-banner pr"> 
+    <div class="menuwrap"> 
+    </div> 
+        <!-- web前端 --> 
+    <div class="submenu  hide"style="display:none;" id="f1"> 
+     <div class="innerBox " style="background-image: url(/static/img/home/mobileBg.png); background-size: 100%;"> 
+      <div class="subinnerBox"> 
+       <div class="title">
+        分类目录
+       </div> 
+             <a target="_blank" href="field.php?v=course&f_id=1&sf_id=1">Java</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=1&sf_id=2">JavaScript</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=1&sf_id=4">C/C++</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=1&sf_id=5">Python</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=1&sf_id=6">Swift</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=1&sf_id=10">Objective-C</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=1&sf_id=98">Kotlin</a>
+       <span class="ml10 mr10">/</span> 
+  	     	  </div> 
+     </div> 
+    </div> 
+         <!-- web前端 --> 
+    <div class="submenu  hide"style="display:none;" id="f2"> 
+     <div class="innerBox " style="background-image: url(/static/img/home/mobileBg.png); background-size: 100%;"> 
+      <div class="subinnerBox"> 
+       <div class="title">
+        分类目录
+       </div> 
+             <a target="_blank" href="field.php?v=course&f_id=2&sf_id=19">Hadoop</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=2&sf_id=20">Spark</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=2&sf_id=24">其他(大数据)</a>
+       <span class="ml10 mr10">/</span> 
+  	     	  </div> 
+     </div> 
+    </div> 
+         <!-- web前端 --> 
+    <div class="submenu  hide"style="display:none;" id="f4"> 
+     <div class="innerBox " style="background-image: url(/static/img/home/mobileBg.png); background-size: 100%;"> 
+      <div class="subinnerBox"> 
+       <div class="title">
+        分类目录
+       </div> 
+             <a target="_blank" href="field.php?v=course&f_id=4&sf_id=32">HTML5</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=4&sf_id=33">HTML/CSS</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=4&sf_id=34">jQuery</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=4&sf_id=35">XML/XSL</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=4&sf_id=36">React.js</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=4&sf_id=37">Vue.js</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=4&sf_id=38">Bootstrap</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=4&sf_id=39">其他(web前端)</a>
+       <span class="ml10 mr10">/</span> 
+  	     	  </div> 
+     </div> 
+    </div> 
+         <!-- web前端 --> 
+    <div class="submenu  hide"style="display:none;" id="f5"> 
+     <div class="innerBox " style="background-image: url(/static/img/home/mobileBg.png); background-size: 100%;"> 
+      <div class="subinnerBox"> 
+       <div class="title">
+        分类目录
+       </div> 
+             <a target="_blank" href="field.php?v=course&f_id=5&sf_id=40">MySql</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=5&sf_id=41">Oracle</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=5&sf_id=42">SQL Server</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=5&sf_id=46">Access</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=5&sf_id=48">MongoDB</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=5&sf_id=49">其他(数据库)</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=5&sf_id=107">区块链</a>
+       <span class="ml10 mr10">/</span> 
+  	     	  </div> 
+     </div> 
+    </div> 
+         <!-- web前端 --> 
+    <div class="submenu  hide"style="display:none;" id="f6"> 
+     <div class="innerBox " style="background-image: url(/static/img/home/mobileBg.png); background-size: 100%;"> 
+      <div class="subinnerBox"> 
+       <div class="title">
+        分类目录
+       </div> 
+             <a target="_blank" href="field.php?v=course&f_id=6&sf_id=50">机器学习</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=6&sf_id=51">机器人开发</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=6&sf_id=52">其他(人工智能)</a>
+       <span class="ml10 mr10">/</span> 
+  	     	  </div> 
+     </div> 
+    </div> 
+         <!-- web前端 --> 
+    <div class="submenu  hide"style="display:none;" id="f7"> 
+     <div class="innerBox " style="background-image: url(/static/img/home/mobileBg.png); background-size: 100%;"> 
+      <div class="subinnerBox"> 
+       <div class="title">
+        分类目录
+       </div> 
+             <a target="_blank" href="field.php?v=course&f_id=7&sf_id=53">React Native</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=7&sf_id=54">Hybrid技术</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=7&sf_id=56">QT</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=7&sf_id=57">其他(跨平台技术)</a>
+       <span class="ml10 mr10">/</span> 
+  	     	  </div> 
+     </div> 
+    </div> 
+         <!-- web前端 --> 
+    <div class="submenu  hide"style="display:none;" id="f8"> 
+     <div class="innerBox " style="background-image: url(/static/img/home/mobileBg.png); background-size: 100%;"> 
+      <div class="subinnerBox"> 
+       <div class="title">
+        分类目录
+       </div> 
+             <a target="_blank" href="field.php?v=course&f_id=8&sf_id=58">Node.js</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=8&sf_id=59">Express</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=8&sf_id=60">PHP</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=8&sf_id=61">Django</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=8&sf_id=62">Java EE</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=8&sf_id=63">ASP.NET</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=8&sf_id=64">Ruby on Rails</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=8&sf_id=65">其他(服务端技术)</a>
+       <span class="ml10 mr10">/</span> 
+  	     	  </div> 
+     </div> 
+    </div> 
+         <!-- web前端 --> 
+    <div class="submenu  hide"style="display:none;" id="f9"> 
+     <div class="innerBox " style="background-image: url(/static/img/home/mobileBg.png); background-size: 100%;"> 
+      <div class="subinnerBox"> 
+       <div class="title">
+        分类目录
+       </div> 
+             <a target="_blank" href="field.php?v=course&f_id=9&sf_id=66">Android</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=9&sf_id=67">iOS</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=9&sf_id=68">微信开发</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=9&sf_id=71">其他(移动开发)</a>
+       <span class="ml10 mr10">/</span> 
+  	     	  </div> 
+     </div> 
+    </div> 
+         <!-- web前端 --> 
+    <div class="submenu  hide"style="display:none;" id="f11"> 
+     <div class="innerBox " style="background-image: url(/static/img/home/mobileBg.png); background-size: 100%;"> 
+      <div class="subinnerBox"> 
+       <div class="title">
+        分类目录
+       </div> 
+             <a target="_blank" href="field.php?v=course&f_id=11&sf_id=78">Unity3D</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=11&sf_id=79">Cocos2d-x/Cocos2d-js</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=11&sf_id=80">VR/AR/MR</a>
+       <span class="ml10 mr10">/</span> 
+  	          <a target="_blank" href="field.php?v=course&f_id=11&sf_id=81">其他(游戏开发)</a>
+       <span class="ml10 mr10">/</span> 
+  	     	  </div> 
+     </div> 
+    </div> 
+         <div class="menuContent"> 
+          <div class="item" data-id="1"> 
+      <a href="field.php?v=course&f_id=1" target="_blank"> <span class="group">编程语言</span>  </a> 
+     </div> 
+  	     <div class="item" data-id="2"> 
+      <a href="field.php?v=course&f_id=2" target="_blank"> <span class="group">大数据</span>  </a> 
+     </div> 
+  	     <div class="item" data-id="4"> 
+      <a href="field.php?v=course&f_id=4" target="_blank"> <span class="group">Web前端</span>  </a> 
+     </div> 
+  	     <div class="item" data-id="5"> 
+      <a href="field.php?v=course&f_id=5" target="_blank"> <span class="group">数据库</span>  </a> 
+     </div> 
+  	     <div class="item" data-id="6"> 
+      <a href="field.php?v=course&f_id=6" target="_blank"> <span class="group">人工智能/算法</span>  </a> 
+     </div> 
+  	     <div class="item" data-id="7"> 
+      <a href="field.php?v=course&f_id=7" target="_blank"> <span class="group">跨平台技术</span>  </a> 
+     </div> 
+  	     <div class="item" data-id="8"> 
+      <a href="field.php?v=course&f_id=8" target="_blank"> <span class="group">服务端技术</span>  </a> 
+     </div> 
+  	     <div class="item" data-id="9"> 
+      <a href="field.php?v=course&f_id=9" target="_blank"> <span class="group">移动开发</span>  </a> 
+     </div> 
+  	     <div class="item" data-id="11"> 
+      <a href="field.php?v=course&f_id=11" target="_blank"> <span class="group">游戏开发</span>  </a> 
+     </div> 
+  	  	
+  	
+    </div> 
+    <ul class="g-banner-content"> 
+     <!--轮播--> 
+     	 <li class="slide"><a href="course.php?c_id=53"><img src="images/slide/p53.png" /></a></li>
+	 	 <li class="slide" style="display:none"><a href="course.php?c_id=4"><img src="images/slide/p4.png" /></a></li>
+	 	 <li class="slide" style="display:none"><a href="course.php?c_id=3"><img src="images/slide/p3.png" /></a></li>
+	 	 <li class="slide" style="display:none"><a href="course.php?c_id=6"><img src="images/slide/p6.png" /></a></li>
+	 	 <li class="slide" style="display:none"><a href="course.php?c_id=1"><img src="images/slide/p1.png" /></a></li>
+	     </ul> 
+    <div class="banner-dots">
+     <span class="active"></span>
+     <span class=""></span>
+     <span class=""></span>
+     <span class=""></span>
+     <span class=""></span>
+    </div> 
+    <a href="javascript:;" class="banner-anchor prev">上一张</a> 
+    <a href="javascript:;" class="banner-anchor next">下一张</a> 
+    <div class="cb"></div> 
+   </div>
+   <!--<div class="path-banner clearfix"> 
+    <a href="#" target="_blank" data-track="sysdtj-1-1"> <img src="images/path_1.png" /> </a> 
+    <a href="#" target="_blank" data-track="sysdtj-1-2"> <img src="images/path_2.png" /> </a> 
+    <a href="#" target="_blank" data-track="sysdtj-1-3"> <img src="images/path_3.png" /> </a> 
+    <a href="#" target="_blank" data-track="sysdtj-1-4"> <img src="images/path_4.png" /> </a> 
+    <a href="#" target="_blank" data-track="sysdtj-1-4"> <img src="images/path_5.png" /> </a>
+   </div>-->
+	<!--轮播--> 
+   <div class="container-types clearfix"> 
+    <h3 class="types-title"> 编程语言 <a href="https://geekori.com/edu/field.php?v=course&f_id=1" class="types-title-more" target="_blank"> <span>更多</span> <i class="imv2-arrow2_r"></i> </a> </h3> 
+    <div class="clearfix types-content"> 
+    	 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=2" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-08/p2.png" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">征服JavaScript</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk" style="background-image: url(http://szimg.mukewang.com/583e42fb0001e04f05400300-360-202.jpg)" ;=""></div> 
+     </div> 
+		 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=3" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-08/p3.png" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">Java基础教程</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk" style="background-image: url(http://szimg.mukewang.com/583e42fb0001e04f05400300-360-202.jpg)" ;=""></div> 
+     </div> 
+		 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=5" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-08/p5.png" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">征服React Native</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk" style="background-image: url(http://szimg.mukewang.com/583e42fb0001e04f05400300-360-202.jpg)" ;=""></div> 
+     </div> 
+		 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=14" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-08/p14.png" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">OC与Foundation Framework高级程序设计课程</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk" style="background-image: url(http://szimg.mukewang.com/583e42fb0001e04f05400300-360-202.jpg)" ;=""></div> 
+     </div> 
+		 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=32" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-09/uploadImg_326231505709461.jpg" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">跟李宁老师学Python视频教程（1）：初识Python</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk" style="background-image: url(http://szimg.mukewang.com/583e42fb0001e04f05400300-360-202.jpg)" ;=""></div> 
+     </div> 
+	     </div>
+	</div>
+      
+   <div class="container-types clearfix"> 
+    <h3 class="types-title"> 大数据 <a href="https://geekori.com/edu/field.php?v=course&f_id=2" class="types-title-more" target="_blank"> <span>更多</span> <i class="imv2-arrow2_r"></i> </a> </h3> 
+    <div class="clearfix types-content"> 
+    暂无相关课程     </div>
+	</div>
+
+	<div class="container-types clearfix"> 
+    <h3 class="types-title"> web前端 <a href="https://geekori.com/edu/field.php?v=course&f_id=4" class="types-title-more" target="_blank"> <span>更多</span> <i class="imv2-arrow2_r"></i> </a> </h3> 
+    <div class="clearfix types-content"> 
+    	 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=23" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-08/p23.png" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">征服HTML5</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk" style="background-image: url(http://szimg.mukewang.com/583e42fb0001e04f05400300-360-202.jpg)" ;=""></div> 
+     </div> 
+		 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=29" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-08/p29.png" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">项目实战：欧瑞书屋(jQuery+Nodejs+Express+Mysql)</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk" style="background-image: url(http://szimg.mukewang.com/583e42fb0001e04f05400300-360-202.jpg)" ;=""></div> 
+     </div> 
+	     </div>
+	</div>
+	
+	<div class="container-types clearfix"> 
+    <h3 class="types-title"> 人工智能 <a href="https://geekori.com/edu/field.php?v=course&f_id=6" class="types-title-more" target="_blank"> <span>更多</span> <i class="imv2-arrow2_r"></i> </a> </h3> 
+    <div class="clearfix types-content"> 
+    暂无相关课程     </div>
+	</div>
+	
+	<div class="container-types clearfix"> 
+    <h3 class="types-title"> 服务端 <a href="https://geekori.com/edu/field.php?v=course&f_id=8" class="types-title-more" target="_blank"> <span>更多</span> <i class="imv2-arrow2_r"></i> </a> </h3> 
+    <div class="clearfix types-content"> 
+    	 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=4" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-08/p4.png" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">征服Node.js 7.x</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk" style="background-image: url(http://szimg.mukewang.com/583e42fb0001e04f05400300-360-202.jpg)" ;=""></div> 
+     </div> 
+		 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=27" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-08/p27.png" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">征服express4.x</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk" style="background-image: url(http://szimg.mukewang.com/583e42fb0001e04f05400300-360-202.jpg)" ;=""></div> 
+     </div> 
+		 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=30" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-08/uploadImg_443151503458780.jpg" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">项目实战：小程序版网上商城（Node.js + Express + MySQL)视频教程</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk" style="background-image: url(http://szimg.mukewang.com/583e42fb0001e04f05400300-360-202.jpg)" ;=""></div> 
+     </div> 
+	     </div>
+	</div>
+	
+	<div class="container-types clearfix"> 
+    <h3 class="types-title"> 跨平台 <a href="https://geekori.com/edu/field.php?v=course&f_id=7" class="types-title-more" target="_blank"> <span>更多</span> <i class="imv2-arrow2_r"></i> </a> </h3> 
+    <div class="clearfix types-content"> 
+    	 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=5" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-08/p5.png" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">征服React Native</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk" style="background-image: url(http://szimg.mukewang.com/583e42fb0001e04f05400300-360-202.jpg)" ;=""></div> 
+     </div> 
+	     </div>
+	</div>
+	
+	<div class="container-types clearfix"> 
+    <h3 class="types-title"> 游戏开发 <a href="https://geekori.com/edu/field.php?f_id=11" class="types-title-more" target="_blank"> <span>更多</span> <i class="imv2-arrow2_r"></i> </a> </h3> 
+    <div class="clearfix types-content"> 
+    	 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=15" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-08/p15.png" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">Swift游戏项目实战：FlappyBird</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk"></div> 
+     </div> 
+		 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=17" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-08/p17.png" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">SpriteKit游戏引擎入门（Swift版）</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk"></div> 
+     </div> 
+		 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=18" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-08/p18.png" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">从零开始掌握Cocos2d-js</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk"></div> 
+     </div> 
+		 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=19" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-08/p19.png" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">Cocos2d-x项目实战：仿微信飞机大战</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk"></div> 
+     </div> 
+		 <div class="index-card-container course-card-container container coding"> 
+      <a target="_blank" class="course-card" href="course.php?c_id=20" data-track="sztj-1-1"> 
+        <div class="course-card-content"> 
+        <div class="clearfix" style="width:100%;height:100%;"> 
+         <img src="/images/weixinimg/17-08/p20.png" style="width:100%;height:100%;">
+        </div> 
+       </div>
+	   <div class="course-card-top cart-color purple"> 
+        <i class="imv2-war"></i> 
+        <span class="course-card-name">Cocos2d-x项目实战：星空大战</span>
+       </div> 
+	   </a> 
+      <img src="images/new.png" class="course-cart-new" /> 
+      <div class="course-card-bk"></div> 
+     </div> 
+	     </div>
+	</div>
+	</div>
+  <div class="footer bg-white idx-minwidth"> 
+   <div class="container"> 
+    <div class="footer-wrap idx-width"> 
+     
+    <div class="footer-link"> 
+    <wb:share-button appkey="2139803286" addition="simple" type="button" ralateUid="6172758888" default_text="%E5%88%86%E4%BA%AB%E5%BF%83%E5%BE%97"></wb:share-button>
+     <!-- <a href="/about/us" target="_blank" title="关于我们">关于我们</a> 
+     <a href="#cooperate" target="_blank" title="企业合作">企业合作</a> 
+     <a href="#job" target="_blank" title="人才招聘">人才招聘</a> 
+     <a href="#contact" target="_blank" title="联系我们">联系我们</a> 
+     <a href="#recruit" target="_blank" title="讲师招募">讲师招募</a> 
+     <a href="#faq" target="_blank" title="常见问题">常见问题</a> 
+     <a href="#/feedback" target="_blank" title="意见反馈">意见反馈</a> 
+     <a href="#" target="_blank">慕课大学</a> 
+     <a href="#friendly" target="_blank" title="友情链接">友情链接</a> 
+	 --> 
+    </div> 
+    <div class="footer-copyright"> 
+     <p>Copyright&copy;&nbsp;2016-2017 edu.geekori.com 辽ICP备 16003609号   </p> 
+    </div> 
+   </div>
+  </div>
+  <div class="container-types clearfix">
+	<div class="user">
+		<h2><span id="login" class="activered">登录</span><span id="register" class="">注册</span><span class="close"></span></h2>
+		<div class="login">
+			<form name="form1" method="post" action="login.php">
+				<input type="text" name="username" placeholder="请输入登录账号"/>
+				<input type="password" name="password" placeholder="请输入登录密码"/>
+				<input type="submit" value="登录" class="btn1">
+				<a href="https://geekori.com/weixinUpload/ticket.php?login=pcori" style="height:30px;line-height:30px;"><img style="width:30px;height:25px;" alt="weixin" src="images/weixin.jpg"><span style="height:35px;line-height:30px;font-size:18px;">微信登录</span></a>
+				<a href="https://api.weibo.com/oauth2/authorize?client_id=2139803286&redirect_uri=https%3A%2F%2Fgeekori.com%2Fedu%2Fsina%2Fcallback.php&response_type=code"><img src="sina/weibo_login.png" title="点击进入授权页面" alt="点击进入授权页面" border="0" /></a>
+			</form>
+		</div>
+		<div class="register">
+			<form name="form2" method="post" action="register.php">
+				<input type="text" name="username" placeholder="请输入注册账号"/>
+				<input type="password" name="password" placeholder="请输入注册密码"/>
+				<input type="text" name="rpassword" placeholder="请再次输入注册密码"/>
+				<input type="text" name="vertify" class="vertify" placeholder="请输入验证码"/><img src="vertifycode.php"><span class="err"></span>
+				<input type="submit" value="注册" class="btn2" disabled="disabled">
+			</form>
+		</div>
+   </div>
+   <div class="loginb"></div>
+  </div>
+  </div>
+  <!--script--> 
+  <script src="js/ssologin.js"></script> 
+  <script src="jquery/jquery-3.1.1.min.js"></script> 
+  <script type="text/javascript" src="js/sea.js"></script> 
+  <script type="text/javascript" src="js/sea_config.js"></script> 
+  <script type="text/javascript">seajs.use("/static/page/"+OP_CONFIG.module+"/"+OP_CONFIG.page);</script> 
+  <script type="text/javascript" src="js/user.htm"></script>
+  <script type="text/javascript" src="js/iplookup.php"></script> 
+  <script>
+	$(document).ready(function(){
+		$(".item").mouseenter(function(){
+			var op=$(this).attr("data-id");
+			$("#f"+op).show();
+			$("#f"+op).mouseenter(function(){
+				$("#f"+op).show();
+			});
+			$("#f"+op).mouseleave(function(){
+				$("#f"+op).hide();
+			});
+		});
+
+		$(".item").mouseleave(function(){
+			var op=$(this).attr("data-id");
+			$("#f"+op).hide();
+			$("#f"+op).mouseenter(function(){
+				$("."+op).show();
+			});
+			$("#f"+op).mouseleave(function(){
+				$("#f"+op).hide();
+			});
+		});
+
+		$("#js-signin-btn").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+		});	
+		$(".cart-c").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+		});
+		$("#js-signup-btn").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+			$(".register").show()
+			$("#register").addClass("activered");
+			$(".login").hide();
+			$("#login").removeClass("activered");
+		});	
+		$(".close").click(function(){
+			$(".user").hide();
+			$(".loginb").hide();
+		});	
+		$("#login").click(function(){
+			$(".login").show();
+			$("#login").addClass("activered");
+			$(".register").hide();
+			$("#register").removeClass("activered");
+		});	
+		$("#register").click(function(){
+			$(".register").show()
+			$("#register").addClass("activered");
+			$(".login").hide();
+			$("#login").removeClass("activered");
+		});	
+		$(".vertify").blur(function(){
+			setInterval(chk,1000);
+		});
+		$(".btn_search").click(function(){
+			var cname=$(".search-input").val();
+			window.location.href='search.php?b='+cname;
+		});
+		function chk(){
+			var a=$(".vertify").val();
+			$.ajax({
+					url:"check.php",
+					data:{b:a},
+					success:function(data){
+						if(data==1){
+							$(".err").text("正确").css({"color":"green","float":"left"});
+							$(".btn2").attr("disabled",false);
+						}else{
+							$(".err").text("验证码错误").css({"color":"red","line-height":"70px"});
+							$(".btn2").attr("disabled",true);
+						}
+					}
+			});
+		}				
+		var timer=null; //定时器返回值，主要用于关闭定时器
+		var iNow=0; //iNow为正在展示的图片索引值，当用户打开网页时首先显示第一张图，即索引值为0
+		$(".banner-dots span").click(function(){
+			var num=$(this).index();
+			iNow=num;
+			$(this).addClass("active").siblings().removeClass("active");
+			$(".slide").eq(num).fadeIn("slow").siblings().hide();			
+		});
+		timer=setInterval(function(){ //打开定时器
+			iNow++;    //让图片的索引值次序加1，这样就可以实现顺序轮播图片
+			if(iNow>$(".slide").length-1){
+				iNow=0;
+			}
+			$(".banner-dots span").eq(iNow).trigger("click"); //模拟触发数字按钮的click事件
+		},9000); //2000为轮播的时间
+
+	 
+	});
+	
+  </script>
+  <div class="moco-usercard-dialog js-moco-usercard-modal"></div>
+ </body>
+</html>

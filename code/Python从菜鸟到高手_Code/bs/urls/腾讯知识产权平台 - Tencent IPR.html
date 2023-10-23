@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="keywords" content="tencent"/>
+    <meta name="description" content="tencent"/>
+    <meta name="author" content="tencent">
+    <link rel="icon" href="/assets/img/favicon.ico">
+
+    <title>腾讯知识产权平台 - Tencent IPR</title>
+
+    <link rel="stylesheet" type="text/css" href="/assets/font-awesome/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min-4.3.1.css">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="../../assets/tencent/iconfont.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/swiper/swiper.min.css"/>
+    <link href="/assets/tencent/tencentFont.css" rel="stylesheet">
+    <link href="../../assets/css/tencent.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/animate.css/animate.min.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/assets/jquery/jquery.min-v1.12.4.js"></script>
+</head>
+
+<!--如果不需要悬浮的header 就去掉body上的class-->
+<body>
+<!--header部分 -->
+<header>
+<nav class=" navbar navbar-expand-lg fixed-top navbar-dark header-top fixed-top-transparent ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <!--<embed src="../../assets/img/T.svg" width="25" height="25" class="d-inline-block align-top" alt="">-->
+            <i class="d-inline-block align-text-bottom tencent-T" style='top:0px'></i>腾讯知识产权保护
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">首页</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/information">资讯动态</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/policy">原则与创新</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/report">透明度专区</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/complain">投诉指引</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="tencent-qcode"></i>
+                    </a>
+                    <div class="dropdown-menu" style="right: 0;left: unset;text-align: center;">
+                        <div class="triangle-border">
+                            <span class="triangle"></span>
+                        </div>
+                        <img src="/assets/img/qcode.png" />
+                        <div>
+                        <div class="text">扫上方二维码关注<br />腾讯知识产权保护</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="lang_area">
+                <a class="current" href="">简</a>
+                <i class="s_line">|</i>
+                <a class="toggle_lang" href=""> EN</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    $(".toggle_lang").on("click",function(event){
+        event.preventDefault(); // 使a自带的方法失效，即无法向addStudent.action发出请求
+        $.ajax({
+            type: "POST", // 使用post方式
+            url: "/toggleLanguage",
+            contentType:"application/json",
+            data: {},
+            dataType:"json",
+            success: function(result){
+                location.reload();
+            },
+            error: function(result){
+            }
+        });
+    });
+</script></header>
+
+<!--主体内容-->
+<main role="main" style='background-color: unset' class="">
+<div class="main_container">
+<div class="home-banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="">
+                    <video loop="" autoplay="" preload="" muted="">
+                        <source src="/upload/files/banner/banner中文3.mp4" type="video/mp4">
+                    </video>
+                </a>
+            </div>
+        </div>
+        <div class="home-pagination"></div>
+    </div>
+</div>
+<script type="text/javascript" src="../../assets/swiper/swiper.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var homeSwiper = new Swiper('.home-banner .swiper-container', {
+            pagination: {
+                el: '.home-pagination',
+                clickable: true,
+            },
+        })
+    });
+</script>    <div class="background_top"></div>
+<script>
+    function getText(obj, text) {
+        $("#" + obj).text(text);
+    }
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 d-block d-sm-block d-md-none" style="margin-top: 25px">
+            <div>
+                <div class="text-center">
+                    <div class="top_title">资讯动态</div>
+                </div><!-- /.col-lg-12 -->
+                <div class="text-center">
+                    <div class="card report_phone_card" >
+                        <img src="/upload/img/article/0/1_20210426104854.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <a id="info-title-0" class="card_title" href="/information/content?id=49"><script>getText("info-title-0", '最新发布！一图透视《2020年微信知识产权保护数据报告》！')</script> </a>
+                            <a class="card_summary" href="/information/content?id=49"></a>
+                            <h4 class="card_time float-left">2021/04/26</h4>
+                            <a class="btn btn_link no_bg float-right"
+                                                     href="/information/content?id=49"
+                                                     target="_blank">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="card report_phone_card" >
+                        <img src="/upload/img/article/0/1_20210425182124.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <a id="info-title-1" class="card_title" href="/information/content?id=48"><script>getText("info-title-1", '沟通合作，微信护航 | 2021品牌权利人交流沙龙（上海站）成功举办')</script> </a>
+                            <a class="card_summary" href="/information/content?id=48">为促进品牌权利人全面了解微信的品牌保护体系，帮助品牌权利人更高效地使用微信品牌维权平台保护自身合法权益，微信法务团队于4月23日在上海举办了2021年品牌权利人交流沙龙（上海站），累计近70名权利人参会交流。</a>
+                            <h4 class="card_time float-left">2021/04/25</h4>
+                            <a class="btn btn_link no_bg float-right"
+                                                     href="/information/content?id=48"
+                                                     target="_blank">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 d-none d-sm-none d-md-block">
+            <div id="info_guide" style="position: relative;top:-300px"></div>
+            <div class="row info_guide no-gutters">
+                <div class="col-6">
+                    <div class="tab-content" id="pills-tabContent">
+                        <li class="tab-pane fade info_img  show active "
+                            id="v-pills-info0" role="tabpanel"
+                            aria-labelledby="v-pills-info-tab0">
+                            <img src="/upload/img/article/0/1_20210426104854.jpg">
+                        </li>
+                        <li class="tab-pane fade info_img "
+                            id="v-pills-info1" role="tabpanel"
+                            aria-labelledby="v-pills-info-tab1">
+                            <img src="/upload/img/article/0/1_20210425182124.jpg">
+                        </li>
+                    </div>
+                    <div class="tab_header">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link  active " id="v-pills-info-tab0"
+                                   onmouseenter="hoverTab(this)"
+                                   onclick="clickInfoTab(49, '最新发布！一图透视《2020年微信知识产权保护数据报告》！', '2021/04/26', '')"
+                                   data-toggle="pill" href="#v-pills-info0" role="tab"
+                                   aria-controls="v-pills-info0"
+                                   aria-selected=" true ">
+                                    <img src="" class="gray"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " id="v-pills-info-tab1"
+                                   onmouseenter="hoverTab(this)"
+                                   onclick="clickInfoTab(48, '沟通合作，微信护航 | 2021品牌权利人交流沙龙（上海站）成功举办', '2021/04/25', '为促进品牌权利人全面了解微信的品牌保护体系，帮助品牌权利人更高效地使用微信品牌维权平台保护自身合法权益，微信法务团队于4月23日在上海举办了2021年品牌权利人交流沙龙（上海站），累计近70名权利人参会交流。')"
+                                   data-toggle="pill" href="#v-pills-info1" role="tab"
+                                   aria-controls="v-pills-info1"
+                                   aria-selected="false ">
+                                    <img src="/upload/img/article/0/1_20210425182253.jpg" class="gray"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 no-gutters">
+                    <div class="no-gutters info_content">
+                        <div class="media-body align-self-center info_info col-12">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_tips">NEWS</div>
+        </div>
+    </div>
+</div><!-- /.row -->
+<script>
+    function clickInfoTab(id, title, publishAt, summaryF) {
+        $('.info_info').replaceWith('<div class="media-body align-self-center info_info col-12">\n' +
+            '                            <div class="sub_summary" style="color: #0052DA; font-family: tencentFont;">' + publishAt + '</div>\n' +
+            '                            <a class="sub_title" href="/information/content?id=' + id + '" target="_blank">' + title + '</a>\n' +
+            '                            <div class="sub_summary" style="-webkit-line-clamp: 4;">' + summaryF + '</div>\n' +
+            '                            <div class="btn_left"><a class="btn btn_link no_bg" href="/information/content?id=' + id + '" target="_blank">查看详情</a></div>\n' +
+            '                            <div class="btn_right"><a class="btn btn_link" href="/information">了解更多\n' +
+            '                            <img src="/assets/img/btn_right.png"> </a></div>\n' +
+            '                        </div>')
+    }
+
+    function hoverTab(obj) {
+        obj.click();
+    }
+
+    $(".info_guide .nav-link.active").click();
+
+</script><div class="container">
+    <div class="policy-guide">
+        <div class="d-block d-sm-block d-md-none">
+            <div class="col-lg-12 text-center">
+                <div class="top_title">原则与创新</div>
+                <p class="title_summary">尊重权利 · 连接智慧</p>
+                <p class="sub_title">
+                    腾讯致力于连接知识与智慧，<br/>鼓励创意和创新，<br/>尊重和保护权利人的知识产权权益。</p>
+                <a class="btn btn_link" href="/policy" role="button">了解更多<img
+                        src="/assets/img/btn_right.png" style="margin-left: 8px"></a>
+            </div>
+        </div>
+
+        <div class=" d-none d-sm-none d-md-block">
+            <div id="policy_guide" style="position: relative;top:-100px"></div>
+            <div class="row no-gutters" style="width: 100%; height: 100%;">
+                <div class="no-gutters policy_guide_content">
+                    <div class="top_title" style="line-height: 55px; padding-top: 57px;">原则与创新
+                    </div>
+                    <div class="sub_title">尊重权利 · 连接智慧</div>
+                    <p class="sub_summary">
+                        腾讯致力于连接知识与智慧，鼓励创意和创新，尊重和保护权利人的知识产权权益。
+                    </p>
+                    <a class="btn btn_link" href="/policy" role="button" style="margin-top: 100px;">
+                        了解更多 <img src="/assets/img/btn_right.png"></a>
+                </div>
+                <div class="no-gutters policy_guide_title">
+                    <img src="/assets/img/policy_bg.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="stripe_background report_guide">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-lg-12 text-center">
+                <div class="top_title">透明度专区</div>
+                <p class="title_summary">了解关键数据 ·
+                    保护措施</p>
+            </div><!-- /.col-lg-12 -->
+            <div class="col-lg-12 d-block d-sm-block d-md-none">
+                <div class="">
+                    <div class="text-center">
+                        <a class="card report_phone_card" href="/report/content?id=51">
+                            <div class="text-center">
+                                <p class="card_title">2021年微信品牌保护报告</p>
+                            </div>
+                            <img src="" class="card-img">
+                            <div>
+                                <p class="card_summary">无</p>
+                            </div>
+                        </a>
+                        <a class="card report_phone_card" href="/report/content?id=47">
+                            <div class="text-center">
+                                <p class="card_title">2020年微信品牌保护报告（英文版）</p>
+                            </div>
+                            <img src="/upload/img/article/0/1_20210425150713.jpg" class="card-img">
+                            <div>
+                                <p class="card_summary"></p>
+                            </div>
+                        </a>
+                        <a class="card report_phone_card" href="/report/content?id=44">
+                            <div class="text-center">
+                                <p class="card_title">2020微信版权保护报告</p>
+                            </div>
+                            <img src="/upload/img/article/0/1_20201125155249.jpg" class="card-img">
+                            <div>
+                                <p class="card_summary"></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 d-none d-sm-none d-md-block">
+                <div id="report_guide" style="position: relative;top:-200px"></div>
+                <div class="row report_card no-gutters">
+                    <div class="col-3">
+                        <div class="nav flex-column nav-pills" id="report-v-pills-tab" role="tablist"
+                             aria-orientation="vertical">
+                            <a class="nav-link  active " id="v-pills-report-tab0"
+                               onmouseenter="hoverReportTab(51, '无')"
+                               onclick="clickReportTab(51)" data-toggle="pill"
+                               href="#v-pills-report0" role="tab" aria-controls="v-pills-report0"
+                               aria-selected=" true ">
+                                <div class="tab_info">
+                                    <div class="report_title">2021</div>
+                                    <span class="report_sub">年微信品牌保护报告</span>
+                                </div>
+                            </a>
+                            <a class="nav-link " id="v-pills-report-tab1"
+                               onmouseenter="hoverReportTab(47, '')"
+                               onclick="clickReportTab(47)" data-toggle="pill"
+                               href="#v-pills-report1" role="tab" aria-controls="v-pills-report1"
+                               aria-selected="false ">
+                                <div class="tab_info">
+                                    <div class="report_title">2020</div>
+                                    <span class="report_sub">年微信品牌保护报告（英文版）</span>
+                                </div>
+                            </a>
+                            <a class="nav-link " id="v-pills-report-tab2"
+                               onmouseenter="hoverReportTab(44, '')"
+                               onclick="clickReportTab(44)" data-toggle="pill"
+                               href="#v-pills-report2" role="tab" aria-controls="v-pills-report2"
+                               aria-selected="false ">
+                                <div class="tab_info">
+                                    <div class="report_title">2020</div>
+                                    <span class="report_sub">微信版权保护报告</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-9" style="padding-left: 15px;">
+                        <div class="tab-content" id="report-v-pills-tabContent">
+                            <div class="tab-pane fade report_img  show active "
+                                 id="v-pills-report0" role="tabpanel"
+                                 aria-labelledby="v-pills-report-tab0">
+                                <a href="/report/content?id=51" target="_blank">
+                                    <img src="">
+                                </a>
+                            </div>
+                            <div class="tab-pane fade report_img "
+                                 id="v-pills-report1" role="tabpanel"
+                                 aria-labelledby="v-pills-report-tab1">
+                                <a href="/report/content?id=47" target="_blank">
+                                    <img src="/upload/img/article/0/1_20210425150713.jpg">
+                                </a>
+                            </div>
+                            <div class="tab-pane fade report_img "
+                                 id="v-pills-report2" role="tabpanel"
+                                 aria-labelledby="v-pills-report-tab2">
+                                <a href="/report/content?id=44" target="_blank">
+                                    <img src="/upload/img/article/0/1_20201125155249.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 d-none d-sm-none d-md-block"
+                 style="margin-top: 45px;">
+                <div class="row report_info" style="padding: 0">
+                    <span class="info_msg col-10">无</span>
+                    <span class="info_btn col-2">
+                        <a class="btn btn_link" href="/report">
+                            <span>了解更多 <img src="/assets/img/btn_right.png"></span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.row -->
+</div>
+<script>
+    function hoverReportTab(id, summaryF) {
+        $('.report_info').replaceWith('<div class="row report_info" style="padding: 0">\n' +
+            '            <span class="info_msg col-10">' + summaryF + '</span>\n' +
+            '            <span class="info_btn col-2">\n' +
+            '                <a class="btn btn_link" href="/report">\n' +
+            '                    <span>了解更多</span>\n' +
+            '                    <img src="/assets/img/btn_right.png">\n' +
+            '                </a>\n' +
+            '            </span>\n' +
+            '        </div>')
+    }
+
+    function clickReportTab(id) {
+        window.open("/report/content?id=" + id)
+    }
+
+    $(function () {
+        tab_floatingSwitch('#report-v-pills-tab>a', '#report-v-pills-tabContent>div');
+    });
+
+    /* tab页自动切换 */
+    function tab_floatingSwitch(id_1, id_2) {
+        // tab页自动切换
+        $(id_1).hover(function () { // 悬停
+            $(id_1).removeClass("active");
+            $(this).addClass("active");
+
+            $(id_2).removeClass("show active");
+            var href = $(this).attr("href");
+            $(href).addClass(" show active");
+        });
+    }
+
+</script><div class="complain-guide">
+    <div id="complain_guide"></div>
+    <div class="container">
+        <div class="complain-title">
+            <h4 class="title">腾讯知识产权保护指引</h4>
+            <p class="title_summary">了解腾讯各产品业务保护政策 · 维权指引</p>
+        </div>
+        <div class="swiper-container d-none d-sm-block">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20210425114011.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=46">
+                            <div class="content">
+                                <div class="title">QQ</div>
+                                <div class="summary">QQ，由腾讯公司于1999年推出。作为一款横跨PC和移动的即时通信和社交平台，QQ支持在线聊天、视频语音通话、点对点断点续传文件、QQ邮箱等多种功能，并不断推出符合年轻用户需求的创新功能，例如支持用户根据个人需求和兴趣快速扩关系的“扩列”以及精准匹配用户兴趣的内容社交平台“看点”等。此外，腾讯亦提供提升企业工作效率的TIM（办公版QQ）。截至2020年3月，QQ月活跃用户（包括PC和移动）为7.68亿。</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224121732.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=6">
+                            <div class="content">
+                                <div class="title">腾讯视频</div>
+                                <div class="summary">中国领先的在线视频媒体平台。</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224121754.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=5">
+                            <div class="content">
+                                <div class="title">腾讯网</div>
+                                <div class="summary">互联网媒体平台，大型综合门户网站。</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191225130624.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=8">
+                            <div class="content">
+                                <div class="title">微信</div>
+                                <div class="summary">超过10亿人使用的即时通讯工具。</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224121814.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=20">
+                            <div class="content">
+                                <div class="title">内容开放平台</div>
+                                <div class="summary">对用户推出信息发布和品牌推广服务的平台。</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224121832.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=21">
+                            <div class="content">
+                                <div class="title">QQ空间</div>
+                                <div class="summary">用户的网上家园，分享生活，留住感动。</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224122054.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=16">
+                            <div class="content">
+                                <div class="title">微云</div>
+                                <div class="summary">在多设备之间云同步传输数据。</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224121939.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=7">
+                            <div class="content">
+                                <div class="title">WeGame</div>
+                                <div class="summary">开发者平台，连接游戏开发者和用户。</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191225130843.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=19">
+                            <div class="content">
+                                <div class="title">腾讯手机管家</div>
+                                <div class="summary">永久免费的手机安全与管理软件。</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224121919.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=23">
+                            <div class="content">
+                                <div class="title">QQ游戏大厅</div>
+                                <div class="summary">腾讯自主研发的全球最大的休闲游戏平台。</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191225130737.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=17">
+                            <div class="content">
+                                <div class="title">腾讯广告</div>
+                                <div class="summary">多维定向推广,实现精准投放。</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224121855.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=22">
+                            <div class="content">
+                                <div class="title">QQ小程序</div>
+                                <div class="summary">QQ小程序是腾讯公司推出的小程序。</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224122037.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=24">
+                            <div class="content">
+                                <div class="title">企鹅电竞</div>
+                                <div class="summary">腾讯旗下规模最大的移动电竞平台。</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191225130918.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=10">
+                            <div class="content">
+                                <div class="title">腾讯课堂</div>
+                                <div class="summary">腾讯推出的专业在线教育平台。</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224122012.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=15">
+                            <div class="content">
+                                <div class="title">腾讯游戏学院</div>
+                                <div class="summary">打造游戏知识分享交流平台。</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="d-block d-sm-none">
+            <div class="row">
+                <div class="col-6 ">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20210425114011.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=46">
+                            <div class="content">
+                                <h4 class="title">QQ</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224121732.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=6">
+                            <div class="content">
+                                <h4 class="title">腾讯视频</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224121754.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=5">
+                            <div class="content">
+                                <h4 class="title">腾讯网</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191225130624.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=8">
+                            <div class="content">
+                                <h4 class="title">微信</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224121814.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=20">
+                            <div class="content">
+                                <h4 class="title">内容开放平台</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224121832.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=21">
+                            <div class="content">
+                                <h4 class="title">QQ空间</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224122054.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=16">
+                            <div class="content">
+                                <h4 class="title">微云</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224121939.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=7">
+                            <div class="content">
+                                <h4 class="title">WeGame</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191225130843.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=19">
+                            <div class="content">
+                                <h4 class="title">腾讯手机管家</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224121919.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=23">
+                            <div class="content">
+                                <h4 class="title">QQ游戏大厅</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191225130737.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=17">
+                            <div class="content">
+                                <h4 class="title">腾讯广告</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224121855.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=22">
+                            <div class="content">
+                                <h4 class="title">QQ小程序</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224122037.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=24">
+                            <div class="content">
+                                <h4 class="title">企鹅电竞</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191225130918.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=10">
+                            <div class="content">
+                                <h4 class="title">腾讯课堂</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="card">
+                        <div class="card-header p-0">
+                            <div class="border">
+                                <img class="logo" src="/upload/img/article/0/1_20191224122012.jpg">
+                            </div>
+                        </div>
+                        <a class="card-body" href="/complain?id=15">
+                            <div class="content">
+                                <h4 class="title">腾讯游戏学院</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="complain-footer d-none d-sm-flex">
+            <p class="summary">腾讯知识产权保护平台将为权利人提供维权投诉、知识产权投诉政策和规则等一站式服务。
+            </p>
+            <a class="btn btn_link" href="/complain" role="button">了解更多<img
+                    src="/assets/img/btn_right.png"
+                    style="margin-left: 8px"></a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../../assets/swiper/swiper.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var complainSwiper = new Swiper('.complain-guide .swiper-container', {
+            watchSlidesProgress: true,
+            slidesPerView: 5,
+            centeredSlides: true,
+            initialSlide: 2,
+            loop: true,
+            loopedSlides: 5,
+            navigation: {
+                nextEl: '.swiper-container .swiper-button-next',
+                prevEl: '.swiper-container .swiper-button-prev',
+            },
+            on: {
+                progress: function (progress) {
+                    for (i = 0; i < this.slides.length; i++) {
+                        var slide = this.slides.eq(i);
+                        var slideProgress = this.slides[i].progress;
+                        slide.css('opacity', 1);
+                        if (Math.abs(slideProgress) > 2.5) {
+                            // if (slideProgress < -4 || slideProgress > 0) {
+                            slide.css('opacity', 0);
+                        }
+                    }
+                },
+                setTransition: function (transition) {
+                    for (var i = 0; i < this.slides.length; i++) {
+                        var slide = this.slides.eq(i)
+                        slide.transition(transition);
+                    }
+
+                }
+            }
+        })
+    })
+</script><div class="partner-guide">
+    <div class="container">
+        <div id="partner_guide" style="position: relative;top:-100px"></div>
+        <h2 class="title">连接更多</h2>
+        <p class="title_summary">和腾讯一起 · 共同守护</p>
+        <div class="swiper-container partner-slick d-none d-sm-block">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card-body" style="background: url('/assets/img/partner-bg1.png') no-repeat;">
+                        <div class="logo">
+                            <img src="/assets/img/partner-logo1.png">
+                        </div>
+                        <div class="content">
+                            <p class="summary">微信品牌维权平台</p>
+                            <a class="btn btn_link" href="https://www.wechatlegal.net" target="_blank" role="button">点击进入<img
+                                        src="/assets/img/btn_right.png" style="margin-left: 8px"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-body" style="background: url('/assets/img/partner-bg2.png') no-repeat;">
+                        <div class="logo">
+                            <img src="/assets/img/partner-logo3.png">
+                        </div>
+                        <div class="content">
+                            <p class="summary">微信知识产权保护</p>
+                            <a class="btn btn_link" href="http://ipr.wechatlegal.cn" target="_blank"
+                               role="button">点击进入<img
+                                    src="/assets/img/btn_right.png" style="margin-left: 8px"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-body" style="background: url('/assets/img/partner-bg3.png') no-repeat;">
+                        <div class="logo">
+                            <img src="/assets/img/partner-logo2.png">
+                        </div>
+                        <div class="content">
+                            <p class="summary">腾讯内容开放平台</p>
+                            <a class="btn btn_link" href="https://om.qq.com/userAuth/index" target="_blank"
+                               role="button">点击进入<img
+                                    src="/assets/img/btn_right.png" style="margin-left: 8px"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-block d-sm-none">
+            <div class="card-body"
+                 style="background: url('/assets/img/partner-bg1.png') no-repeat;background-size: cover">
+                <div class="logo">
+                    <img src="/assets/img/partner-logo1.png">
+                </div>
+                <div class="content text-center">
+                    <p class="summary">微信品牌维权平台</p>
+                    <a class="btn btn_link" href="https://www.wechatlegal.net" target="_blank" role="button">点击进入<img
+                                src="/assets/img/btn_right.png" style="margin-left: 8px"></a>
+                </div>
+            </div>
+            <div class="card-body"
+                 style="background: url('/assets/img/partner-bg3.png') no-repeat;background-size: cover">
+                <div class="logo">
+                    <img src="/assets/img/partner-logo2.png">
+                </div>
+                <div class="content text-center">
+                    <p class="summary">腾讯内容开放平台</p>
+                    <a class="btn btn_link" href="https://om.qq.com/userAuth/index" target="_blank" role="button">点击进入<img
+                                src="/assets/img/btn_right.png" style="margin-left: 8px"></a>
+                </div>
+            </div>
+            <div class="card-body "
+                 style="background: url('/assets/img/partner-bg2.png') no-repeat;background-size: cover">
+                <div class="logo">
+                    <img src="/assets/img/partner-logo3.png">
+                </div>
+                <div class="content text-center">
+                    <p class="summary">微信知识产权保护</p>
+                    <a class="btn btn_link" href="http://ipr.wechatlegal.cn" target="_blank" role="button">点击进入<img
+                                src="/assets/img/btn_right.png" style="margin-left: 8px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../../assets/swiper/swiper.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var parterSwiper = new Swiper('.partner-guide .swiper-container', {
+            watchSlidesProgress: true,
+            slideToClickedSlide: true,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            loop: true,
+            loopedSlides: 3,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            on: {
+                progress: function (progress) {
+                    for (i = 0; i < this.slides.length; i++) {
+                        var slide = this.slides.eq(i);
+                        var slideProgress = this.slides[i].progress;
+                        modify = 1;
+                        if (Math.abs(slideProgress) > 1) {
+                            modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+                        }
+                        translate = slideProgress * modify * 500 + 'px';
+                        scale = 1 - Math.abs(slideProgress) / 3;
+                        zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+                        slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+                        slide.css('zIndex', zIndex);
+                        slide.css('opacity', 1);
+                        if (Math.abs(slideProgress) > 1.5) {
+                            slide.css('opacity', 0);
+                        }
+                    }
+                },
+                setTransition: function (transition) {
+                    for (var i = 0; i < this.slides.length; i++) {
+                        var slide = this.slides.eq(i)
+                        slide.transition(transition);
+                    }
+
+                }
+            }
+        })
+        parterSwiper.el.onmouseover = function () {
+            parterSwiper.autoplay.stop();
+        }
+        parterSwiper.el.onmouseout = function () {
+            parterSwiper.autoplay.start();
+        }
+    })
+</script></div>
+</main>
+<!-- FOOTER -->
+<div class="footer-info   mb-0">
+    <footer class="container">
+        <div class="d-flex justify-content-between">
+            <div class="float-md-left d-none d-md-block">
+                <div class="more-info">
+                    <div class="qcode">
+                        <img src="/assets/img/qcode.png"/>
+                        <div class="tips">公众号二维码
+                        </div>
+                    </div>
+                    <div class="more">
+                        <h3 class="title">
+                            <embed src="/assets/img/T.svg" type="image/svg+xml">
+                            <span style="position: relative; bottom: 3px;">腾讯知识产权保护</span>
+                        </h3>
+                        <a class="btn btn_link more-link" style="font-weight: unset;cursor: default;color: white;"
+                           role="button"><img src="/assets/img/btn_left.png" style="margin-right: 8px;">扫码关注</img></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w-100 d-block d-sm-none">
+                <div class="footer-item" id="accordion">
+                    <div class="panel">
+                        <h4 class="title">
+                            <a data-toggle="collapse" href="#collapseOne">首页</a>
+                        </h4>
+                        <div id="collapseOne" data-parent="#accordion" class="collapse">
+                            <ul class="list-unstyled footer-item-list">
+                                <li>
+                                    <a href="/information">资讯动态</a>
+                                </li>
+                                <li>
+                                    <a href="/policy">原则与创新</a>
+                                </li>
+                                <li>
+                                    <a href="/report">透明度专区</a>
+                                </li>
+                                <li>
+                                    <a href="/complain">投诉指引</a>
+                                </li>
+                                <li>
+                                    <a href="/">连接更多</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <h4 class="title">
+                            <a data-toggle="collapse" href="#collapseTwo">资讯动态</a>
+                        </h4>
+                        <div id="collapseTwo" data-parent="#accordion" class="collapse">
+                            <ul class="list-unstyled footer-item-list">
+                                <li>
+                                    <a href="/information">资讯动态</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <h4 class="title">
+                            <a data-toggle="collapse" href="#collapseThree">原则与创新</a>
+                        </h4>
+                        <div id="collapseThree" data-parent="#accordion" class="collapse">
+                            <ul class="list-unstyled footer-item-list">
+                                <li>
+                                    <a href="/policy">保护原则</a>
+                                </li>
+                                <li>
+                                    <a href="/policy">创新机制</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <h4 class="title">
+                            <a data-toggle="collapse" href="#collapseFour">透明度专区</a>
+                        </h4>
+                        <div id="collapseFour" data-parent="#accordion" class="collapse">
+                            <ul class="list-unstyled footer-item-list">
+                                <li>
+                                    <a href="/report">2019年报告</a>
+                                </li>
+                                <li>
+                                    <a href="/report">2018年报告</a>
+                                </li>
+                                <li>
+                                    <a href="/report">2017年白皮书</a>
+                                </li>
+                                <li>
+                                    <a href="/report">2015年白皮书</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <h4 class="title">
+                            <a data-toggle="collapse" href="#collapseFive">投诉指引</a>
+                        </h4>
+                        <div id="collapseFive" data-parent="#accordion" class="collapse">
+                            <ul class="list-unstyled footer-item-list">
+                                <li>
+                                    <a href="/complain">产品列表</a>
+                                </li>
+                                <li>
+                                    <a href="/complain">维权指引</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="float-md-right d-none d-sm-block">
+                <div class="row" style='min-width: 550px'>
+                    <div class="footer-item col-md">
+                        <a href="/">
+                            <h4 class="title">
+                                首页
+                            </h4>
+                        </a>
+                        <ul class="list-unstyled footer-item-list">
+                            <li>
+                                <a href="/#info_guide">资讯动态</a>
+                            </li>
+                            <li>
+                                <a href="/#policy_guide">原则与创新</a>
+                            </li>
+                            <li>
+                                <a href="/#report_guide">透明度专区</a>
+                            </li>
+                            <li>
+                                <a href="/#complain_guide">投诉指引</a>
+                            </li>
+                            <li>
+                                <a href="/#partner_guide">连接更多</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-item col-md">
+                        <a href="/information">
+                            <h4 class="title">
+                                资讯动态
+                            </h4>
+                        </a>
+                        <ul class="list-unstyled footer-item-list">
+                            <li>
+                                <a href="/information">资讯动态</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-item col-md">
+                        <a href="/policy">
+                            <h4 class="title">
+                                原则与创新
+                            </h4>
+                        </a>
+                        <ul class="list-unstyled footer-item-list">
+                            <li>
+                                <a href="/policy#policy_guide1">保护原则</a>
+                            </li>
+                            <li>
+                                <a href="/policy#policy_guide2">创新机制</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-item col-md">
+                        <a href="/report">
+                            <h4 class="title">
+                                透明度专区
+                            </h4>
+                        </a>
+                        <ul class="list-unstyled footer-item-list">
+                            <li>
+                                <a href="/report">2019年报告</a>
+                            </li>
+                            <li>
+                                <a href="/report">2018年报告</a>
+                            </li>
+                            <li>
+                                <a href="/report">2017年白皮书</a>
+                            </li>
+                            <li>
+                                <a href="/report">2015年白皮书</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-item col-md">
+                        <a href="/complain">
+                            <h4 class="title">
+                                投诉指引
+                            </h4>
+                        </a>
+                        <ul class="list-unstyled footer-item-list">
+                            <li>
+                                <a href="/complain#complain_guide1">产品列表</a>
+                            </li>
+                            <li>
+                                <a href="/complain#complain_guide2">维权指引</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="footer-about bg-dark text-light">
+    <div class="bottom">
+        <p>Copyright © 1998 - 2019 Tencent. All Rights Reserved</p>
+    </div>
+    <div class="to_top" style="opacity: 1; right: 8px;">
+        <span class="fa fa-angle-up" style="font-size: 24px"></span>
+    </div>
+</div>
+
+<script type="text/javascript" src="/assets/js/bootstrap.min-4.3.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+            if ($(document).scrollTop() >= 580) {
+                $(".fixed-top").addClass("bg-navbar")
+            } else {
+                $(".fixed-top").removeClass("bg-navbar")
+            }
+        $(window).scroll(function () {
+            if ($(document).scrollTop() >= 580) {
+                $(".fixed-top").addClass("bg-navbar")
+            } else {
+                $(".fixed-top").removeClass("bg-navbar")
+            }
+        })
+        if ($(document).scrollTop() >= 200) {
+            $(".to_top").stop().animate({
+                "opacity": 1,
+                "right": 5
+            }, 80)
+        }
+
+        function toTop() {
+            $(document).scroll(function () {
+                if ($(document).scrollTop() >= 200) {
+                    $(".to_top").stop().animate({
+                        "opacity": 1,
+                        "right": 5
+                    }, 80)
+                } else {
+                    $(".to_top").stop().animate({
+                        "opacity": 0,
+                        "right": -46
+                    }, 80)
+                }
+            })
+        }
+
+        toTop();
+        $(".to_top").click(function () {
+            $("html,body").animate({
+                scrollTop: 0
+            }, 350)
+        })
+        // // 初始时，“返回顶部”标签隐藏
+        // $(".to_top").hide();
+        // $(window).scroll(function() {
+        // 	// 若滚动的高度，超出指定的高度后，“返回顶部”的标签出现。
+        // 	if($(document).scrollTop() >= 150) {
+        // 		$(".to_top").fadeIn();
+        // 	} else {
+        // 		$(".to_top").fadeOut();
+        // 	}
+        // })
+        // // 绑定点击事件，实现返回顶部的效果
+        // $(".to_top").click(function() {
+        // 	$(document).scrollTop(0);
+        // })
+
+    })
+</script>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<!--<script src="/assets/js/holder.min.js"></script>-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
+
+

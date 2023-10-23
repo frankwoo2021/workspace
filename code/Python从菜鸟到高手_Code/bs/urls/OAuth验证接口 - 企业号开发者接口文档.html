@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>OAuth验证接口 - 企业号开发者接口文档</title>
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta name="generator" content="MediaWiki 1.23.2" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/opensearch_desc.php" title="企业号开发者接口文档 (zh-cn)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://qydev.weixin.qq.com/wiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="企业号开发者接口文档的Atom feed" href="/wiki/index.php?title=%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom" />
+<link rel="stylesheet" href="https://qydev.weixin.qq.com/wiki/load.php?debug=false&amp;lang=zh-cn&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: db_wiki:resourceloader:filter:minify-css:7:9c5a4db2a4eada45e8752f24b39639f8 */</style>
+<script src="https://qydev.weixin.qq.com/wiki/load.php?debug=false&amp;lang=zh-cn&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"OAuth验证接口","wgTitle":"OAuth验证接口","wgCurRevisionId":2479,"wgRevisionId":2479,"wgArticleId":100,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"zh-cn","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"zh","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"OAuth验证接口","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,
+"useeditwarning":1,"prefershttps":1,"language":"zh-cn","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"variant":"zh-cn"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});},{},{});
+/* cache key: db_wiki:resourceloader:filter:minify-js:7:3495b98c4c2f32900cc45a4e1832703e */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","skins.vector.js"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/wiki/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-OAuth验证接口 skin-vector action-view vector-animateLayout">
+		<!-- header -->
+		<div class="headWrap">
+			<div class="header"  id="header">
+				<div class="inner" style="width: 1270px;">
+	      				<a class="logo" href="/wiki">
+	        				<img src="/wiki/skins/common/images/weixin/weixin_wiki_logo.png" alt="微信公众平台">
+	      				</a>
+					<div class="wiki-outlink" style="top: 1px; right: 570px;">
+						<div id="wiki-outlink-interfacedoc" class="currentsite">
+							<a href="//qydev.weixin.qq.com/wiki/">接口文档</a>
+						</div>
+					</div>
+					<div class="wiki-qy-index">
+						<a href="https://qy.weixin.qq.com" class="qy-index">
+							<span class="">进入官网</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- main content container -->
+		<div class="mainwrapper" style="width: 1270px;">
+		<div class="inner">
+
+			<div id="content" class="mw-body scroll-bar-wrap" role="main">
+				<div class="scroll-box">
+					<a id="top"></a>
+
+					<div id="mw-js-message" style="display:none;"></div>
+
+					
+					<div class="content_hd">
+						<h2 id="firstHeading" class="firstHeading">
+							OAuth验证接口						</h2>
+						<div id="right-navigation">
+	                        <div id="p-search" role="search">
+	                                <form action="/wiki/index.php" id="searchform">
+	                                        <div>
+	                                            <input type="submit" name="fulltext" value=""  title="搜索含这些文字的页面" id="mw-searchButton" class="searchButton">
+												<input type="search" name="search" title="搜索微信企业号开发者文档[f]" accesskey="f" id="searchInput">
+	                                        </div>
+	                                </form>
+	                        </div>
+		                </div>
+						<!--<div class="info">
+							<a href="javascript:;" onclick="document.referrer ?location.replace(document.referrer):location.href='/wiki/index.php';return false;" class="back" >返回
+							</a>
+						</div> -->
+					</div>
+
+					<div id="bodyContent" class="bodyContent">
+
+												<div id="siteSub">来自企业号开发者接口文档</div>
+						
+						<div id="contentSub"></div>
+
+						
+						
+						<div id="jump-to-nav" class="mw-jump">
+							跳转至：							<a href="#mw-navigation">导航</a>、							<a href="#p-search">搜索</a>
+						</div>
+
+						<div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>目录</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#OAuth2.0.E9.AA.8C.E8.AF.81.E6.8E.A5.E5.8F.A3.E8.AF.B4.E6.98.8E"><span class="tocnumber">1</span> <span class="toctext"><b>OAuth2.0验证接口说明</b></span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.E4.BC.81.E4.B8.9A.E8.8E.B7.E5.8F.96code"><span class="tocnumber">2</span> <span class="toctext"><b>企业获取code</b></span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.E6.A0.B9.E6.8D.AEcode.E8.8E.B7.E5.8F.96.E6.88.90.E5.91.98.E4.BF.A1.E6.81.AF"><span class="tocnumber">3</span> <span class="toctext"><b>根据code获取成员信息</b></span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.E4.BD.BF.E7.94.A8user_ticket.E8.8E.B7.E5.8F.96.E6.88.90.E5.91.98.E8.AF.A6.E6.83.85"><span class="tocnumber">4</span> <span class="toctext"><b>使用user_ticket获取成员详情</b></span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="OAuth2.0.E9.AA.8C.E8.AF.81.E6.8E.A5.E5.8F.A3.E8.AF.B4.E6.98.8E"><b><strong>OAuth2.0验证接口说明</strong></b></span></h2>
+<p>企业应用中的URL链接（包括自定义菜单或者消息中的链接），可以通过OAuth2.0验证接口来获取成员的身份信息。</p>
+<p><br />
+</p>
+<p>通过此接口获取成员身份会有一定的时间开销。对于频繁获取成员身份的场景，建议采用如下方案：</p>
+<p>1、企业应用中的URL链接直接填写企业自己的页面地址</p>
+<p>2、成员跳转到企业页面时，企业校验是否有代表成员身份的cookie，此cookie由企业生成</p>
+<p>3、如果没有获取到cookie，重定向到OAuth验证链接，获取成员身份后，由企业生成代表成员身份的cookie</p>
+<p>4、根据cookie获取成员身份，进入相应的页面</p>
+<p><br />
+</p>
+<p>注意，此URL的域名，<strong>必须完全匹配企业应用设置项中的'可信域名'（如果你的redirect_uri有端口号，那'可信域名'也必须加上端口号）</strong>，否则跳转时会提示redirect_uri参数错误。</p>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".E4.BC.81.E4.B8.9A.E8.8E.B7.E5.8F.96code"><b><strong>企业获取code</strong></b></span></h2>
+<p>企业如果需要员工在跳转到企业网页时带上员工的身份信息，需构造如下的链接：</p>
+<p><a rel="nofollow" class="external free" href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&amp;redirect_uri=REDIRECT_URI&amp;response_type=code&amp;scope=SCOPE&amp;agentid=AGENTID&amp;state=STATE#wechat_redirect">https://open.weixin.qq.com/connect/oauth2/authorize?appid=CORPID&amp;redirect_uri=REDIRECT_URI&amp;response_type=code&amp;scope=SCOPE&amp;agentid=AGENTID&amp;state=STATE#wechat_redirect</a></p>
+<p>员工点击后，页面将跳转至 redirect_uri?code=CODE&amp;state=STATE，企业可根据code参数获得员工的userid。</p>
+<ul>
+<li>参数说明
+</li>
+</ul>
+<table border="1" cellspacing="0" cellpadding="4" align="center" width="640px">
+<tr>
+<th style="width:120px">参数
+</th>
+<th>必须
+</th>
+<th>说明
+</th></tr>
+<tr>
+<td> appid
+</td>
+<td> 是
+</td>
+<td> 企业的CorpID
+</td></tr>
+<tr>
+<td> redirect_uri
+</td>
+<td> 是
+</td>
+<td> 授权后重定向的回调链接地址，请使用urlencode对链接进行处理
+</td></tr>
+<tr>
+<td> response_type
+</td>
+<td> 是
+</td>
+<td> 返回类型，此时固定为：code
+</td></tr>
+<tr>
+<td> scope
+</td>
+<td> 是
+</td>
+<td> 应用授权作用域。
+<p>snsapi_base：静默授权，可获取成员的基础信息；
+snsapi_userinfo：静默授权，可获取成员的详细信息，但不包含手机、邮箱；
+snsapi_privateinfo：手动授权，可获取成员的详细信息，包含手机、邮箱。
+</p>
+</td></tr>
+<tr>
+<td> agentid
+</td>
+<td> 是
+</td>
+<td>企业应用的id。
+<p>当scope是snsapi_userinfo或snsapi_privateinfo时，该参数必填。
+注意redirect_uri的域名必须与该应用的可信域名一致。
+</p>
+</td></tr>
+<tr>
+<td> state
+</td>
+<td> 否
+</td>
+<td> 重定向后会带上state参数，企业可以填写a-zA-Z0-9的参数值，长度不可超过128个字节
+</td></tr>
+<tr>
+<td> #wechat_redirect
+</td>
+<td> 是
+</td>
+<td> 微信终端使用此参数判断是否需要带上身份信息
+</td></tr></table>
+<p><br />
+</p>
+<ul>
+<li>权限说明
+</li>
+</ul>
+<p>企业无限制；第三方使用snsapi_privateinfo的scope时，应用必须有’成员敏感信息授权’的权限。
+</p>
+<h2><span class="mw-headline" id=".E6.A0.B9.E6.8D.AEcode.E8.8E.B7.E5.8F.96.E6.88.90.E5.91.98.E4.BF.A1.E6.81.AF"><b><strong>根据code获取成员信息</strong></b></span></h2>
+<ul>
+<li>请求说明
+</li>
+</ul>
+<p>Https请求方式：GET</p>
+<p><a rel="nofollow" class="external free" href="https://qyapi.weixin.qq.com/cgi-bin/user/getuserinfo?access_token=ACCESS_TOKEN&amp;code=CODE">https://qyapi.weixin.qq.com/cgi-bin/user/getuserinfo?access_token=ACCESS_TOKEN&amp;code=CODE</a></p>
+<ul>
+<li>参数说明
+</li>
+</ul>
+<table border="1" cellspacing="0" cellpadding="4" align="center" width="640px">
+<tr>
+<th style="width:120px">参数
+</th>
+<th>必须
+</th>
+<th>说明
+</th></tr>
+<tr>
+<td> access_token
+</td>
+<td> 是
+</td>
+<td> 调用接口凭证
+</td></tr>
+<tr>
+<td> code
+</td>
+<td> 是
+</td>
+<td> 通过成员授权获取到的code，每次成员授权带上的code将不一样，code只能使用一次，10分钟未被使用自动过期
+</td></tr></table>
+<ul>
+<li>权限说明
+</li>
+</ul>
+<p>跳转的域名须完全匹配管理组中任一应用的可信域名。</p>
+<ul>
+<li>返回结果
+</li>
+</ul>
+<p>a)企业成员授权时返回示例如下：</p>
+<pre>{
+   "UserId":"USERID",
+   "DeviceId":"DEVICEID"
+   "user_ticket": "USER_TICKET"，
+   "expires_in":7200
+}
+</pre>
+<table border="1" cellspacing="0" cellpadding="4" align="center" width="640px">
+<tr>
+<th style="width:240px">参数
+</th>
+<th>说明
+</th></tr>
+<tr>
+<td> UserId
+</td>
+<td> 成员UserID
+</td></tr>
+<tr>
+<td> DeviceId
+</td>
+<td> 手机设备号(由微信在安装时随机生成，删除重装会改变，升级不受影响，同一设备上不同的登录账号生成的deviceid也不同)
+</td></tr>
+<tr>
+<td> user_ticket
+</td>
+<td> 成员票据，最大为512字节。
+<p>scope为snsapi_userinfo或snsapi_privateinfo，且用户在应用可见范围之内时返回此参数。
+后续利用该参数可以获取用户信息或敏感信息。
+</p>
+</td></tr>
+<tr>
+<td> expires_in
+</td>
+<td> user_token的有效时间（秒），随user_ticket一起返回
+</td></tr></table>
+<p>b)非企业成员授权时返回示例如下：</p>
+<pre>{
+   "OpenId":"OPENID",
+   "DeviceId":"DEVICEID"
+}
+</pre>
+<table border="1" cellspacing="0" cellpadding="4" align="center" width="640px">
+<tr>
+<th style="width:240px">参数
+</th>
+<th>说明
+</th></tr>
+<tr>
+<td> OpenId
+</td>
+<td> 非企业成员的标识，对当前企业号唯一
+</td></tr>
+<tr>
+<td> DeviceId
+</td>
+<td> 手机设备号(由微信在安装时随机生成，删除重装会改变，升级不受影响)
+</td></tr></table>
+<p>c)出错时返回示例如下：</p>
+<pre>{
+   "errcode": "40029",
+   "errmsg": "invalid code"
+}
+</pre>
+<p><br />
+</p>
+<h2><span class="mw-headline" id=".E4.BD.BF.E7.94.A8user_ticket.E8.8E.B7.E5.8F.96.E6.88.90.E5.91.98.E8.AF.A6.E6.83.85"><b><strong>使用user_ticket获取成员详情</strong></b></span></h2>
+<ul>
+<li>请求说明
+</li>
+</ul>
+<p>Https请求方式：POST</p>
+<p><a rel="nofollow" class="external free" href="https://qyapi.weixin.qq.com/cgi-bin/user/getuserdetail?access_token=ACCESS_TOKEN">https://qyapi.weixin.qq.com/cgi-bin/user/getuserdetail?access_token=ACCESS_TOKEN</a></p>
+<ul>
+<li>请求示例
+</li>
+</ul>
+<pre>{
+   "user_ticket": "USER_TICKET"
+}
+</pre>
+<ul>
+<li>参数说明
+</li>
+</ul>
+<table border="1" cellspacing="0" cellpadding="4" align="center" width="640px">
+<tr>
+<th style="width:120px">参数
+</th>
+<th>必须
+</th>
+<th>说明
+</th></tr>
+<tr>
+<td> access_token
+</td>
+<td> 是
+</td>
+<td> 调用接口凭证
+</td></tr>
+<tr>
+<td> user_ticket
+</td>
+<td> 是
+</td>
+<td> 成员票据
+</td></tr></table>
+<ul>
+<li>权限说明
+</li>
+</ul>
+<p>需要有对应应用的使用权限，且成员必须在授权应用的可见范围内。</p>
+<ul>
+<li>返回结果
+</li>
+</ul>
+<p>{
+</p>
+<pre>  "userid":"lisi",
+  "name":"李四",
+  "department":[3],
+  "position": "后台工程师",
+  "mobile":"15050495892",
+  "gender":1,
+  "email":"xxx@xx.com",
+  "avatar":"<a rel="nofollow" class="external free" href="http://shp.qpic.cn/bizmp/xxxxxxxxxxx/0">http://shp.qpic.cn/bizmp/xxxxxxxxxxx/0</a>"
+</pre>
+<p>}
+</p>
+<table border="1" cellspacing="0" cellpadding="4" align="center" width="640px">
+<tr>
+<th style="width:240px">参数
+</th>
+<th>说明
+</th></tr>
+<tr>
+<td> userid
+</td>
+<td> 成员UserID
+</td></tr>
+<tr>
+<td> name
+</td>
+<td> 成员姓名
+</td></tr>
+<tr>
+<td> gender
+</td>
+<td> 性别。0表示未定义，1表示男性，2表示女性
+</td></tr>
+<tr>
+<td> department
+</td>
+<td> 成员所属部门
+</td></tr>
+<tr>
+<td> position
+</td>
+<td> 职位信息
+</td></tr>
+<tr>
+<td> avatar
+</td>
+<td> 头像url。注：如果要获取小图将url最后的”/0”改成”/64”即可
+</td></tr>
+<tr>
+<td> mobile
+</td>
+<td> 成员手机号，仅在用户同意snsapi_privateinfo授权时返回
+</td></tr>
+<tr>
+<td> email
+</td>
+<td> 成员邮箱，仅在用户同意snsapi_privateinfo授权时返回
+</td></tr></table>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.016 seconds
+Real time usage: 0.022 seconds
+Preprocessor visited node count: 14/1000000
+Preprocessor generated node count: 20/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key db_wiki:pcache:idhash:100-0!*!*!!zh-cn!*!* and timestamp 20211215071407 and revision id 2479
+ -->
+</div>												<div class="printfooter">
+						取自“<a href="https://qydev.weixin.qq.com/wiki/index.php?title=OAuth验证接口&amp;oldid=2479">https://qydev.weixin.qq.com/wiki/index.php?title=OAuth验证接口&amp;oldid=2479</a>”						</div>
+																		<div id='catlinks' class='catlinks catlinks-allhidden'></div>												
+						<div class="visualClear"></div>
+
+											</div>
+				</div>
+			</div>
+
+			<!-- nav -->
+			<div id="mw-panel" class="collapsible-nav scroll-bar-wrap">
+				<div class="scroll-box">
+						<div class="portal" role="navigation" id='p--.E9.A6.96.E9.A1.B5' aria-labelledby='p--.E9.A6.96.E9.A1.B5-label'>
+					<h5 			id="p-.24name-label"
+			class="category ">
+			首页		</h5>
+	</div>
+	<div class="portal" role="navigation" id='p-.3D.E5.BC.80.E5.A7.8B.E5.BC.80.E5.8F.91' aria-labelledby='p-.3D.E5.BC.80.E5.A7.8B.E5.BC.80.E5.8F.91-label'>
+					<h5 			id="p-.24name-label"
+			class="category separator">
+			开始开发		</h5>
+	</div>
+	<div class="portal" role="navigation" id='p-.E4.B8.BB.E5.8A.A8.E8.B0.83.E7.94.A8' aria-labelledby='p-.E4.B8.BB.E5.8A.A8.E8.B0.83.E7.94.A8-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			主动调用		</h5>
+		<div class="body" >
+							<ul>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E5.9B.9E.E8.B0.83.E6.A8.A1.E5.BC.8F' aria-labelledby='p-.E5.9B.9E.E8.B0.83.E6.A8.A1.E5.BC.8F-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			回调模式		</h5>
+		<div class="body" >
+							<ul>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.3D.E8.AE.A4.E8.AF.81.E6.8E.A5.E5.8F.A3' aria-labelledby='p-.3D.E8.AE.A4.E8.AF.81.E6.8E.A5.E5.8F.A3-label'>
+					<h5 			id="p-.24name-label"
+			class="category separator">
+			认证接口		</h5>
+	</div>
+	<div class="portal active" role="navigation" id='p-.E8.BA.AB.E4.BB.BD.E9.AA.8C.E8.AF.81' aria-labelledby='p-.E8.BA.AB.E4.BB.BD.E9.AA.8C.E8.AF.81-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			身份验证		</h5>
+		<div class="body"  style='display:block'>
+							<ul>
+											<li id="n-OAuth.E9.AA.8C.E8.AF.81.E6.8E.A5.E5.8F.A3"><a href="/wiki/index.php?title=OAuth%E9%AA%8C%E8%AF%81%E6%8E%A5%E5%8F%A3">OAuth验证接口</a></li>
+											<li id="n-Userid.E4.B8.8Eopenid.E4.BA.92.E6.8D.A2.E6.8E.A5.E5.8F.A3"><a href="/wiki/index.php?title=Userid%E4%B8%8Eopenid%E4%BA%92%E6%8D%A2%E6%8E%A5%E5%8F%A3">Userid与openid互换接口</a></li>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E6.88.90.E5.91.98.E7.99.BB.E5.BD.95.E6.8E.88.E6.9D.83' aria-labelledby='p-.E6.88.90.E5.91.98.E7.99.BB.E5.BD.95.E6.8E.88.E6.9D.83-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			成员登录授权		</h5>
+		<div class="body" >
+							<ul>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E5.8D.95.E7.82.B9.E7.99.BB.E5.BD.95.E6.8E.88.E6.9D.83' aria-labelledby='p-.E5.8D.95.E7.82.B9.E7.99.BB.E5.BD.95.E6.8E.88.E6.9D.83-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			单点登录授权		</h5>
+		<div class="body" >
+							<ul>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.3D.E8.B5.84.E6.BA.90.E6.8E.A5.E5.8F.A3' aria-labelledby='p-.3D.E8.B5.84.E6.BA.90.E6.8E.A5.E5.8F.A3-label'>
+					<h5 			id="p-.24name-label"
+			class="category separator">
+			资源接口		</h5>
+	</div>
+	<div class="portal" role="navigation" id='p-.E7.AE.A1.E7.90.86.E4.BC.81.E4.B8.9A.E5.8F.B7.E5.BA.94.E7.94.A8' aria-labelledby='p-.E7.AE.A1.E7.90.86.E4.BC.81.E4.B8.9A.E5.8F.B7.E5.BA.94.E7.94.A8-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			管理企业号应用		</h5>
+		<div class="body" >
+							<ul>
+											<li id="n-.E8.8E.B7.E5.8F.96.E4.BC.81.E4.B8.9A.E5.8F.B7.E5.BA.94.E7.94.A8"><a href="/wiki/index.php?title=%E8%8E%B7%E5%8F%96%E4%BC%81%E4%B8%9A%E5%8F%B7%E5%BA%94%E7%94%A8">获取企业号应用</a></li>
+											<li id="n-.E8.AE.BE.E7.BD.AE.E4.BC.81.E4.B8.9A.E5.8F.B7.E5.BA.94.E7.94.A8"><a href="/wiki/index.php?title=%E8%AE%BE%E7%BD%AE%E4%BC%81%E4%B8%9A%E5%8F%B7%E5%BA%94%E7%94%A8">设置企业号应用</a></li>
+											<li id="n-.E8.8E.B7.E5.8F.96.E5.BA.94.E7.94.A8.E6.A6.82.E5.86.B5.E5.88.97.E8.A1.A8"><a href="/wiki/index.php?title=%E8%8E%B7%E5%8F%96%E5%BA%94%E7%94%A8%E6%A6%82%E5%86%B5%E5%88%97%E8%A1%A8">获取应用概况列表</a></li>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E8.87.AA.E5.AE.9A.E4.B9.89.E8.8F.9C.E5.8D.95' aria-labelledby='p-.E8.87.AA.E5.AE.9A.E4.B9.89.E8.8F.9C.E5.8D.95-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			自定义菜单		</h5>
+		<div class="body" >
+							<ul>
+											<li id="n-.E5.88.9B.E5.BB.BA.E5.BA.94.E7.94.A8.E8.8F.9C.E5.8D.95"><a href="/wiki/index.php?title=%E5%88%9B%E5%BB%BA%E5%BA%94%E7%94%A8%E8%8F%9C%E5%8D%95">创建应用菜单</a></li>
+											<li id="n-.E5.88.A0.E9.99.A4.E8.8F.9C.E5.8D.95"><a href="/wiki/index.php?title=%E5%88%A0%E9%99%A4%E8%8F%9C%E5%8D%95">删除菜单</a></li>
+											<li id="n-.E8.8E.B7.E5.8F.96.E8.8F.9C.E5.8D.95.E5.88.97.E8.A1.A8"><a href="/wiki/index.php?title=%E8%8E%B7%E5%8F%96%E8%8F%9C%E5%8D%95%E5%88%97%E8%A1%A8">获取菜单列表</a></li>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E7.AE.A1.E7.90.86.E9.80.9A.E8.AE.AF.E5.BD.95' aria-labelledby='p-.E7.AE.A1.E7.90.86.E9.80.9A.E8.AE.AF.E5.BD.95-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			管理通讯录		</h5>
+		<div class="body" >
+							<ul>
+											<li id="n-.E6.88.90.E5.91.98.E5.85.B3.E6.B3.A8.E4.BC.81.E4.B8.9A.E5.8F.B7"><a href="/wiki/index.php?title=%E6%88%90%E5%91%98%E5%85%B3%E6%B3%A8%E4%BC%81%E4%B8%9A%E5%8F%B7">成员关注企业号</a></li>
+											<li id="n-.E7.AE.A1.E7.90.86.E9.83.A8.E9.97.A8"><a href="/wiki/index.php?title=%E7%AE%A1%E7%90%86%E9%83%A8%E9%97%A8">管理部门</a></li>
+											<li id="n-.E7.AE.A1.E7.90.86.E6.88.90.E5.91.98"><a href="/wiki/index.php?title=%E7%AE%A1%E7%90%86%E6%88%90%E5%91%98">管理成员</a></li>
+											<li id="n-.E7.AE.A1.E7.90.86.E6.A0.87.E7.AD.BE"><a href="/wiki/index.php?title=%E7%AE%A1%E7%90%86%E6%A0%87%E7%AD%BE">管理标签</a></li>
+											<li id="n-.E5.BC.82.E6.AD.A5.E4.BB.BB.E5.8A.A1.E6.8E.A5.E5.8F.A3"><a href="/wiki/index.php?title=%E5%BC%82%E6%AD%A5%E4%BB%BB%E5%8A%A1%E6%8E%A5%E5%8F%A3">异步任务接口</a></li>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E7.AE.A1.E7.90.86.E7.B4.A0.E6.9D.90.E6.96.87.E4.BB.B6' aria-labelledby='p-.E7.AE.A1.E7.90.86.E7.B4.A0.E6.9D.90.E6.96.87.E4.BB.B6-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			管理素材文件		</h5>
+		<div class="body" >
+							<ul>
+											<li id="n-.E4.B8.8A.E4.BC.A0.E4.B8.B4.E6.97.B6.E7.B4.A0.E6.9D.90.E6.96.87.E4.BB.B6"><a href="/wiki/index.php?title=%E4%B8%8A%E4%BC%A0%E4%B8%B4%E6%97%B6%E7%B4%A0%E6%9D%90%E6%96%87%E4%BB%B6">上传临时素材文件</a></li>
+											<li id="n-.E8.8E.B7.E5.8F.96.E4.B8.B4.E6.97.B6.E7.B4.A0.E6.9D.90.E6.96.87.E4.BB.B6"><a href="/wiki/index.php?title=%E8%8E%B7%E5%8F%96%E4%B8%B4%E6%97%B6%E7%B4%A0%E6%9D%90%E6%96%87%E4%BB%B6">获取临时素材文件</a></li>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.3D.E8.83.BD.E5.8A.9B.E6.8E.A5.E5.8F.A3' aria-labelledby='p-.3D.E8.83.BD.E5.8A.9B.E6.8E.A5.E5.8F.A3-label'>
+					<h5 			id="p-.24name-label"
+			class="category separator">
+			能力接口		</h5>
+	</div>
+	<div class="portal" role="navigation" id='p-.E5.8F.91.E6.B6.88.E6.81.AF' aria-labelledby='p-.E5.8F.91.E6.B6.88.E6.81.AF-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			发消息		</h5>
+		<div class="body" >
+							<ul>
+											<li id="n-.E5.8F.91.E9.80.81.E6.8E.A5.E5.8F.A3.E8.AF.B4.E6.98.8E"><a href="/wiki/index.php?title=%E5%8F%91%E9%80%81%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E">发送接口说明</a></li>
+											<li id="n-.E6.B6.88.E6.81.AF.E7.B1.BB.E5.9E.8B.E5.8F.8A.E6.95.B0.E6.8D.AE.E6.A0.BC.E5.BC.8F"><a href="/wiki/index.php?title=%E6%B6%88%E6%81%AF%E7%B1%BB%E5%9E%8B%E5%8F%8A%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F">消息类型及数据格式</a></li>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E6.8E.A5.E6.94.B6.E6.B6.88.E6.81.AF.E4.B8.8E.E4.BA.8B.E4.BB.B6' aria-labelledby='p-.E6.8E.A5.E6.94.B6.E6.B6.88.E6.81.AF.E4.B8.8E.E4.BA.8B.E4.BB.B6-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			接收消息与事件		</h5>
+		<div class="body" >
+							<ul>
+											<li id="n-.E6.8E.A5.E6.94.B6.E6.99.AE.E9.80.9A.E6.B6.88.E6.81.AF"><a href="/wiki/index.php?title=%E6%8E%A5%E6%94%B6%E6%99%AE%E9%80%9A%E6%B6%88%E6%81%AF">接收普通消息</a></li>
+											<li id="n-.E6.8E.A5.E6.94.B6.E4.BA.8B.E4.BB.B6"><a href="/wiki/index.php?title=%E6%8E%A5%E6%94%B6%E4%BA%8B%E4%BB%B6">接收事件</a></li>
+											<li id="n-.E8.A2.AB.E5.8A.A8.E5.93.8D.E5.BA.94.E6.B6.88.E6.81.AF"><a href="/wiki/index.php?title=%E8%A2%AB%E5%8A%A8%E5%93%8D%E5%BA%94%E6%B6%88%E6%81%AF">被动响应消息</a></li>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E5.BE.AE.E4.BF.A1JS-SDK.E6.8E.A5.E5.8F.A3' aria-labelledby='p-.E5.BE.AE.E4.BF.A1JS-SDK.E6.8E.A5.E5.8F.A3-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			微信JS-SDK接口		</h5>
+		<div class="body" >
+							<ul>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E4.BC.9A.E8.AF.9D.E6.9C.8D.E5.8A.A1' aria-labelledby='p-.E4.BC.9A.E8.AF.9D.E6.9C.8D.E5.8A.A1-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			会话服务		</h5>
+		<div class="body" >
+							<ul>
+											<li id="n-.E4.BC.81.E4.B8.9A.E4.BC.9A.E8.AF.9D.E6.8E.A5.E5.8F.A3.E8.AF.B4.E6.98.8E"><a href="/wiki/index.php?title=%E4%BC%81%E4%B8%9A%E4%BC%9A%E8%AF%9D%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E">企业会话接口说明</a></li>
+											<li id="n-.E4.BC.81.E4.B8.9A.E4.BC.9A.E8.AF.9D.E5.9B.9E.E8.B0.83"><a href="/wiki/index.php?title=%E4%BC%81%E4%B8%9A%E4%BC%9A%E8%AF%9D%E5%9B%9E%E8%B0%83">企业会话回调</a></li>
+											<li id="n-.E4.BC.81.E4.B8.9A.E4.BC.9A.E8.AF.9D.E7.AC.AC.E4.B8.89.E6.96.B9.E6.8E.88.E6.9D.83"><a href="/wiki/index.php?title=%E4%BC%81%E4%B8%9A%E4%BC%9A%E8%AF%9D%E7%AC%AC%E4%B8%89%E6%96%B9%E6%8E%88%E6%9D%83">企业会话第三方授权</a></li>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E5.AE.A2.E6.9C.8D.E6.9C.8D.E5.8A.A1' aria-labelledby='p-.E5.AE.A2.E6.9C.8D.E6.9C.8D.E5.8A.A1-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			客服服务		</h5>
+		<div class="body" >
+							<ul>
+											<li id="n-.E4.BC.81.E4.B8.9A.E8.87.AA.E8.A1.8C.E5.BC.80.E5.8F.91.E5.AF.B9.E6.8E.A5.E5.AE.A2.E6.9C.8D"><a href="/wiki/index.php?title=%E4%BC%81%E4%B8%9A%E8%87%AA%E8%A1%8C%E5%BC%80%E5%8F%91%E5%AF%B9%E6%8E%A5%E5%AE%A2%E6%9C%8D">企业自行开发对接客服</a></li>
+											<li id="n-.E6.9C.8D.E5.8A.A1.E5.95.86.E5.BC.80.E5.8F.91.E5.AE.A2.E6.9C.8D.E5.A5.97.E4.BB.B6"><a href="/wiki/index.php?title=%E6%9C%8D%E5%8A%A1%E5%95%86%E5%BC%80%E5%8F%91%E5%AE%A2%E6%9C%8D%E5%A5%97%E4%BB%B6">服务商开发客服套件</a></li>
+											<li id="n-.E4.BC.81.E4.B8.9A.E5.AE.A2.E6.9C.8D.E6.8E.A5.E5.8F.A3.E8.AF.B4.E6.98.8E"><a href="/wiki/index.php?title=%E4%BC%81%E4%B8%9A%E5%AE%A2%E6%9C%8D%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E">企业客服接口说明</a></li>
+											<li id="n-.E5.AE.A2.E6.9C.8D.E5.9B.9E.E5.A4.8D.E6.B6.88.E6.81.AF.E5.9B.9E.E8.B0.83"><a href="/wiki/index.php?title=%E5%AE%A2%E6%9C%8D%E5%9B%9E%E5%A4%8D%E6%B6%88%E6%81%AF%E5%9B%9E%E8%B0%83">客服回复消息回调</a></li>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E4.BC.81.E4.B8.9A.E5.8F.B7.E5.BE.AE.E4.BF.A1.E6.94.AF.E4.BB.98' aria-labelledby='p-.E4.BC.81.E4.B8.9A.E5.8F.B7.E5.BE.AE.E4.BF.A1.E6.94.AF.E4.BB.98-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			企业号微信支付		</h5>
+		<div class="body" >
+							<ul>
+											<li id="n-.E5.BE.AE.E4.BF.A1.E6.94.AF.E4.BB.98"><a href="/wiki/index.php?title=%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98">微信支付</a></li>
+											<li id="n-.E5.BE.AE.E4.BF.A1.E7.8E.B0.E9.87.91.E7.BA.A2.E5.8C.85.2F.E4.BC.81.E4.B8.9A.E4.BB.98.E6.AC.BE"><a href="/wiki/index.php?title=%E5%BE%AE%E4%BF%A1%E7%8E%B0%E9%87%91%E7%BA%A2%E5%8C%85/%E4%BC%81%E4%B8%9A%E4%BB%98%E6%AC%BE">微信现金红包/企业付款</a></li>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E6.91.87.E4.B8.80.E6.91.87.E5.91.A8.E8.BE.B9' aria-labelledby='p-.E6.91.87.E4.B8.80.E6.91.87.E5.91.A8.E8.BE.B9-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			摇一摇周边		</h5>
+		<div class="body" >
+							<ul>
+											<li id="n-.E8.8E.B7.E5.8F.96.E8.AE.BE.E5.A4.87.E5.8F.8A.E7.94.A8.E6.88.B7.E4.BF.A1.E6.81.AF"><a href="/wiki/index.php?title=%E8%8E%B7%E5%8F%96%E8%AE%BE%E5%A4%87%E5%8F%8A%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF">获取设备及用户信息</a></li>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E5.8D.A1.E5.88.B8.E6.9C.8D.E5.8A.A1' aria-labelledby='p-.E5.8D.A1.E5.88.B8.E6.9C.8D.E5.8A.A1-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			卡券服务		</h5>
+		<div class="body" >
+							<ul>
+											<li id="n-.E5.88.9B.E5.BB.BA.E5.8D.A1.E5.88.B8"><a href="/wiki/index.php?title=%E5%88%9B%E5%BB%BA%E5%8D%A1%E5%88%B8">创建卡券</a></li>
+											<li id="n-.E7.AE.A1.E7.90.86.E5.8D.A1.E5.88.B8"><a href="/wiki/index.php?title=%E7%AE%A1%E7%90%86%E5%8D%A1%E5%88%B8">管理卡券</a></li>
+											<li id="n-.E6.8A.95.E6.94.BE.E5.8D.A1.E5.88.B8"><a href="/wiki/index.php?title=%E6%8A%95%E6%94%BE%E5%8D%A1%E5%88%B8">投放卡券</a></li>
+											<li id="n-.E6.A0.B8.E9.94.80.E5.8D.A1.E5.88.B8"><a href="/wiki/index.php?title=%E6%A0%B8%E9%94%80%E5%8D%A1%E5%88%B8">核销卡券</a></li>
+											<li id="n-.E5.8D.A1.E5.88.B8.E4.BA.8B.E4.BB.B6.E6.8E.A8.E9.80.81"><a href="/wiki/index.php?title=%E5%8D%A1%E5%88%B8%E4%BA%8B%E4%BB%B6%E6%8E%A8%E9%80%81">卡券事件推送</a></li>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.3DSaaS.E5.A5.97.E4.BB.B6.E6.8E.A5.E5.8F.A3' aria-labelledby='p-.3DSaaS.E5.A5.97.E4.BB.B6.E6.8E.A5.E5.8F.A3-label'>
+					<h5 			id="p-.24name-label"
+			class="category separator">
+			SaaS套件接口		</h5>
+	</div>
+	<div class="portal" role="navigation" id='p-.E7.AC.AC.E4.B8.89.E6.96.B9.E5.BA.94.E7.94.A8.E6.8E.88.E6.9D.83' aria-labelledby='p-.E7.AC.AC.E4.B8.89.E6.96.B9.E5.BA.94.E7.94.A8.E6.8E.88.E6.9D.83-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			第三方应用授权		</h5>
+		<div class="body" >
+							<ul>
+											<li id="n-.E5.BA.94.E7.94.A8.E6.8F.90.E4.BE.9B.E5.95.86.E6.B3.A8.E5.86.8C.E5.BA.94.E7.94.A8"><a href="/wiki/index.php?title=%E5%BA%94%E7%94%A8%E6%8F%90%E4%BE%9B%E5%95%86%E6%B3%A8%E5%86%8C%E5%BA%94%E7%94%A8">应用提供商注册应用</a></li>
+											<li id="n-.E4.BC.81.E4.B8.9A.E5.8F.B7.E7.AE.A1.E7.90.86.E5.91.98.E6.8E.88.E6.9D.83.E6.B5.81.E7.A8.8B"><a href="/wiki/index.php?title=%E4%BC%81%E4%B8%9A%E5%8F%B7%E7%AE%A1%E7%90%86%E5%91%98%E6%8E%88%E6%9D%83%E6%B5%81%E7%A8%8B">企业号管理员授权流程</a></li>
+											<li id="n-.E7.AC.AC.E4.B8.89.E6.96.B9.E5.BA.94.E7.94.A8.E6.8E.A5.E5.8F.A3.E8.AF.B4.E6.98.8E"><a href="/wiki/index.php?title=%E7%AC%AC%E4%B8%89%E6%96%B9%E5%BA%94%E7%94%A8%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E">第三方应用接口说明</a></li>
+											<li id="n-.E7.AC.AC.E4.B8.89.E6.96.B9.E5.9B.9E.E8.B0.83.E5.8D.8F.E8.AE.AE"><a href="/wiki/index.php?title=%E7%AC%AC%E4%B8%89%E6%96%B9%E5%9B%9E%E8%B0%83%E5%8D%8F%E8%AE%AE">第三方回调协议</a></li>
+											<li id="n-.E9.80.9A.E8.AE.AF.E5.BD.95.E6.9D.83.E9.99.90.E4.BD.93.E7.B3.BB"><a href="/wiki/index.php?title=%E9%80%9A%E8%AE%AF%E5%BD%95%E6%9D%83%E9%99%90%E4%BD%93%E7%B3%BB">通讯录权限体系</a></li>
+											<li id="n-.E8.AE.BE.E8.AE.A1.E8.B5.84.E6.BA.90.E4.B8.8B.E8.BD.BD"><a href="/wiki/index.php?title=%E8%AE%BE%E8%AE%A1%E8%B5%84%E6%BA%90%E4%B8%8B%E8%BD%BD">设计资源下载</a></li>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E7.AE.A1.E7.90.86.E5.90.8E.E5.8F.B0.E5.8D.95.E7.82.B9.E7.99.BB.E5.BD.95' aria-labelledby='p-.E7.AE.A1.E7.90.86.E5.90.8E.E5.8F.B0.E5.8D.95.E7.82.B9.E7.99.BB.E5.BD.95-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			管理后台单点登录		</h5>
+		<div class="body" >
+							<ul>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.3D.E5.85.B6.E4.BB.96' aria-labelledby='p-.3D.E5.85.B6.E4.BB.96-label'>
+					<h5 			id="p-.24name-label"
+			class="category separator">
+			其他		</h5>
+	</div>
+	<div class="portal" role="navigation" id='p-.E5.9F.BA.E7.A1.80.E6.A0.B7.E5.BC.8F.E5.BA.93' aria-labelledby='p-.E5.9F.BA.E7.A1.80.E6.A0.B7.E5.BC.8F.E5.BA.93-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			基础样式库		</h5>
+		<div class="body" >
+							<ul>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E9.99.84.E5.BD.95' aria-labelledby='p-.E9.99.84.E5.BD.95-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			附录		</h5>
+		<div class="body" >
+							<ul>
+											<li id="n-.E5.8A.A0.E8.A7.A3.E5.AF.86.E6.96.B9.E6.A1.88.E7.9A.84.E8.AF.A6.E7.BB.86.E8.AF.B4.E6.98.8E"><a href="/wiki/index.php?title=%E5%8A%A0%E8%A7%A3%E5%AF%86%E6%96%B9%E6%A1%88%E7%9A%84%E8%AF%A6%E7%BB%86%E8%AF%B4%E6%98%8E">加解密方案的详细说明</a></li>
+											<li id="n-.E5.8A.A0.E8.A7.A3.E5.AF.86.E5.BA.93.E4.B8.8B.E8.BD.BD.E4.B8.8E.E8.BF.94.E5.9B.9E.E7.A0.81"><a href="/wiki/index.php?title=%E5%8A%A0%E8%A7%A3%E5%AF%86%E5%BA%93%E4%B8%8B%E8%BD%BD%E4%B8%8E%E8%BF%94%E5%9B%9E%E7%A0%81">加解密库下载与返回码</a></li>
+											<li id="n-.E5.85.A8.E5.B1.80.E8.BF.94.E5.9B.9E.E7.A0.81.E8.AF.B4.E6.98.8E"><a href="/wiki/index.php?title=%E5%85%A8%E5%B1%80%E8%BF%94%E5%9B%9E%E7%A0%81%E8%AF%B4%E6%98%8E">全局返回码说明</a></li>
+														</ul>
+					</div>
+	</div>
+	<div class="portal" role="navigation" id='p-.E6.9B.B4.E6.96.B0.E6.97.A5.E5.BF.97.EF.BC.882016.07.19.EF.BC.89' aria-labelledby='p-.E6.9B.B4.E6.96.B0.E6.97.A5.E5.BF.97.EF.BC.882016.07.19.EF.BC.89-label'>
+					<h5 			id="p-.24name-label" >
+			<span class="portal_arrow"></span>
+			更新日志（2016.07.19）		</h5>
+		<div class="body" >
+							<ul>
+														</ul>
+					</div>
+	</div>
+					<div class="debug-tool"><a href="//qydev.weixin.qq.com/debug" target="_blank">接口调试工具</a></div>
+					<!-- <div class="debug-tool" style="margin-top: 0;background: #ECECEC url(//qydev.weixin.qq.com/wiki/skins/vector/blog.png) no-repeat 24px 15px;}"><a href="//qywx.gitcafe.io/" target="_blank">企业号团队博客</a></div> -->
+					<div class="debug-tool" style="margin-top: 0;background: #ECECEC url(//qydev.weixin.qq.com/wiki/skins/vector/blog.png) no-repeat 24px 15px;}"><a href="//qydev.weixin.qq.com/cdn/cdnjs.html" target="_blank">CDN服务</a></div>
+				</div>
+				<div class="cover-bar"></div>
+			</div>
+
+		</div>
+		</div>
+
+		<!-- footer -->
+		<div id="footer" role="contentinfo" class="footer">
+
+			<ul class="links ft" id="footer-places">
+				<li class="links_item no_extra" id="footer-about"><a target="_blank" href="http://www.tencent.com/zh-cn/index.shtml">关于腾讯</a></li>
+			<li class="links_item" id="footer-policy"> <a target="_blank" href="https://mp.weixin.qq.com/cgi-bin/readtemplate?t=home/agreement_tmpl&type=info&lang=zh_CN&token=">服务协议</a></li>
+			<li class="links_item" id="footer-runrule"><a target="_blank" href="https://qy.weixin.qq.com/cgi-bin/loginpage?t=standard_op.html">运营规范</a></li>
+			<li class="links_item" id="footer-contactctr"><a target="_blank" href="https://kf.qq.com/product/qyweixin.html?scene_id=pc349">客服中心</a></li>
+			<!-- <li class="links_item" id="footer-contactonl"><a target="_blank" href="http://CRM2.QQ.COm/page/portalpage/wpa.php?uin=40012345&f=1&ty=1&ap=000011:400792:|m:18|f:Ggzpt3">在线客服</a></li> -->
+			<li class="links_item" id="footer-contactmail"><a href="mailto:weixinqiye@qq.com">联系邮箱</a></li>
+			</ul>
+			<p class="copyright">Copyright&nbsp;@&nbsp;2021 Tencent. All Rights Reserved.</p>
+		</div>
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"ready","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","skins.vector.collapsibleNav"],null,true);
+}</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":410});
+}</script>		<script type="text/javascript" src='jquery-min.js'></script>
+		<script type="text/javascript" src='wiki.js'></script>
+	</body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title></title>
+<script type="text/javascript">
+	var _speedMark=new Date();
+</script>
+<style>
+.topbar {color: #dddddd;background:#171717;}
+.topbar .wrap {width: 1120px;height: 36px;line-height: 36px;margin: auto;text-align:center;}
+.topbar .wrap a {display: inline-block;color: #fff;}
+</style>
+<link rel="stylesheet" href="/wiki/doc/api/css/common.css" />
+<script type="text/javascript" src="https://wx.gtimg.com/third/jquery/jquery-1.7.min.js"></script>
+</head>
+<body class="technology-integr">
+<!-- 头部 S -->
+<script>var _speedMark=Date.now()</script>
+<script>
+$(function(){
+    $(".showPopUpJS").mouseover(function(){ 
+		$(this).addClass("show-dropdown-body");
+	});
+	$(".showPopUpJS").mouseout(function(){
+		$(this).removeClass("show-dropdown-body");
+	});
+});
+</script>
+<div class="header">
+    <div class="wrap">
+        <div class="logo">
+            <h1 class="main-logo"><a href="/wiki/doc/apiv3/wxpay/pages/index.shtml" >微信支付商户平台</a></h1>
+            <div class="sub-logo np"></div>
+            
+        </div>
+        <div class="link">
+        	<a href="/wiki/doc/apiv3/wxpay/pages/index.shtml" target="_blank">开发文档首页</a>
+			<i class="vs">|</i>
+			<a href="http://kf.qq.com/product/wechatpaymentmerchant.html" target="_blank">自助服务专区</a>
+        	<i class="vs">|</i>
+        	<a href="/index.php" target="_blank">商户平台首页</a>
+        	<i class="vs">|</i>
+			<a href="https://developers.weixin.qq.com/community/pay" target="_blank">社区</a>
+        	<i class="vs">|</i>
+            <div class="dropdown-box showPopUpJS">
+                <a class="dropdown-head" href="javascript:;">帮助中心<span class="dropdown-arrow"></span></a>
+                <div class="dropdown-body">
+                    <ul>
+                        <li class="kefu">
+                            <p class="tel">客服：95017</p>
+                            <p class="time">周一到周五 09:00-18:00</p>
+                        </li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>
+<div class="query hide">
+	<div class="wrap tr">
+		<div class="postion"><!--a href="index.html">返回</a--></div>
+    </div>
+ </div><!-- 头部 E -->
+<div class="topbar">
+            <div class="wrap">
+                <ul>
+                    <li><a href="http://pay.weixin.qq.com/wiki/doc/apiv3/wxpay/pages/convention.shtml" target="_blank"> <i class="ico-switch"></i> <font color="#00c250">微信支付代金券API已经全面升级，点击查看全新文档。</font></a>本接口文档未来将不再维护，请已经基于本文档开发的商户尽快升级至新接口。</li>
+					
+                </ul>
+            </div>
+        </div>
+<!-- 内容 [[ -->
+<div class="container wrap" id="art-content">
+            <!-- 侧边栏 [[ -->
+            <div class="sidebar"> 
+
+                <div class="menu">
+                	<div class="menu-hd"><h3><i class="type-ico"></i>代金券或立减优惠</h3></div>
+                    <div class="munu-bd">                   
+                    <!-- 交互说明
+                         1.给标签dl添加样式"open",显示下拉列表
+                         2.给标签dt或dd添加样式"on",显示选中状态
+                    -->
+                    <dl id="1">
+                        <dt><a href="javascript:;"><i class="ico-arrows"></i>文档说明</a></dt>
+                        <dd><a href="?chapter=1_1">阅读对象</a></dd>
+                        <dd><a href="?chapter=1_2">版本说明</a></dd>
+                    </dl>
+                    <dl id="2">
+                        <dt><a href="javascript:;"><i class="ico-arrows"></i>术语</a></dt>
+                        <dd><a href="?chapter=2_1">支付模式</a></dd>
+                        <dd><a href="?chapter=2_2">名词解释</a></dd>
+                    </dl>
+                    <dl id="3">
+                        <dt><a href="javascript:;"><i class="ico-arrows"></i>支付账户</a></dt>
+                        <dd><a href="?chapter=3_1">支付账户</a></dd>
+                    </dl>
+                    <dl id="4">
+                        <dt><a href="javascript:;"><i class="ico-arrows"></i>接口规则</a></dt>
+                        <dd><a href="?chapter=4_1">协议规则</a></dd>
+                        <dd><a href="?chapter=4_2">参数规定</a></dd>
+                        <dd><a href="?chapter=4_3">安全规范</a></dd>
+                    </dl>
+                    <dl id="12">
+                        <dt><a href="javascript:;"><i class="ico-arrows"></i>代金券接口</a></dt>
+                        <dd><a href="?chapter=12_1&index=1">场景介绍</a></dd>
+                        <dd><a href="?chapter=12_2&index=2">接口介绍</a></dd>
+						<dd><a href="?chapter=12_7&index=3">操作指引</a></dd>
+                        <dd><a href="?chapter=12_3&index=4">发放代金券 </a></dd>
+                        <dd><a href="?chapter=12_4&index=5">查询代金券批次 </a></dd>
+                        <dd><a href="?chapter=12_5&index=6">查询代金券信息</a></dd>
+                    </dl>
+					<dl id="23">
+                <dt><a href="javascript:;"><i class="ico-arrows"></i>最佳实践</a></dt>
+				<!--<dd><a href="?chapter=23_10&index=1">支付回调和查单实现指引</a></dd> --> 
+                <dd><a href="?chapter=23_15&index=1">免充值开通指引</a></dd> 
+				<dd><a href="?chapter=23_1&index=2" >支付验收指引</a></dd>      
+				<dd><a href="?chapter=23_2&index=3" >网络排查指引</a></dd>
+                <dd><a href="?chapter=23_3&index=4" >最佳安全实践</a></dd>  
+				<dd><a href="?chapter=23_6&index=5" >跨城冗灾方案</a></dd>  
+				<dd><a href="?chapter=23_8&index=6" >回调通知注意事项</a></dd> 
+                <dd><a href="?chapter=23_17&index=7">商户收银台H5大字号规范</a></dd> 
+                <dd><a href="?chapter=23_18&index=8">微信支付二维码规范</a></dd>
+            </dl>
+			<dl id="29">
+                   <dt><a href="javascript:;"><i class="ico-arrows"></i>运营规范</a></dt>     
+                <dd><a href="?chapter=29_1">运营规范</a></dd>
+                    </dl>
+			
+					<dl id="11">
+                        <dt><a href="javascript:;"><i class="ico-arrows"></i>注意事项</a></dt>
+                        <dd><a href="?chapter=11_2&index=1">注意事项</a></dd>
+                        <dd><a href="?chapter=11_3&index=2">联系我们</a></dd>
+                    </dl>
+                </div>
+                </div>
+            </div>
+            <!-- 侧边栏 ]] -->
+            <!-- 主区域 [[ -->
+            <div class="content">
+
+                <!-- 内容 [[ -->
+		            <div class="content-hd">
+    <h2 class="with-border">操作指导</h2>
+</div>  
+
+<div class="content-bd">
+<div class="data-box with-padding">
+    <div class="data-hd">
+        <h3>发放前准备事项</h3>
+    </div>
+<div class="data-bd">
+<p>一、开通代金券权限</p>
+<p>在使用代金券之前，请前往开通代金券功能。操作路径：【登录微信支付商户平台——>产品中心——>预充值代金券——>开通】。</p>
+<p class="tc"><img src="../img/chapter12_7_1.jpg"  alt="""/></p>
+<p>&nbsp;</p>
+<p>二、下载API证书</p>
+<p>商户在使用代金券时，需要安装证书，请在商户平台下载证书。</p>
+<p class="tc"><img src="../img/chapter12_7_2.jpg"  alt="""/></p>
+<p>&nbsp;</p>
+<p>三、创建代金券</p>
+<p>1、选择代金券类型</p>
+<p>创建代金券时，先选择全场券还是单品券，全场券可以给商户所有的商品减价，单品券只能给指定商品减价。本内容仅针对全场券进行介绍，单品券的相关指引请参考《<a target="_blank"  href="https://wx.gtimg.com/pay/download/coupon/marketing_single_v1.0.pdf">单品营销帮助手册</a>》。</p>
+<p>&nbsp;</p>
+<p>2、填写基本信息</p>
+<p>代金券基本信息都会向用户展示</p>
+<p class="tc"><img src="../img/chapter12_7_3.jpg"  alt="""/></p>
+<p>需要调用查询接口的情况：</p>
+            <ol class="mb20">
+            <li>◆ 活动名称：代金券名称，9 个中文字符以内，会在代金券上呈现给用户； </li>
+            <li>◆ 营销经费：可以使用预充值或免充值，选择预充值需要在余额中有足够的预算，选择免充值不需要提前充值预算，但是会影响商户交易时实际收到的金额（详情可查看<a target="_blank"  href="https://kf.qq.com/faq/161220J7bIZr161220QbQvua.html">微信支付营销工具介绍</a>）； </li>
+            <li>◆ 面额：单个代金券的固定面额，不能低于 1 元； </li>
+            <li>◆ 使用门槛：订单定额需≥门槛金额，代金券才可使用，并且一次性使用完。多个代金券或立减优惠叠加时，均以优惠前的订单金额不使用门槛相比较。且总优惠必须小于订单金额，用户至少需支付一分钱； </li>
+			<li>◆ 可用时间：该代金券生效和失效的日期，与用户领取时间无关。已过期的代金券无法领取。可用时间最短 1 天，最长 3 个月。可选择周几、几点到几点有效； </li>
+			<li>◆ 使用说明：可向用户介绍该批次代金券的使用场景，支付方式等情况，将在领取首页使用说明、放入卡包后的卡券详情页展示，不能超过 120 个中文字符； </li>
+            </ol>
+<p>&nbsp;</p>
+<p>3、填写其他规则</p>
+<p class="tc"><img src="../img/chapter12_7_4.jpg"  alt="""/></p>
+<ol class="mb20">
+            <li>◆ 用户可领个数：每个微信用户可领该代金券的个数，需小于发放总上限； </li>
+            <li>◆ 用户类型：可选所有用户或指定会员用户，若指定某商户的微信会员能享受优惠，需要输入商户 appid； </li>
+            <li>◆ 可用商户：设置该批次代金券可在哪些商户内使用，默认为创建批次的本商户号。也可以输入商户号，添加其他可使用的商户，输入商户号后先点击确定，待系统成功录入后，再点击完成。最多可添加 3000 个商户号，这些商户都要使用微信支付新接口。此商户号列表不会给用户展示，为了让用户顺利使用，最好在使用说明中注明可用商户。（不同商户类型创建免充值折扣时，可添加的活动商户不同，详情可查看<a target="_blank"  href="http://pay.weixin.qq.com/wiki/doc/api/jsapi_sl.php?chapter=23_15">单品营销帮助手册</a>免充值产品功能使用指引</a>）； </li>
+            <li>◆ 发放总上限：该代金券批次的发放数上限，最少 5 个。填写完发放总上限后系统会根据代金券面额计算出该批次代金券活动的预算总额，发放数达到此上限时无法继续发放； </li>
+			<li>◆ 卡包功能：选择该批次代金券是否要具备可插入卡包的能力，代金券是否插入卡包，并不影响用户领取及拥有此代金券。（选择此项需额外设置卡券样式，详情可查看<a target="_blank"  href="https://kf.qq.com/faq/1706153UVram170615EzmIBr.html">卡包功能说明</a>）； </li>
+			<li>◆ 付款方式：消耗此代金券时限定的付款方式，默认为不限制（即零钱+所有银行卡）。可只限零钱、银行卡或某个指定的银行卡类型； </li>
+			<li>◆ 同时使用：在用户的同一笔订单中，该代金券能否和本商户发放的其他微信支付优惠活动叠加使用。已指定付款方式的代金券必需可不其他优惠叠加使用； </li>
+			<li>◆ 支付模式：支付模式包括：刷卡支付、公众号支付、APP 支付、扫码支付等，在创建活动时可以设定特定模式下，营销活动才能生效； </li>
+			<li>◆ 券触达消息：用户用扫描二维码的方式领取代金券之后，系统会通过微信支付公众号向用户发送领取成功的通知； </li>
+			<li>◆ 订单优惠标记：限制特定商品订单才能使用该代金券。支付请求信息中 goods_tag 字段包含在代金券的订单优惠标记列表中时，代金券才能使用。一个批次的代金券可配置多个订单优惠标记，支付请求中的订单优惠标记命中其中任意一个即可使用该代金券。订单优惠标记的编写规则为任意不超过 32 个英文字符； </li>
+			<li>◆ 商品标记(<font color="red">goods_tag</font>)说明：在goods_tag配置项中设置了goods_tag（内容自定义），则只有在支付接口中上传了该参数给微信，goods_tag内容与配置内容相同，且支付金额满足代金券使用条件才会触发代金券的使用。不设置则只要支付金额满足条件就会触发代金券的使用； </li>
+            </ol>
+<p>&nbsp;</p>
+<p>3、确认创建</p>
+<p>最后点击“确认创建”完成代金券的规则设置。创建成功后你将获取到代金券的批次号，存放在“管理代金券-草稿箱”中，需激活后才能使用。</p>
+<p class="tc"><img src="../img/chapter12_7_5.jpg"  alt=""/></p>
+<p>&nbsp;</p>
+<p>四、激活代金券</p>
+<p>待激活的代金券都存放在“管理代金券-草稿箱”中。点击各批次右上角“激活”按钮可查看详情并激活，激活后的代金券将迁入“运营中”。已激活的代金券在有效期之内或暂停前都可以发放。</p>
+<p><font color="green">注：</font>在激活前，请确保账户内有足够的预算，且只有拥有“激活营销活动”权限的账号才能够激活代金券。</p>
+<p class="tc"><img src="../img/chapter12_7_6.jpg"  alt="""/></p>
+<p>五、管理代金券</p>
+<p>&nbsp;</p>
+<p>1、分类管理代金券</p>
+<p>在管理代金券中可查询本商户创建的所有代金券，管理功能有“运营中”、“草稿箱”和“已停止”三个 Tab。</p>
+<p class="tc"><img src="../img/chapter12_7_7.jpg"  alt="""/></p>
+<ol class="mb20">
+            <li>◆ 运营中：存放未过期且已激活的代金券，可正常给用户发放、核销。运营中的代金券过期或暂停后进入“已停止”； </li>
+            <li>◆ 草稿箱：已创建成功但未激活的代金券将存放在“草稿箱”中，激活后即可转为“运营中”，终止后转为“已停止”； </li>
+            <li>◆ 已停止：存放被终止、已过期及有效期内暂停发放的代金券； </li>
+			</ol>
+<p>&nbsp;</p>
+<p>2、查看代金券状态</p>
+<p>在代金券的管理页，可看到各代金券的主要信息，包括代金券类型、批次号（唯一 ID）、名称、有效期等。点击右上角“详情”可查询该批次代金券的具体信息及更多操作。</p>
+<p class="tc"><img src="../img/chapter12_7_8.jpg"  alt="""/></p>
+<ol class="mb20">
+            <li>◆ 发放概况：中可看到代金券的基本信息和实时的发券数、发券比例和消耗次数； </li>
+            <li>◆ 详情：中可看到代金券的具体配置信息； </li>
+			</ol>
+<p>&nbsp;</p>
+<p>3、暂停发放代金券</p>
+<p>“运营中”的代金券可通过点击“消耗概况”中的“暂停活动”来暂停该批次的发放，暂停的代金券进入“已停止”中。已发放的代金券仍然有效，但无法继续给其他用户发放。暂停但尚在有效期内的代金券可在“已停止-代金券详情”重启。</p>
+<p class="tc"><img src="../img/chapter12_7_9.jpg"  alt="""/></p>
+<p>&nbsp;</p>
+<p>4、发放和消耗记录</p>
+<p>“运营中”和“已停止”的代金券批次都可以实时查询用户的领取记录，或下载消耗明细，包含以下内容： </p>
+<ol class="mb20">
+            <li>◆ 用户领取记录：OpenID、批次 ID、优惠 ID、类型、面额、领取时间（年月日时分）、发券商户号、有效期、券状态、订单金额。； </li>
+            <li>◆ 活动消耗记录：批次 ID、优惠 ID、优惠类型、优惠金额、订单总金额、交易类型、支付单号、消耗时间、消耗商户号、设备号； </li>
+			</ol>
+<p>&nbsp;</p>
+<p>五、发放代金券</p>
+<p>“运营中”的代金券批次有二维码、营销规则和高级接口 3 种发放方式。代金券发放成功用户即已领取。用户领取后，会收到由微信支付公众号发出的成功领取通知。</p>
+<p class="tc"><img src="../img/chapter12_7_10.jpg"  alt="""/></p>
+<p>&nbsp;</p>
+<p>1、二维码发券</p>
+<p>&nbsp;</p>
+<p>点击代金券“发放概况”中的“查看发放方式”，可下载代金券二维码。每个批次的代金券对应一个唯一的二维码。此二维码在代金券有效期内有效，用户扫描二维码后，可即时领取到一张该批次的代金券。如果该批次已达到发放上限或可用余额不足（可用余额不足停止发放仅涉及充值券），则提示活动已结束。</p>
+<p>&nbsp;</p>
+<p>2、营销活动发券</p>
+<p>微信支付商户平台还提供了“营销活动”工具，可实现用户在本商户或指定商户内支付满一定金额后，主动向其发放一张指定的代金券（详情可查看“满额送”<a target="_blank"  href="http://pay.weixin.qq.com/helper/marketing_mes_config_v1.0.pdf">营销活动文档</a>）。</p>
+<p class="tc"><img src="../img/chapter12_7_11.jpg"  alt="""/></p>
+<p>&nbsp;</p>
+<p>3、代金券高级接口</p>
+<p>代金券系统提供一系列 OpenAPI 接口给有开发能力的商户。通过这些接口可实现向指定用户发放代金券。此接口能力可包装为抽奖、关注赠送、参与游戏赠送等运营活动。同时微信支付代金券系统提供代金券状态查询接口，可实时查询某批次代金券的详细状态或某用户已领取的到代金券状态（详情可参考<a target="_blank"  href="http://pay.weixin.qq.com/wiki/doc/api/tools/sp_coupon.php?chapter=12_3">代金券接口文档</a>）。</p>
+<p>&nbsp;</p>
+<p>六、用户触达</p>
+<p>通过扫码领券的用户，会接收到由微信支付公众账号下发的消息，点击消息可查看代金券详情。如该代金券已开启卡包功能，用户可将代金券添加到卡包。如果用户未关注“微信支付”公众号，则无法收到推送的通知消息，但不影响用户使用该代金券。</p>
+<p class="tc"><img src="../img/chapter12_7_12.jpg"  alt="""/></p>
+</div>
+</div>
+</div>
+
+<!--[if !IE]>|xGv00|e83d9359ea3119a3f6db0fc6220aec89<![endif]-->					<script>
+					$(document).ready(function(){
+							 $("dt").bind("click", function(){
+							//$("dl").removeClass("open");
+							if($(this).parent("dl").hasClass("open")) {
+							$(this).parent("dl").removeClass("open");}else{
+								 
+						  	$(this).parent("dl").addClass("open");}
+						  	//$(this).children("dt").addClass("on");
+						});
+						var re = /\d{1,2}_\d{1,2}/g;
+						var x,y,z;
+						z ='3';
+						if((x = re.exec(location.search)) !=null){
+							y = (''+x).split("_");
+							dl =$("dl#"+y[0]);
+							dl.addClass("open");
+							
+							if(z == ''){
+								z = y[1]-1;
+							}else{
+								z--;
+							}
+							$(dl.children("dd")[z]).addClass("on");
+						}
+					});
+					</script>
+            	<!-- 内容 ]] -->
+				<div class="content-bd">
+			   <footer id="we-feedback__panel"></footer>
+			   </div>
+        	</div>
+            <!-- 主区域 ]] -->
+</div>
+<!-- 内容 ]] -->
+
+<!-- 底部 [[ -->
+<!--<div class="footer">
+    <a href="http://help.tenpay.com/cgi-bin/helpcenter/help_center.cgi?id=1&amp;type=0" target="_blank">关于财付通</a>
+    <i class="vs">|</i>
+    <a href="mailto:weixinpay@tencent.com">联系邮箱</a>
+    <i class="vs">|</i>
+    <a href="../common/protocol.shtml" target="_blank">商户平台使用协议</a>
+    <i class="vs">|</i>
+    Powered By Tencent &amp; Tenpay　Copyright &copy; 2005-2016 All Rights Reserved.
+</div>-->
+
+<div class="page-right">
+  <div class="Catalog-box"  style="right:0">
+    <div class="closeNav">
+      <div id="Catalog-box"> </div>
+      <div class="complaints">
+        <ul>
+          
+          <li><a class="feed-back" href="javascript:;" >文档反馈</a></li>
+          <li><a href="#" >返回顶部</a></li>
+          <li><a href="javascript:;" onclick="closeNav()">收起侧边栏</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="openNav hide" style="width:26px;line-height:20px;"> <a href="javascript:;" onclick="openNav()" style="color:#666">展开侧边栏</a> </div>
+  </div>
+</div>
+
+<iframe id="feed_backs" data-ignore-screenshot="true" src="https://pay.weixin.qq.com/xdc/feedbackappsvr/index.html?date='20210901'#/" style="visibility: hidden;"></iframe>
+<div class="footer">
+  <div class="wrap">
+    <p><a target="_blank" href="https://kf.qq.com/faq/170117mABNnU170117uEFBVN.html">关于财付通</a><i class="vs">|</i><a target="_blank" href="/index.php/core/home/pay_pact_v4"><span class="hide">微信支付</span>平台使用协议</a> <i class="vs">|</i><a href="http://pay.weixin.qq.com/index.php/public/apply_sign/protocol_v2" target="_blank">支付服务协议</a> <i class="vs">|</i><span>Powered By Tencent & Tenpay　Copyright&copy;2005-<script>
+var year="";
+mydate=new Date();
+myyear=mydate.getYear();
+year=(myyear > 200) ? myyear : 1900 + myyear;
+document.write(year);
+</script> Tenpay All Rights Reserved.</span></p>
+  </div>
+</div>
+
+<script language="javascript" src="https://pingjs.qq.com/tcss.ping.https.js"></script> 
+<script language="javascript">
+    if(typeof(pgvMain) == 'function')
+        pgvMain();
+</script> 
+<script src="/wiki/doc/api/js/CateNav.js"></script> 
+<script type="text/javascript">
+	$(function(){
+		 $.CateNav('#art-content','#Catalog-box');//第一个参数为存放文章内容的box,第二个参数为存放生成目录的box
+	//	if(document.body.clientWidth<1300){$(".page-right").addClass("hide")}
+		
+	})
+	function closeNav(){
+		$(".closeNav").addClass("hide");
+		$(".openNav").removeClass("hide");
+		$(".Catalog-box").css("right","0px");
+	}
+		function openNav(){
+		$(".closeNav").removeClass("hide");
+		$(".openNav").addClass("hide");
+		
+	}
+	</script>
+<style>
+		.Catalog-box{
+			background:#e7e8eb;
+			padding:5px;
+		}
+		.Catalog-box dl{
+			margin-top:0;
+			margin-bottom:5px;
+			
+		}
+		.Catalog-box dl{
+			
+		}
+		.Catalog-box .complaints{
+		margin-top:0;}
+	</style>
+<script>TA_STATS_ARGS={}</script> 
+<link rel="stylesheet" href="/wiki/doc/api/css/tomorrow.css">
+<script src="/wiki/doc/api/js/highlight.min.js"></script> 
+<script>hljs.initHighlightingOnLoad();</script> 
+
+<!-- <script type="text/javascript" src="https://res.wx.qq.com/payactres/zh_CN/htmledition/js/lib/analysis/2.0/lib-min.js" charset="UTF−8" async="async" defer="defer"></script> -->
+<script src="https://wx.gtimg.com/pay/js/common/iframe_target.js?v=20210222"></script><!--[if !IE]>|xGv00|5a384d1350aae997885b799febcc5bc5<![endif]--><!--[if !IE]>|xGv00|b4f8e3d48440ec3a259da7321ab3a175<![endif]--><!-- 底部 ]] -->
+<script src="./js/CateNav.js" /></script>
+ 
+	<script type="text/javascript">
+	$(function(){	
+		$.CateNav('#art-content','#Catalog-box');//第一个参数为存放文章内容的box,第二个参数为存放生成目录的box	
+	})
+	</script>
+</body>
+</html>

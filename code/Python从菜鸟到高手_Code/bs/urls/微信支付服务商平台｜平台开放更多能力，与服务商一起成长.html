@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta name="keywords" content="微信支付,微信支付官网,微信服务商平台,微信支付服务商平台,微信服务商,微信商户号,微信支付服务商申请,微信支付接入,微信支付申请,微信支付接口开发,微信支付接口申请,微信支付客服,微信支付登录,微信支付经营,微信支付智慧经营,微信支付经营服务商,微信支付硬件服务商" />
+<meta name="description" content="微信支付服务商平台支持服务商为商家快速在线下场所、公众号、小程序、PC网站、APP等场景接入微信支付，同时服务商可为商家基于平台经营能力提供多样化的增值服务。微信支付未来会开放更多样化能力，与服务商共建支付生态。" />
+<title>微信支付服务商平台｜平台开放更多能力，与服务商一起成长</title>
+<link href="https://wx.gtimg.com/pay/css/common/iconfont/iconfont.css?v=20200311" rel="stylesheet" type="text/css" /><!--[if !IE]>|xGv00|ddefdd92db8bf58c22ddce17dfb498a2<![endif]-->
+<link href="https://wx.gtimg.com/pay/css/common/swiper2.7.6.css?v=20200616" rel="stylesheet" type="text/css" /><!--[if !IE]>|xGv00|f617c8f4bf8638238a0b38656e430cc2<![endif]-->
+<style type="text/css">
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,dl,dt,dd{margin:0;padding:0;}
+body{min-width:1200px;font:14px "Helvetica Neue","Hiragino Sans GB","Microsoft YaHei","\9ED1\4F53",Arial,sans-serif;background:#fff;color:#222;}
+h1,h2,h3{font-weight:400;}
+i,em{font-style:normal;}
+a{color:#1AAD19;text-decoration:none;}
+a:hover{color:#1AAD19;text-decoration:underline;}
+li{list-style:none;}
+input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset;} /* 浏览器记住密码后input黄色背景处理方法 */
+.gapl-wide{ margin-left: 14px; }
+.clr{zoom:1;}
+.clr:after{content:".";clear:both;display:block;height:0;visibility:hidden;}
+.hide{display:none;}
+.vs{margin:0 10px;font-family:arial;color:#ccc;}
+.wrap{width:1025px;margin:0 auto;overflow:hidden;zoom:1;}
+.container{margin:25px auto;}
+.header{position:relative;z-index:99;background:#fff;border-top:4px solid #44b549;border-bottom:1px solid #d9dadc; height: 88px;}
+.header .wrap{position:relative;overflow:visible;z-index:999}
+.header .logo{float:left;width:280px;margin:28px 0 20px;}
+.header .logo a{display:block;height:34px;overflow:hidden;line-height:999px;background: url(https://wx.gtimg.com/pay/img/common/logo_partner.png?v=20190327) no-repeat;background: url(https://wx.gtimg.com/pay/img/common/logo_partner.svg?v=20190327) no-repeat, none;}
+.header .link{float:right;margin-top:18px;margin-right: -25px;}/* 右上角链接 */
+.header .link a{display:inline-block;line-height:30px;padding:3px 5px 0;margin:7px 20px;color:#333;vertical-align:middle;border-bottom:3px solid #fff;}
+.header .link a:hover{color:#00c250;text-decoration:none;}
+.header .link a.selected{color:#00c250;border-color:#00c250;}
+
+.footer{color:#9D9D9D;background:#404343; position: absolute; bottom: 0; width: 100%; z-index: 3;}
+.footer a{color:#9D9D9D !important;}
+.footer a:hover{color:#1AAD19 !important;text-decoration:none;}
+.footer .wrap{padding:43px 0 23px;}
+.footer .footer-service{overflow:hidden;}
+.footer .footer-service dl{float:left;padding-left:43px;margin-left:43px;min-height:155px;height:auto!important;height:155px;}
+.footer .footer-service dt{color:#FFF;margin-bottom:21px;}
+.footer .footer-service dd{margin-top:7px;}
+.footer .footer-service .service-about{padding-left:0;margin-left:0;border-left:none;}
+.footer .footer-service .service-qrcode{float:right;margin-left:0;border-left:1px solid #484a4a;}
+.footer .footer-service .service-qrcode dt{font-size:10px;margin-bottom:12px;}
+.footer .footer-service .service-qrcode .img-qrcode{width:129px;height:129px;}
+.footer .footer-copyright{margin-top:30px;text-align:center;font-size:12px;}
+
+.login-form label,.cbx,.ico-new,.intro li .ico,.apply li .num{background:url(https://wx.gtimg.com/pay/img/partner/index_sprite.png?v=20160905) no-repeat;}
+
+html,body,.swiper-container, .swiper-wrapper, .swiper-slide{height: 100%;}
+.container-wrp{height: -moz-calc(100% - 92px);height: -webkit-calc(100% - 92px);height: calc(100% - 92px)!important;}
+.swiper-slide{overflow: hidden;}
+
+.banner{height:100%;position:relative;}
+.banner ,.wrap{height: 100%;}
+.banner .wrap-login{position:relative; height: 100%;z-index: 2;width: 316px;height: 386px;float: right;top: 50%;margin-top: -250px;}
+.banner .login{float:right;width:314px;padding:15px 15px 20px;position: absolute;z-index: 2;border:1px solid #fff;background:#fff;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;-moz-box-shadow:0 2px 10px 0 rgba(0,0,0,0.1);-webkit-box-shadow:0 2px 10px 0 rgba(0,0,0,0.1);box-shadow:0 2px 10px 0 rgba(0,0,0,0.1);}
+
+@media \0screen\,screen\9{
+.banner .login{background:#fff;*zoom:1;}
+.banner .login .login-in{position:relative;}
+}
+.banner .login h2{margin-bottom:5px;font-size:20px;font-weight:400;}
+.banner .login h2 strong{display:none;}
+.banner .login a{color:#333}
+.banner .login a:hover{color:#459ae9}
+.banner .login .tips-error{font-size:13px;color:#e15f63;margin-top:8px;}
+.banner .login .tips-error a{color:#459ae9;}
+.banner .login-form .login-mainly{margin-top:10px;margin-bottom:10px;}
+.banner .login-form .login-account,
+.banner .login-form .login-password{height:44px;line-height:44px;background:#fff;border:1px solid #e7e7eb;position:relative;padding-left:54px;}
+.banner .login-form label{width:20px;height:20px;overflow:hidden;text-indent:-999px;position:absolute;left:20px;top:30%}
+.banner .login-form input{width:100%;height:22px;line-height:22px;padding:11px 0;border:0;box-shadow:0;outline:0;vertical-align:top;font-family:"Microsoft YaHei";font-size:14px; background:none;}
+.banner .login-form .ico-account{background-position:0 0;}
+.banner .login-form .ico-password{background-position:-20px 0;}
+.banner .login-form .login-password{margin-top:10px;}
+
+/* 扫码登录 */
+.banner .wrap{overflow:visible;}
+.banner .login .tab{margin-top:-5px;}
+.banner .login .tab ul{line-height:40px;border-bottom:1px solid #e7e7eb;}
+.banner .login .tab li{float:left;margin-bottom:-1px;width:50%; text-align:center;}
+.banner .login .tab li:hover{border-bottom:3px solid #a0a3ab;}
+.banner .login .tab li.first a{padding-left:30px;}
+.banner .login .tab li.selected{border-bottom:3px solid #1AAD19;}
+.banner .login .tab li a{display:block;color:#222222;}
+.banner .login .tab li a:hover{text-decoration:none;}
+.banner .login .cnt{padding-top:5px;min-height:254px;}
+.banner .login-weixin{padding:15px 20px 5px;text-align:center;}
+.banner .login-weixin a{color:#459ae9;}
+.banner .login-weixin .qrcode{margin-top:10px;}
+.banner .login-weixin .qrcode .pic{width:180px;height:180px;margin:15px auto 0;position:relative;}
+.banner .login-weixin .qrcode .pic img{width:100%;}
+.banner .login-weixin .qrcode .alt{position:absolute;top:0;right:0;bottom:0;left:0;color:#fff;cursor:pointer;}
+.banner .login-weixin .qrcode .alt .mask{position:absolute;top:0;right:0;bottom:0;left:0;opacity:0.7;filter:alpha(opacity=70);-moz-opacity:0.7;background:#000;}
+.banner .login-weixin .qrcode .alt .void{position:absolute;top:0;right:0;bottom:0;left:0;z-index:11;}
+.banner .login-weixin .qrcode .alt .void .ico{width:80px;height:80px;margin:27px auto 0;background:url(https://wx.gtimg.com/pay/img/home/ico_alert.png) no-repeat;display:block;}
+.banner .login-weixin .status{padding-top:40px;}
+.banner .login-weixin .status .tit{margin:20px 0 5px;line-height:1.6;font-size:16px;}
+.banner .login-weixin .status .txt{color:#8d8d8d;}
+.banner .login-weixin .status .opr{display:inline-block;padding:0 30px;margin-top:10px;height:34px;line-height:34px;background:#44b549;border:1p solid #44b549;color:#ffffff!important;}
+.banner .login-weixin .status .opr:hover{text-decoration:none;background:#1AAD19;border-color:#1AAD19;}
+.banner .login-weixin .status .ico{width:64px;height:64px;vertical-align:middle;display:inline-block;background:url(https://wx.gtimg.com/pay/img/common/ico_msg_l.png) no-repeat;}
+.banner .login-weixin .status .ico-succ{background-position:0 0;}
+.banner .login-weixin .status .ico-warn{background-position:0 -66px;}
+.banner .login-weixin .status .ico-wait{background-position:0 -132px;}
+.banner .login-weixin .status .ico-info{background-position:0 -198px;}
+.banner .login-weixin .qrcode-img{width:180px;height:180px;margin:15px auto 0;position:relative; }
+.banner .login-verify{margin-bottom:10px;height:38px;}
+.banner .login-verify input{width:100px;padding:10px;vertical-align:middle;vertical-align:middle;border:1px solid  #e7e7eb;}
+.banner .login-verify .img-verify{width:100px;height:40px;margin:0 11px;vertical-align:middle;}
+.banner .login-memory{margin-bottom:20px;overflow:hidden;zoom:1;}
+.banner .login-memory .memory-account{float:left; display: none;}
+.banner .login-memory .memory-account .cbx{width:16px;height:16px;display:inline-block;margin:-3px 6px 0 0;*margin-top:0;vertical-align:middle;cursor:pointer;overflow:hidden;background-position:-40px 0;}
+.banner .login-memory .memory-account .cbx-on{background-position:-60px 0;}
+.banner .login-memory .forget-password{float:right;}
+.banner .login .btn-login{display:inline-block;width:100%;height:45px;line-height:45px;background-color:#1AAD19;color:#fff;text-align:center;font-size:20px;}
+.banner .login .btn-login:hover{text-decoration:none;background:#58D78C;color:#fff;}
+.banner .login .login-apply{margin:10px 0 -8px 0;text-align:right;}
+.banner .login .login-apply a{color:#459ae9;}
+.banner .login-service{margin-top:20px;font-size:13px;text-align:center;}
+.banner .login-service a,.banner .login-service a:hover{color:#1AAD19;}
+.banner .login-service .vs{display:inline-block;width:1px;height:12px;background:#aaa;overflow:hidden;opacity:0.54;vertical-align:middle;margin:-2px 16px 0;-moz-border-radius:1px;-webkit-border-radius:1px;border-radius:1px;}
+.banner .tips-warn a,.banner .tips-error a{color:#459ae9;}
+.banner .slider{position:absolute;top:0;width:100%;height:410px;overflow:hidden;left:0}
+.banner .slider a{display:block;width:100%;height:410px;text-indent:-9999px;position: relative;z-index: 1;}
+.banner .slider ul li{position:absolute;top:0;width:100%;height:100%;background-position:center!important;background-size: cover!important;background-repeat:no-repeat;}
+.banner .slider ol{position:absolute;z-index:9!important;bottom:18%;display:table;left:50%;margin-left:-73px;padding:16px 16px 16px 0;cursor: pointer;}
+.banner .slider ol li{float:left;width:10px;height:10px;margin-left:12px;text-indent:-9999px;background:#fff;border-radius:5px;overflow:hidden;}
+.banner .slider ol li.active{background:#1AAD19;}
+
+/* 首页 */
+.index-banner{position: relative;width: 100%;height: 100%;}
+.index-banner .wrap{height: 100%;}
+.banner .slider{height:100%; background: #ccc;}
+.banner .slider a{height:100%;}
+.notice-box{position: absolute;width: 100%;height: 104px;bottom: 0;z-index: 1;}
+.notice{width:1025px;position: absolute;bottom: 24px;padding: 16px 0 18px;font-size: 14px;color: #FFFFFF;line-height: 14px;z-index: 2;left: 50%;margin-left: -512px;}
+.notice h2{font-size: 14px;color: #FFFFFF;margin-bottom: 20px;}
+.notice .more{position:absolute;top:16px;right:0;}
+.notice .more a{color: #FFFFFF;}
+.notice li .ico-new{position:absolute;display:inline-block;width:17px;height:9px;margin-left:5px;background-position:-80px 0;display: none;}
+.notice li{color: #FFFFFF;line-height: 14px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;width: 30%;float:left;margin-right: 3%;}
+.notice li a{color: #FFFFFF;}
+.notice li .time{margin-right:5px;}
+
+.intro{margin-top:25px;overflow:hidden;}
+.intro h2{margin-bottom:18px;font-size:20px;}
+.intro ul{width:105%;}
+.intro li{float:left;width:286px;height:160px;margin-right:20px;padding:35px 20px 20px;text-align:center;border:1px solid #e5e5e5;}
+.intro li .tit{color:#222;font-size:16px;margin-top:10px;height:25px;line-height:25px;overflow:hidden;}
+.intro li .des{color:#8d8d8d;margin:4px 0 0;}
+.intro li .opt{display:inline-block;height:26px;line-height:26px;padding:0 26px;color:#459ae9;border:1px solid #fff;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}
+.intro li .ico{display:inline-block;width:98px;height:62px;}
+.intro li .ico-permit{background-position:0 -60px;}
+.intro li .ico-senior{background-position:0 -124px;}
+.intro li .ico-market{background-position:0 -188px;}
+
+/* 按钮 */
+.btn{display:inline-block;min-width:60px;padding:0 22px;height:30px;line-height:30px;vertical-align:middle;text-align:center;font-size:14px;text-decoration:none;border-width:1px;border-style:solid;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;cursor:pointer;}
+.btn:hover{text-decoration:none;}
+.btn-default{background:#ffffff;border-color:#e7e7eb;color:#222222 !important;}
+.btn-default:hover{background:#e6e7ec;border-color:#dadbe0;}
+.btn-primary{background:#1AAD19;border-color:#1AAD19;color:#ffffff !important;}
+.btn-primary:hover{background:#1AAD19;border-color:#1AAD19;}
+
+/* 提示信息 */
+.page-msg .inner{padding-top:20px;padding-bottom:20px;}
+.page-msg .msg-ico{float:left;margin-top:-1px;*margin-top:1px;}
+.page-msg .msg-ico .ico-msg{width:42px;height:42px;vertical-align:middle;display:inline-block;background:url("https://wx.gtimg.com/pay/img/common/sprite.png") no-repeat;}
+.page-msg .msg-cnt{min-height:56px;margin-left:56px;}
+.page-msg .msg-ico .ico-msg.info{background-position:-132px -78px;}
+.page-msg.align-center{text-align:center;}
+.page-msg.align-center .inner{min-width:220px;display:inline-block;*display:inline;*zoom:1;vertical-align:middle;text-align:left;}
+.page-msg.align-middle .msg-cnt{min-height:auto;padding-top:11px;}
+
+/* 弹出框 */
+.dialog{width:700px;margin-top:-200px;margin-left:-350px;position:fixed;top:50%;left:50%;z-index:9999;background:#ffffff;}
+.dialog-hd{position:relative;padding:0 20px;line-height:52px;height:52px;background:#f4f5f9;}
+.dialog-hd h3{font-size:100%;font-weight:400;}
+.dialog-hd .ico-cls{position:absolute;top:50%;margin-top:-8px;right:20px;width:15px;height:15px;line-height:999em;overflow:hidden;background:url("https://wx.gtimg.com/pay/img/common/ico_cls.png") no-repeat;}
+.dialog-hd .ico-cls:hover{background-position:0 -17px;}
+.dialog-bd{padding:60px 45px;max-height:400px;overflow-x:hidden;overflow-y:auto;position:relative;}
+.dialog-ft{margin:0;padding:16px 0;text-align:center;border-top:1px solid transparent;background:#f4f5f9;}
+.dialog-ft .btn{margin:0 8px;}
+.dialog.align-center .dialog-bd{padding-left:126px;padding-right:126px;}/* 内容居中 */
+.mask-layer{width:100%;height:100%;position:fixed;_position:absolute;top:0;right:0;bottom:0;left:0;z-index:9998;background:#000000;filter:alpha(opacity=50);-moz-opacity:0.5;opacity:0.5;}
+
+/* 数据框(标题在表格外)*/
+.data-box{margin:20px  0 30px;}
+.data-box .data-hd{margin-bottom:20px;height:16px;line-height:16px;padding-left:10px;border-left:3px solid #44b549;}
+.data-box.with-padding .data-bd{padding:0 13px;}
+.data-box.with-button .data-hd .more-info{margin-top:-9px;}
+
+
+/* 分页器 */
+.pagination {position: absolute;z-index: 20;top: 50%;right: 40px;margin-top: -48px;}
+.swiper-pagination-switch {display: block;width: 10px;height: 10px;background: #A6A6A6;opacity: 0.4;filter:Alpha(opacity=40);border-radius: 50%;;margin: 0 0px 16px;cursor: pointer;border: 1px solid transparent;}
+.swiper-active-switch {background: #fff;border: 1px solid #E1E1E1;opacity: 1;filter:Alpha(opacity=100);}
+.copyright{height: 100%;line-height: 320px;font-size: 12px;text-align: center;position: absolute;bottom: 0;left: -40%;width: 180%;background: url('https://wx.gtimg.com/pay/img/partner/index_copyright.svg') no-repeat;background-position: bottom center;background-size: 100%;}
+.copyright .index-guide__arrow{width: 20px;height: 12px;position: absolute;bottom: 3%;left: 50%;margin-left: -31px;-webkit-animation: movearrow 2s infinite; /* Chrome, Safari, Opera */animation: movearrow 2s infinite;z-index: 10;}
+.copyright .index-guide__arrow img{width: 100%;height: 100%;position: absolute;}
+@-webkit-keyframes movearrow {50% {bottom: 2%;}}
+/* Standard syntax */
+@keyframes movearrow {50% {bottom: 2%;}}
+/* 功能页 */
+.features{width: 100%;height: 100%;clear: both;}
+.features-item{width: 33.3333%;height: 100%;position: relative;float: left;}
+.features-item:hover .features-hover{display: block;z-index: 3;transition: all 0.3s linear;}
+.features-item:hover .features-item__box{display: none;}
+.features-item:hover .features-mask{display: none;}
+.features-mask{width: 100%;height: 50%;position: absolute;left: 0;bottom: 0;opacity: 0.8;filter:Alpha(opacity=80);background: linear-gradient(180deg, rgba(0,0,0,0.00) 0%, #000000 100%);z-index: 1;}
+.features-hover{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(26, 173, 25, 0.8);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C81AAD19,endColorstr=#C81AAD19);display: none;z-index: 3;}
+.features-hover__box{position: absolute;left: 12%;bottom: -444px;right: 12%;opacity: 0;}
+.features-hover__title{font-size: 32px;color: #FFFFFF;line-height: 32px;margin-bottom: 20px;}
+.features-hover__intro{font-size: 14px;color: #FFFFFF;line-height: 22px;margin-bottom: 30px;}
+.features-hover__list{position: relative;padding: 20px 0;}
+.hover-list__line{position: absolute;bottom: 0;left: 0;height: 1px;width: 100%;background: rgba(255,255,255,0.20);-pie-background:rgba(255,255,255,0.2);}
+.features-hover__list .hover-list__ico{position: absolute;left: 0;margin-top: -21px;top: 50%;font-size: 42px;margin-right: 19px;color: #ffffff;}
+.hover-list__title{font-size: 16px;color: #FFFFFF;line-height: 16px;margin-top: 4px;margin-bottom: 8px;margin-left: 62px;}
+.hover-list__intro{font-size: 12px;color: #FFFFFF;line-height: 18px;margin-left: 62px;}
+.features-hover__btn{width: 160px;height: 48px;text-align: center;background: #FFFFFF;border-radius: 4px;font-size: 16px;color: #1AAD19;line-height: 48px;margin-bottom: 60px;cursor: pointer;}
+.features-hover__btn a{color: #1AAD19; display: inline-block; width: 100%; text-decoration: none;}
+.features-hover__btn:hover{opacity: 0.8;filter:Alpha(opacity=80);}
+.features-hover__box ul{margin-bottom: 38px;}
+.features-pay{background: url('https://wx.gtimg.com/pay/img/partner/index_features_pay.png') no-repeat;background-position: center;background-size: cover;}
+.features-manage{background: url('https://wx.gtimg.com/pay/img/partner/index_features_manage.png') no-repeat;background-position: center;background-size: cover;}
+.features-hardware{background: url('https://wx.gtimg.com/pay/img/partner/index_features_hardware.png') no-repeat;background-position: center;background-size: cover;}
+.features-item__box{position: absolute;bottom: 0;left: 12%;right:12%;height: 252px;z-index: 2;}
+.features-title{font-size: 32px;color: #FFFFFF;line-height: 32px;margin-bottom: 20px;}
+.features-intro{font-size: 14px;color: #FFFFFF;line-height: 24px;margin-bottom: 56px;height: 48px;}
+.features-block__item{display: inline-block;width: 80px;height: 32px;background: rgba(255,255,255,0.10);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19FFFFFF,endColorstr=#19FFFFFF);border: 1px solid rgba(255,255,255,0.20);border-radius: 3px;font-size: 14px;color: rgba(255,255,255,0.60);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99FFFFFF,endColorstr=#99FFFFFF);line-height: 32px;margin-right: 12px;text-align: center;}
+.features-block__item.last{margin-right: 0;}
+
+/* 政策页 */
+.policy{width: 100%;height: 100%;clear: both;}
+.policy-item{width: 49.99%;height: 50%;position: relative;float: left; text-align: center;}
+.policy-item:hover .policy-hover{z-index: 3;transition: all 0.3s linear;}
+.policy-item:hover .policy-item__box{display: none;}
+.policy-item:hover .policy-mask{display: none;}
+.policy-mask{width: 100%;height: 50%;position: absolute;left: 0;bottom: -1px;opacity: 0.8;filter:Alpha(opacity=80);background: linear-gradient(180deg, rgba(0,0,0,0.00) 0%, #000000 100%);z-index: 1;}
+.policy-hover{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(26, 173, 25, 0.8);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C81AAD19,endColorstr=#C81AAD19);}
+.policy-hover__box{height: 240px;width: 400px;position: absolute;top: 50%;margin-top: -120px;left: 50%;margin-left: -200px;}
+.policy-reward{background: url('https://wx.gtimg.com/pay/img/partner/index_policy_reward.png') no-repeat;background-position: top center;background-size: cover;}
+.policy-tools{background: url('https://wx.gtimg.com/pay/img/partner/index_policy_tools.png') no-repeat;background-position: top center;background-size: cover;}
+.policy-materials{background: url('https://wx.gtimg.com/pay/img/partner/index_policy_materials.png') no-repeat;background-position: top center;background-size: cover;}
+.policy-plan{background: url('https://wx.gtimg.com/pay/img/partner/index_policy_plan.png') no-repeat;background-position: top center;background-size: cover;}
+.policy-item__box{width: 130px;position: absolute;left: 50%;bottom: 13%;margin-left: -65px;z-index: 2;}
+.policy-icon{position: relative;z-index: 2;display: inline-block;width: 64px;height: 64px;background: #1aad19;border-radius: 50%;margin-bottom: 16px;}
+.policy-icon.hover{background: transparent;border: 2px solid #ffffff;margin-bottom: 24px;}
+.policy-icon__ico{font-size: 26px;line-height: 64px;color: #fff;}
+.policy-hover__title{font-size: 20px;color: #FFFFFF;text-align: center;line-height: 20px;margin-bottom: 12px;}
+.policy-hover__intro{font-size: 14px;color: #FFFFFF;text-align: center;line-height: 22px;margin-bottom: 40px;}
+.policy-hover__btn{width: 160px;height: 48px;text-align: center;background: #FFFFFF;border-radius: 4px;font-size: 16px;color: #1AAD19;line-height: 48px;margin: 0 auto;cursor: pointer;}
+.policy-hover__btn a{color: #1AAD19; display: inline-block; width: 100%; text-decoration: none;}
+.policy-hover__btn:hover{opacity: 0.8;filter:Alpha(opacity=80);}
+.policy-title{font-size: 16px;color: #FFFFFF;text-align: center;line-height: 16px;}
+
+/* 流程页 */
+.process{height: 100%;position: relative;}
+.process .process-box{overflow: hidden;zoom: 1;height: 412px;position: absolute;top: 50%;margin-top: -350px;left: 50%;margin-left: -512px;width: 1025px;}
+.process-title{font-size: 32px;color: #0E0E0E;text-align: center;line-height: 32px;margin-bottom: 4%}
+.process-items{width: 99.9%;height: 198px;background: #F7F7FA;border: 1px solid #EEEEEE;border-radius: 4px;margin-bottom: 4%;}
+.process-item{float: left;width: 25%;height: 198px;position: relative;}
+.process-item__box{margin: 32px 20px 40px 16px;}
+.process-item__num{font-size: 60px;color: #333333;line-height: 60px;margin-bottom: 24px;}
+.process-item__title{font-size: 20px;color: #333333;line-height: 20px;margin-bottom: 10px;}
+.process-item__intro{font-size: 14px;color: #999999;line-height: 14px;}
+.process-item__arrow{position: absolute;top: -1px;right: -6px;width: 33px;height: 200px;background: url(https://wx.gtimg.com/pay/img/partner/index_process_arrow__bg.png) no-repeat;background-size: contain;z-index: 2;}
+.process-btn{width: 240px;height: 64px;margin: 0 auto;background: #1AAD19;border-radius: 4px;line-height: 64px;font-size: 20px;color: #FFFFFF;text-align: center;cursor: pointer;}
+.process-btn a{color: #FFFFFF; display: inline-block; width: 100%; text-decoration: none;}
+.process-btn:hover{opacity: 0.8;filter:Alpha(opacity=80);}
+.index-mask{position: absolute;width: 100%;height: 100%;top: 0;bottom: 0;left: 0;right: 0;background: #fff;z-index: 10;}
+
+@media (min-width: 800px) { /*>=800的设备*/
+	.banner .wrap-login{margin-top: -242px;}
+}
+@media (min-width: 1024px) {
+	.banner .wrap-login{margin-top: -230px;}
+}
+@media (min-width: 1280px) {
+	.banner .wrap-login{margin-top: -246px;}
+}
+@media (min-width: 1280px) and (min-height: 960px) {
+	.banner .wrap-login{margin-top: -220px;}
+}
+@media (min-width: 1920px) {
+	.wrap{ width: 1280px;}
+	.notice{ width: 1280px;margin-left:-640px; bottom: 48px;}
+	.banner .wrap-login{margin-top: -233px;}	
+} 
+@media (min-width: 2650px) {
+	.wrap{ width: 1440px;}
+	.notice{ width: 1440px;margin-left:-720px; bottom: 80px;}
+	.banner .wrap-login{margin-top: -233px;}	
+} 
+@media (min-height: 100px) {
+    .process-title{margin-bottom: 1%;margin-top: 10%;}
+    .process-items{height: 134px;margin-bottom: 15px;}
+    .process-item{height: 134px;}
+    .process-item__box{margin:12px 20px 12px 16px;}
+    .process-item__arrow{height: 134px;}
+    .process-item__num{margin-bottom:6px}
+    .process-item__title{margin-bottom: 10px;}
+    .process-btn{width: 180px;height:50px;line-height: 50px;font-size: 18px;}
+    .footer .wrap{padding-top: 10px;}
+}
+@media (min-height: 660px) {
+    .process-title{margin-bottom: 1%;margin-top: 8%;}
+    .process-items{height: 166px;margin-bottom: 15px;}
+    .process-item{height: 166px;}
+    .process-item__box{margin:32px 20px 20px 16px;}
+    .process-item__arrow{height: 168px;}
+}
+@media (min-height: 670px) {
+    .process-title{margin-bottom: 2%;margin-top: 7%;}
+}
+@media (min-height: 680px) {
+    .footer .wrap{padding-top: 43px;}
+}
+@media (min-height: 700px) {
+    .process-title{margin-bottom: 3%;margin-top: 6%;}
+}
+@media (max-height: 800px) {
+    
+}
+@media (min-height: 770px) {
+    .process-title{margin-bottom: 3%;margin-top: 4%;}
+}
+@media (min-height: 900px) {
+    .process-title{margin-bottom: 4%;margin-top: 0;}
+    .process{height: 100%;position: relative;}
+    .process-items{height: 198px;margin-bottom: 4%;}
+    .process-item{height: 198px;}
+    .process-item__box{margin: 32px 20px 40px 16px;}
+    .process-item__num{margin-bottom: 24px;}
+    .process-item__title{margin-bottom: 10px;}
+    .process-item__arrow{height: 200px;}
+    .process-btn{width: 240px;height: 64px;line-height: 64px;font-size: 20px;}
+}
+</style>
+
+</head>
+<body class="index no-topbar with-link">
+
+<!-- 头部 [[ -->
+<!--小于ie7 跳转到错误页面 -->
+<!--[if lt IE 7]>
+<script>
+    window.location.href='https://pay.weixin.qq.com/public/error/browser_tips';
+</script>
+<![endif]-->
+<script src="https://wx.gtimg.com/third/jquery/jquery-1.7.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var Url = window.location.pathname;
+        var Name = Url.split("/")
+        var SmallName = Name[3].split(".")
+        var IndexName = Name[3]
+        var IndexPhpName = Name[4]
+        var sn = SmallName[0].replace(/_/g, "-")
+        $(".link a").removeClass("selected")
+        if (IndexName == "home" || IndexPhpName == "home") {
+            $(".link a").removeClass("selected");
+            $(".link .nav_0").addClass("selected");
+        }
+        if (Name[2] == "partner_guide" && sn != "partner-reward") {
+            $(".link a").removeClass("selected");
+            $(".link .nav_1").addClass("selected");
+        }
+        if (Name[2] == "partner_guide" && sn == "partner-types") {
+            $(".link a").removeClass("selected");
+            $(".link .nav_1").addClass("selected");
+        }
+        if (Name[2] == "partner_ability") {
+            $(".link a").removeClass("selected");
+            $(".link .nav_2").addClass("selected");
+        }
+        if (IndexName == "search" || IndexPhpName == "search") {
+            $(".link a").removeClass("selected");
+            $(".link .nav_3").addClass("selected");
+        }
+        if (Name[2] == "partner_guide" && sn == "partner-reward") {
+            $(".link a").removeClass("selected");
+            $(".link .nav_3").addClass("selected");
+        }
+        if (Name[2] == "partner_reward") {
+            $(".link a").removeClass("selected");
+            $(".link .nav_3").addClass("selected");
+        }
+        if (IndexName == "cservice_provider_course") {
+            $(".link a").removeClass("selected");
+            $(".link .nav_3").addClass("selected");
+        }
+        
+    });
+</script>
+<div class="header">
+    <div class="wrap clr">
+        <div class="logo">
+            <h1 class="main-logo partner"><a href="https://pay.weixin.qq.com/index.php/partner/public/home" title="微信支付服务商平台" onClick="pgvSendClick({hottag:'PARTNER.HEADER.LOGO.MAINLOGO'});">微信支付服务商平台</a></h1>
+            <div class="sub-logo"></div>
+        </div>
+        <div class="link">
+            <a class="nav_0" href="https://pay.weixin.qq.com/index.php/partner/public/home" target="_blank">首页</a>
+            <a class="nav_1" href="https://pay.weixin.qq.com/static/partner_guide/partner_types.shtml" target="_blank">成为服务商</a>
+            <a class="nav_2" href="https://pay.weixin.qq.com/static/partner_ability/platform_ability.shtml" target="_blank">服务商能力</a>
+            <a class="nav_3" href="https://pay.weixin.qq.com/static/partner_guide/partner_reward.shtml" target="_blank">服务商成长</a>
+            <a class="nav_4" href="https://pay.weixin.qq.com/wiki/doc/apiv3_partner/pages/index.shtml" target="_blank" onClick="pgvSendClick({hottag:'PARTNER.HEADER.LINK.DEV_DOC'});">文档中心</a>
+        </div>  
+     </div>
+</div>
+
+<script type="text/javascript">if(typeof $jqueryUi == "undefined"){document.write('<script type="text/javascript" src="https://wx.gtimg.com/third/jquery/jquery-ui.js"></script"+">');}</script>
+<script>window["MCH.common.time"]=[new Date()]</script>
+<script id="legos:22195" ver="22195:20180801:20180801155056" name="MCH.common" crossorigin="anonymous" src="https://wx.gtimg.com/mch/js/ver/2018/08/mch.common.20180801.js?t=20180801155056" charset="utf-8"></script><!--[if !IE]>|xGv00|20376253381c3bc490422772d316fe90<![endif]-->
+<script>window["MCH.header.time"]=[new Date()]</script>
+<script id="legos:22118" ver="22118:20201111:20201111154702" name="MCH.header" crossorigin="anonymous" src="https://wx.gtimg.com/mch/js/ver/2020/11/mch.header.20201111.js?t=20201111154702" charset="utf-8"></script><!--[if !IE]>|xGv00|9be819d223b5197885fa75e4c5a46ac1<![endif]-->
+
+<!-- 该标签用于添加通栏背景，结束标签在footer.shtml -->
+<div class="container-wrp"><!--[if !IE]>|xGv00|4a4ff4dccd558f48677f4cd00e6aa8d1<![endif]-->
+<!-- 头部 ]] -->
+
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="index-banner">
+                <div class="banner">
+                    <div class="wrap">
+                        <div class="wrap-login">
+                            <div class="login">
+                                <div class="login-in">
+                                    <div class="tab">
+                                        <ul class="clr">
+                                            <li id="IDSwitchWechatLogin"><a href="javascript:;" onclick="pgvSendClick({hottag:'PARTNER.INDEX.LOGIN_BOX.LOGIN_QRCODE'});">扫码登录</a></li>
+                                            <li id="IDSwitchAccountLogin"><a href="javascript:;" onclick="pgvSendClick({hottag:'PARTNER.INDEX.LOGIN_BOX.LOGIN_ACCOUNT'});">账号登录</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="cnt">
+                                        <div class="login-weixin" id="IDWechatLogin">
+                                            <div class="qrcode " id="IDQrcode">
+                                                <div class="tit">微信扫一扫</div>
+                                                <div class="pic">
+                                                    <div alt="" onClick="MCH.wechatLogin.refreshQrcode();" id="IDQrcodeImg"></div>
+                                                    <div class="alt hide" id="IDQrcodeInvalid">
+                                                        <div class="void">
+                                                            <i class="ico ico-void"></i>
+                                                            <p class="txt">二维码失效<br>点击刷新</p>
+                                                        </div>
+                                                        <div class="mask"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="status status-succ hide" id="IDQrcodeScaned">
+                                                <i class="ico ico-succ"></i>
+                                                <p class="tit">扫码成功，请在手机端完成操作</p>
+                                                <p class="txt">请勿刷新页面</p>
+                                            </div>
+                                            <div class="status status-warn hide" id="IDRefuseLogin">
+                                                <i class="ico ico-warn"></i>
+                                                <p class="tit">登录被拒绝</p>
+                                                <a class="opr" href="javascript:;" id="IDRefuseLoginReturn">返回</a>
+                                            </div>
+                                            <div class="status status-info hide" id="IDHasNotBind">
+                                                <i class="ico ico-info"></i>
+                                                <p class="tit">该微信号尚未绑定任何商户号<br>新增微信号与商户号绑定，请<a href="https://pay.weixin.qq.com/index.php/public/bind_wechat" target="_blank">点击此处</a></p>
+                                            </div>
+                                            <div class="status status-info hide" id="IDHasNotAuth">
+                                                <i class="ico ico-info"></i>
+                                                <p class="tit">该员工账号无登录商户平台权限，<br>请找管理员配置权限，<a href="" target="_blank">查看详情</a></p>
+                                            </div>
+                                            <div class="tips-error hide" id="IDQrcodeError"></div>
+                                        </div>
+                                        <div class="login-weixin hide" id="IDWechatLoginTip">
+                                            <div class="status status-info">
+                                                <i class="ico ico-info"></i>
+                                                <p class="tit" id="IDTipTit"></p>
+                                                <p class="txt" id="IDTipTxt"></p>
+                                                <a class="opr" href="javascript:;" id="IDTipLink" style="margin-top: 15px"></a>
+                                            </div>
+                                        </div>
+                                        <div class="login-account hide" id="IDAccountLogin">
+
+                                    <div class="tips-warn clr hide" id="IDBrowserSafariTips"><i class="warn"></i>
+                                        <p>
+                                            由于Safari浏览器安全策略，如密码输入出现异常，请根据指引获取解决方案，
+                                            <a href="/help_guide/login_guide.shtml" target="_blank">查看指引</a>
+                                        </p>
+                                    </div>
+                                    <div class="tips-warn clr hide" id="IDBrowserMacChromeTips">
+                                        <i class="warn"></i>
+                                        <p>
+                                            如密码输入出现异常，请根据指引获取解决方案，
+                                            <a href="https://pay.weixin.qq.com/index.php/public/cms/content_detail?platformType=0&lang=zh&id=29000 " target="_blank">查看指引。</a>
+                                        </p>
+                                    </div>
+
+                                                                        
+                                                                        <div class="tips-error"><i class="ico-error"></i><p id="errmsg" style="color:red"></p></div>
+                                    
+                                    <!-- 交互说明
+                                        1. 给样式"login-form"添加样式"login-account-on",显示账号获焦效果
+                                        2. 给样式"login-form"添加样式"login-password-on",显示密码获焦效果
+                                    -->
+                                    <form class="login-form" action="/index.php/core/home/d_login_transition" method="post">
+                                        <div class="login-mainly">
+                                            <div class="login-account"><label class="ico-account" for="" title="登录账号">登录账号</label><input type="text" name="username" placeholder="登录账号" id="idUserName"></div>
+                                            <div class="login-password" id="mmpayPwdEdit"><label class="ico-password" for="" title="登录密码">登录密码</label><input type="password" name="password" placeholder="登录密码" id="idPassword"></div>
+                                        </div>
+
+                                                                                <input type="hidden" name="login_type" value="1">
+                                        <input id="token" type="hidden" name="ecc_csrf_token" value="5f05d4f45254508f34049d8bdd24202f">
+                                        <input type="hidden" name="ecc_csrf_token" value="5f05d4f45254508f34049d8bdd24202f" id="CsrfInput">
+
+                                                                                <div class="login-verify "><input type="text" name="checkword_in" maxlength="4" placeholder="验证码"><input type="hidden" name="need_check" value="1"/><img class="img-verify change-verify" src="" style="height:40px;width:100px;"><a class="change-verify" href="#">换一张</a></div>
+                                                                            </form>
+                                    <div class="login-memory"><label id="memory_username_label" class="memory-account" for=""><i class="cbx" id="memory_username"></i>记住账号</label><a class="forget-password" href="javascript:void(0);" style="cursor:pointer">忘记密码？</a></div>
+                                    <a class="btn-login" href="javascript:void(0);" id="do_login">登录</a>
+                                        </div>
+                                    </div>
+                                    <div class="login-service">
+                                        <a href="https://pay.weixin.qq.com/static/help_guide/identity_selection.shtml" target="_blank" onClick="pgvSendClick({hottag:'PARTNER.INDEX.LOGIN_BOX.IDENTITY_SELECTION'});">绑定微信号</a>
+                                        <i class="vs"></i>
+                                        <a href="https://pay.weixin.qq.com/static/help_guide/retrieve_mchnum.shtml" target="_blank" onClick="pgvSendClick({hottag:'PARTNER.INDEX.LOGIN_BOX.RETRIEVE_MCHNUM'});">找回商户号</a>
+                                    </div>                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider cms-banner cms-area" id="cmspic_11400" home="true"></div>
+                </div>
+                <div class="notice-box">
+                    <!-- 公告 ]] -->
+                    <div class="notice cms-notice cms-area clr" id="cmsanm_4400" home="true" link-list-id="4400"></div>
+                    <!-- 公告 ]] -->
+                </div>
+                <div class="copyright">
+                    <div class="index-guide__arrow" title="向下滑动查看更多">
+                        <img src="https://wx.gtimg.com/pay/img/partner/index_guide_arrow.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="features">
+                <div class="features-item features-pay">
+                    <div class="features-item__box">
+                        <div class="features-title">为商家提供支付服务</div>
+                        <div class="features-intro">为商家提供移动支付解决方案</div>
+                        <div class="features-block">
+                            <span class="features-block__item">场景覆盖</span>
+                            <span class="features-block__item">资源开放</span>
+                            <span class="features-block__item last">合作共创</span>
+                        </div>
+                    </div>
+                    <div class="features-hover">
+                        <div class="features-hover__box">
+                            <div class="features-hover__title">为商家提供支付服务</div>
+                            <div class="features-hover__intro">为商家提供移动支付解决方案</div>
+                            <ul>
+                                <li class="features-hover__list">
+                                    <i class="hover-list__ico iconfont">&#xe660;</i>
+                                    <div class="hover-list__title">场景覆盖</div>
+                                    <div class="hover-list__intro">适用于线上线下多种场景</div>
+                                    <div class="hover-list__line"></div>
+    
+                                </li>
+                                <li class="features-hover__list">
+                                    <i class="hover-list__ico iconfont">&#xe65a;</i>
+                                    <div class="hover-list__title">资源开放</div>
+                                    <div class="hover-list__intro">共享300+插件及API能力</div>
+                                    <div class="hover-list__line"></div>
+                                </li>
+                                <li class="features-hover__list">
+                                    <i class="hover-list__ico iconfont">&#xe65b;</i>
+                                    <div class="hover-list__title">合作共创</div>
+                                    <div class="hover-list__intro">携手打造移动支付新生态</div>
+                                    <div class="hover-list__line"></div>
+                                </li>
+                            </ul>
+                            <div class="features-hover__btn"><a href="https://pay.weixin.qq.com/static/partner_guide/partner_types.shtml?type=1" target="_blank" onClick="pgvSendClick({hottag:'PARTNER.INDEX.SUPPORT.PAYMENT'});">了解更多</a></div>
+                        </div>
+                    </div>
+                    <div class="features-mask"></div>
+                </div>
+                <div class="features-item features-manage">
+                    <div class="features-item__box">
+                        <div class="features-title">为商家提供经营服务</div>
+                        <div class="features-intro">以微信支付为基础能力，结合流量开放和数据能力，提供增值服务</div>
+                        <div class="features-block">
+                            <span class="features-block__item">流量开放</span>
+                            <span class="features-block__item">数字营销</span>
+                            <span class="features-block__item last">智慧经营</span>
+                        </div>
+                    </div>
+                    <div class="features-hover">
+                        <div class="features-hover__box">
+                            <div class="features-hover__title">为商家提供经营服务</div>
+                            <div class="features-hover__intro">以微信支付为基础能力，结合流量开放和数据能力，为商家提供增值服务</div>
+                            <ul>
+                                <li class="features-hover__list">
+                                    <i class="hover-list__ico iconfont">&#xe650;</i>
+                                    <div class="hover-list__title">流量开放</div>
+                                    <div class="hover-list__intro">开放微信生态多种流量场景，协助商家引流获客</div>
+                                    <div class="hover-list__line"></div>
+                                </li>
+                                <li class="features-hover__list">
+                                    <i class="hover-list__ico iconfont">&#xe662;</i>
+                                    <div class="hover-list__title">数字营销</div>
+                                    <div class="hover-list__intro">利用微信生态内数字化能力，协助商家精准推广</div>
+                                    <div class="hover-list__line"></div>
+                                </li>
+                                <li class="features-hover__list">
+                                    <i class="hover-list__ico iconfont">&#xe65d;</i>
+                                    <div class="hover-list__title">智慧经营</div>
+                                    <div class="hover-list__intro">提供精细化的顾客运营能力，协助商家高效转化</div>
+                                    <div class="hover-list__line"></div>
+                                </li>
+                            </ul>
+                            <div class="features-hover__btn"><a href="https://pay.weixin.qq.com/static/partner_guide/partner_types.shtml?type=2" target="_blank" onClick="pgvSendClick({hottag:'PARTNER.INDEX.SUPPORT.MANAGE'});">了解更多</a></div>
+                        </div>
+                    </div>
+                    <div class="features-mask"></div>
+                </div>
+                <div class="features-item features-hardware">
+                    <div class="features-item__box">
+                        <div class="features-title">为商家提供硬件服务</div>
+                        <div class="features-intro">开放硬件设备生态，整合软硬件产品能力，提升商家收银体验</div>
+                        <div class="features-block">
+                            <span class="features-block__item">收银升级</span>
+                            <span class="features-block__item last">数字转型</span>
+                        </div>
+                    </div>
+                    <div class="features-hover">
+                        <div class="features-hover__box">
+                            <div class="features-hover__title">为商家提供硬件服务</div>
+                            <div class="features-hover__intro">开放硬件设备生态，整合软硬件产品能力，提升商家收银体验</div>
+                            <ul>
+                                <li class="features-hover__list">
+                                    <i class="hover-list__ico iconfont">&#xe65f;</i>
+                                    <div class="hover-list__title">收银升级</div>
+                                    <div class="hover-list__intro">打造“刷脸支付”硬件产品，提升商家收银效率</div>
+                                    <div class="hover-list__line"></div>
+                                </li>
+                                <li class="features-hover__list">
+                                    <i class="hover-list__ico iconfont">&#xe661;</i>
+                                    <div class="hover-list__title">数字转型</div>
+                                    <div class="hover-list__intro">“刷脸即会员”协助经营，促进商家数字化转型</div>
+                                    <div class="hover-list__line"></div>
+                                </li>
+                            </ul>
+                            <div class="features-hover__btn"><a href="https://pay.weixin.qq.com/static/partner_guide/partner_types.shtml?type=3" target="_blank" onClick="pgvSendClick({hottag:'PARTNER.INDEX.SUPPORT.HARDWARE'});">了解更多</a></div>
+                        </div>
+                    </div>
+                    <div class="features-mask"></div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="policy">
+                <div class="policy-item policy-reward">
+                    <div class="policy-item__box">
+                        <div class="policy-icon">
+                            <i class="policy-icon__ico iconfont">&#xe60e;</i>
+                        </div>
+                        <div class="policy-title">
+                            服务商技术服务费
+                        </div>
+                    </div>
+                    <div class="policy-hover test">
+                        <div class="policy-hover__box">
+                            <div class="policy-icon hover">
+                                <i class="policy-icon__ico iconfont">&#xe60e;</i>
+                            </div>
+                            <div class="policy-hover__title">服务商技术服务费</div>
+                            <div class="policy-hover__intro">多种行业技术服务费合作方案，协助服务商拓业务，携手共建良好支付生态</div>
+                            <div class="policy-hover__btn"><a href="https://pay.weixin.qq.com/static/partner_guide/partner_reward.shtml" target="_blank" onClick="pgvSendClick({hottag:'PARTNER.INDEX.ABILITY.REWARD'});">了解更多</a></div>
+                        </div>
+                    </div>
+                    <div class="policy-mask"></div>
+                </div>
+                <div class="policy-item policy-tools">
+                    <div class="policy-item__box">
+                        <div class="policy-icon">
+                            <i class="policy-icon__ico iconfont">&#xe663;</i>
+                        </div>
+                        <div class="policy-title">
+                            合作工具箱
+                        </div>
+                    </div>
+                    <div class="policy-hover">
+                        <div class="policy-hover__box">
+                            <div class="policy-icon hover">
+                                <i class="policy-icon__ico iconfont">&#xe663;</i>
+                            </div>
+                            <div class="policy-hover__title">合作工具箱</div>
+                            <div class="policy-hover__intro">组合场景解决方案，一键解锁多个产品，高效服务商家智慧经营</div>
+                            <div class="policy-hover__btn"><a href="https://pay.weixin.qq.com/static/partner_ability/platform_ability.shtml" target="_blank" onClick="pgvSendClick({hottag:'PARTNER.INDEX.ABILITY.TOOLKIT'});">了解更多</a></div>
+                        </div>
+                    </div>
+                    <div class="policy-mask"></div>
+                </div>
+                <div class="policy-item policy-materials">
+                    <div class="policy-item__box">
+                        <div class="policy-icon">
+                            <i class="policy-icon__ico iconfont">&#xe65e;</i>
+                        </div>
+                        <div class="policy-title">
+                            物料平台
+                        </div>
+                    </div>
+                    <div class="policy-hover">
+                        <div class="policy-hover__box">
+                            <div class="policy-icon hover">
+                                <i class="policy-icon__ico iconfont">&#xe65e;</i>
+                            </div>
+                            <div class="policy-hover__title">物料平台</div>
+                            <div class="policy-hover__intro">专业行业物料模板，可视化的自助设计，轻松打造商家专属物料</div>
+                            <div class="policy-hover__btn"><a href="https://pay.weixin.qq.com/static/partner_guide/partner_reward.shtml" target="_blank" onClick="pgvSendClick({hottag:'PARTNER.INDEX.ABILITY.MATERIEL'});">了解更多</a></div>
+                        </div>
+                    </div>
+                    <div class="policy-mask"></div>
+                </div>
+                <div class="policy-item policy-plan">
+                    <div class="policy-item__box">
+                        <div class="policy-icon">
+                            <i class="policy-icon__ico iconfont">&#xe622;</i>
+                        </div>
+                        <div class="policy-title">
+                            成长计划
+                        </div>
+                    </div>
+                    <div class="policy-hover">
+                        <div class="policy-hover__box">
+                            <div class="policy-icon hover">
+                                <i class="policy-icon__ico iconfont">&#xe622;</i>
+                            </div>
+                            <div class="policy-hover__title">成长计划</div>
+                            <div class="policy-hover__intro">产品能力深度解析，行业共创案例沉淀，协助合作伙伴快速成长</div>
+                            <div class="policy-hover__btn"><a href="https://pay.weixin.qq.com/index.php/xphp/cservice_provider_course/home#/pages/index/index" target="_blank" onClick="pgvSendClick({hottag:'PARTNER.INDEX.ABILITY.GROW_UP'});">了解更多</a></div>
+                        </div>
+                    </div>
+                    <div class="policy-mask"></div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="process">
+                <div class="process-box">
+                    <div class="process-title">
+                        成为微信支付服务商
+                    </div>
+                    <div class="process-items">
+                        <div class="process-item">
+                            <div class="process-item__box">
+                                <div class="process-item__num">1</div>
+                                <div class="process-item__title">服务商入驻</div>
+                                <div class="process-item__intro">注册成为微信支付服务商</div>
+                                <div class="process-item__arrow"></div>
+                            </div>
+                        </div>
+                        <div class="process-item">
+                            <div class="process-item__box">
+                                <div class="process-item__num">2</div>
+                                <div class="process-item__title">特约商家管理</div>
+                                <div class="process-item__intro">帮助商家完成入驻，提供服务</div>
+                                <div class="process-item__arrow"></div>
+                            </div>
+                        </div>
+                        <div class="process-item">
+                            <div class="process-item__box">
+                                <div class="process-item__num">3</div>
+                                <div class="process-item__title">开通合作工具箱</div>
+                                <div class="process-item__intro">选择合适企业发展的合作工具箱</div>
+                                <div class="process-item__arrow"></div>
+                            </div>
+                        </div>
+                        <div class="process-item">
+                            <div class="process-item__box">
+                                <div class="process-item__num">4</div>
+                                <div class="process-item__title">申请服务商技术服务费</div>
+                                <div class="process-item__intro">申请合作工具箱相关的服务商技术服务费</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-btn"><a href="https://pay.weixin.qq.com/static/partner_guide/service_provider.shtml" target="_blank" onClick="pgvSendClick({hottag:'PARTNER.INDEX.APPLYMENT.BTN_APPLYMENT'});">成为服务商</a></div>
+                </div>
+            </div>
+            <!-- 底部 [[ -->
+                </div>
+<!-- 该标签用于添加通栏背景，开始标签在header.shtml -->
+
+<div class="footer">
+    <div class="wrap">
+        <div class="footer-service">
+            <dl class="service-about">
+                <dt>关于我们</dt>
+                <dd><a href="http://kf.qq.com/faq/181012y6bUNR181012nMFnMr.html" target="_blank">关于微信支付</a></dd>
+                <dd><a href="https://pay.weixin.qq.com/index.php/public/apply_sign/protocol_dev_rule" target="_blank">合作规则</a></dd>
+                <dd><a href="https://pay.weixin.qq.com/index.php/core/home/pay_pact_v4" target="_blank">平台使用协议</a></dd>
+                <dd><a href="https://pay.weixin.qq.com/index.php/public/apply_sign/protocol_v2" target="_blank">支付服务协议</a></dd>
+                <dd><a href="https://www.tencent.com/zh-cn/index.html" target="_blank">联系我们</a></dd>
+            </dl>
+            <dl class="service-support">
+                <dt>服务支持</dt>
+                <dd><a href="https://pay.weixin.qq.com/wiki/doc/apiv3/wxpay/pages/index.shtml" target="_blank">开发文档（商户）</a></dd>
+                <dd><a href="https://pay.weixin.qq.com/wiki/doc/apiv3_partner/pages/index.shtml" target="_blank">开发文档（服务商）</a></dd>
+                <dd><a href="https://pay.weixin.qq.com/material/brand.shtml" target="_blank">物料下载</a></dd>
+                <dd><a href="https://kf.qq.com/product/wechatpaymentmerchant.html" target="_blank">帮助中心</a></dd>
+            </dl>
+            <dl class="service-friend">
+                <dt>友情链接</dt>
+                <dd><a href="https://open.weixin.qq.com/" target="_blank">微信开放平台</a></dd>
+                <dd><a href="https://mp.weixin.qq.com/" target="_blank">微信公众平台</a></dd>
+                <dd><a href="https://work.weixin.qq.com/" target="_blank">企业微信</a></dd>
+            </dl>
+            <dl class="service-help">
+                <dt>客服帮助</dt>
+                <dd><a href="http://kf.qq.com/product/wechatpaymentmerchant.html" target="_blank">自助服务专区</a></dd>
+                <dd>客服：95017-2</dd>
+                <dd>（周一到周五 09:00-18:00）</dd>
+            </dl>
+            <dl class="service-qrcode">
+                <dt>关注微信支付服务商助手公众号</dt>
+                <dd>
+                	<img class="img-qrcode" src="https://wx.gtimg.com/pay/img/common/qrcode_fuwushangzhushou.jpg" alt="">
+                </dd>
+            </dl>
+        </div>
+        <div class="footer-copyright">Powered By Tencent & Tenpay　Copyright 2005-2021 Tenpay All Rights Reserved.</div>
+    </div>
+</div>
+<script language="javascript" src="https://pingjs.qq.com/tcss.ping.https.js"></script>
+<script language="javascript">
+    if(typeof(pgvMain) == 'function')
+        pgvMain();
+</script>
+<script src="https://wx.gtimg.com/pay/js/common/iframe_target.js?v=20210222"></script><!--[if !IE]>|xGv00|5a384d1350aae997885b799febcc5bc5<![endif]-->
+<!--[if !IE]>|xGv00|2a824f99ae45b504e413e19bccf1f388<![endif]-->
+            <!-- 底部 ]] -->
+        </div>
+    </div>
+    <div class="pagination"></div>
+</div>
+
+<div class="index-mask" style="display: block;"></div>
+
+<!-- 内容 ]] -->
+<div class="dialog hide" id="IDErrorDialog">
+    <div class="dialog-hd">
+        <h3>温馨提示</h3>
+        <a class="ico-cls close-dialog close-error-dialog"  href="javascript:;">关闭</a>
+    </div>
+    <div class="dialog-bd ">
+        <div class="page-msg align-center">
+            <div class="inner">
+                <div class="msg-ico"><i class="ico-msg warn"></i></div>
+                <div class="msg-cnt" id="IDErrorDialogContent">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dialog-ft">
+        <a class="btn btn-primary close-error-dialog">确定</a>
+    </div>
+</div>
+<div class="dialog-wrp hide" id="IDForgetPwdDialog">
+    <div class="dialog">
+        <div class="dialog-hd">
+            <h3>温馨提示</h3>
+            <a class="ico-cls closeErrDialog" href="javascript:;" id="IDCloseErrorDialog">关闭</a>
+        </div>
+        <div class="dialog-bd">
+            <div class="page-msg align-center align-middle">
+                <div class="inner">
+                    <div class="msg-ico"><i class="ico-msg info"></i></div>
+                    <div class="msg-cnt">
+                        <h4>微信支付登录模式升级，请切换至扫码登录模式</h4>
+                        <p>若账号未绑定微信号，请<a href="https://pay.weixin.qq.com/index.php/public/bind_wechat" target="_blank">点击此处</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dialog-ft">
+            <a class="btn btn-primary" href="https://pay.weixin.qq.com/partner/public/home">确定</a>
+        </div>
+    </div>
+    <div class="mask-layer"></div>
+</div>
+<div class="mask-layer hide"></div>
+<!-- 底部 [[ -->
+<script src="https://www.tenpay.com/v2/res/js/global/tenpayctrl_v2-min.js"></script>
+<script name="MCH.tenpaycertZH" crossorigin="anonymous" src="https://wx.gtimg.com/mch/js/tenpaycert/mch.tenpaycert_zh.20200405.1.js?t=20200413124134" charset="utf-8"></script><!--[if !IE]>|xGv00|32f432a75aa48b2f2ab32d41932680ce<![endif]-->
+<script>window["MCH.tenpaycertV2.time"]=[new Date()]</script>
+<script id="legos:22410" ver="22410:20200413:20200413124134" name="MCH.tenpaycertV2" crossorigin="anonymous" src="https://wx.gtimg.com/mch/js/tenpaycert/mch.tenpaycertV2.20200405.1.js?t=20200413124134" charset="utf-8"></script>
+<script crossorigin="anonymous" src="https://wx.gtimg.com/third/jsencrypt/jsencrypt.min.js" charset="utf-8"></script>
+<!--[if !IE]>|xGv00|1a222765c7efc921acc0a203c9076635<![endif]--><!--[if !IE]>|xGv00|8ab59df4495293a71573934cfa4d640c<![endif]-->
+<script>window["MCH.home.time"]=[new Date()]</script>
+<script id="legos:22134" ver="22134:20171025:20171025111311" name="MCH.home" src="https://wx.gtimg.com/mch/js/ver/2017/10/mch.home.20171025.js?t=20171025111311" charset="utf-8"></script><!--[if !IE]>|xGv00|636a73af80810f30688382767a2f029e<![endif]-->
+<script>window["MCH.partnerLoginHome.time"]=[new Date()]</script>
+<script id="legos:22553" ver="22553:20160906:20171009173405" name="MCH.partnerLoginHome" src="https://wx.gtimg.com/mch/js/ver/2016/09/mch.partnerLoginHome.20160906.js?t=20171009173405" charset="utf-8"></script><!--[if !IE]>|xGv00|98e34cedb3bbfe0e95f0beeac73a2de8<![endif]-->
+<script type="text/javascript">if(typeof $jqueryUi == "undefined"){document.write('<script type="text/javascript" src="https://wx.gtimg.com/third/jquery/jquery-ui.js"></script"+">');}</script>
+<script>window["MCH.footer.time"]=[new Date()]</script>
+<script id="legos:22125" ver="22125:20180801:20180801162700" name="MCH.footer" charset="utf-8">
+window['MCH.footer.time'] && window['MCH.footer.time'].push(new Date());
+function $addToken(url,type,skey){var token=$getToken(skey);if(url==""||(url.indexOf("://")<0?location.href:url).indexOf("http")!=0){return url;}
+if(url.indexOf("#")!=-1){var f1=url.match(/\?.+\#/);if(f1){var t=f1[0].split("#"),newPara=[t[0],"&g_tk=",token,"&g_ty=",type,"#",t[1]].join("");return url.replace(f1[0],newPara);}else{var t=url.split("#");return[t[0],"?g_tk=",token,"&g_ty=",type,"#",t[1]].join("");}}
+return token==""?(url+(url.indexOf("?")!=-1?"&":"?")+"g_ty="+type):(url+(url.indexOf("?")!=-1?"&":"?")+"g_tk="+token+"&g_ty="+type);};var $ajax=(function(window,undefined){var oXHRCallbacks,xhrCounter=0;var fXHRAbortOnUnload=window.ActiveXObject?function(){for(var key in oXHRCallbacks){oXHRCallbacks[key](0,1);}}:false;return function(opt){var o={url:'',method:'GET',data:null,type:"text",async:true,cache:false,timeout:0,autoToken:true,username:'',password:'',beforeSend:$empty(),onSuccess:$empty(),onError:$empty(),onComplete:$empty()};for(var key in opt){o[key]=opt[key]}
+var callback,timeoutTimer,xhrCallbackHandle,ajaxLocation,ajaxLocParts;try{ajaxLocation=location.href;}
+catch(e){ajaxLocation=document.createElement("a");ajaxLocation.href="";ajaxLocation=ajaxLocation.href;}
+ajaxLocParts=/^([\w\+\.\-]+:)(?:\/\/([^\/?#:]*)(?::(\d+)|)|)/.exec(ajaxLocation.toLowerCase())||[];o.isLocal=/^(?:about|app|app\-storage|.+\-extension|file|res|widget):$/.test(ajaxLocParts[1]);o.method=(typeof(o.method)!="string"||o.method.toUpperCase()!="POST")?"GET":"POST";o.data=(typeof o.data=="string")?o.data:$makeUrl(o.data);if(o.method=='GET'&&o.data){o.url+=(o.url.indexOf("?")<0?"?":"&")+o.data;}
+if(o.autoToken){o.url=$addToken(o.url,"ajax");}
+o.xhr=$xhrMaker();if(o.xhr===null){return false;}
+try{if(o.username){o.xhr.open(o.method,o.url,o.async,o.username,o.password);}
+else{o.xhr.open(o.method,o.url,o.async);}}
+catch(e){o.onError(-2,e);return false;}
+if(o.method=='POST'){o.xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');}
+if(!o.cache){o.xhr.setRequestHeader('If-Modified-Since','Thu, 1 Jan 1970 00:00:00 GMT');o.xhr.setRequestHeader('Cache-Control','no-cache');}
+o.beforeSend(o.xhr);if(o.async&&o.timeout>0){if(o.xhr.timeout===undefined){timeoutTimer=setTimeout(function(){if(o.xhr&&callback){callback(0,1);}
+o.onError(0,null,'timeout');},o.timeout);}
+else{o.xhr.timeout=o.timeout;o.xhr.ontimeout=function(){if(o.xhr&&callback){callback(0,1);}
+o.onError(0,null,'timeout');};}}
+o.xhr.send(o.method=='POST'?o.data:null);callback=function(e,isAbort){if(timeoutTimer){clearTimeout(timeoutTimer);timeoutTimer=undefined;}
+if(callback&&(isAbort||o.xhr.readyState===4)){callback=undefined;if(xhrCallbackHandle){o.xhr.onreadystatechange=$empty();if(fXHRAbortOnUnload){try{delete oXHRCallbacks[xhrCallbackHandle];}
+catch(e){}}}
+if(isAbort){if(o.xhr.readyState!==4){o.xhr.abort();}}
+else{var status,statusText,responses;responses={headers:o.xhr.getAllResponseHeaders()};status=o.xhr.status;try{statusText=o.xhr.statusText;}
+catch(e){statusText="";}
+try{responses.text=o.xhr.responseText;}
+catch(e){responses.text="";}
+if(!status&&o.isLocal){status=responses.text?200:404;}
+else if(status===1223){status=204;}
+if(status>=200&&status<300){responses.text=responses.text.replace(/<!--\[if !IE\]>[\w\|]+<!\[endif\]-->/g,'');switch(o.type){case'text':o.onSuccess(responses.text);break;case"json":var json;try{json=(new Function("return ("+responses.text+")"))();}
+catch(e){o.onError(status,e,responses.text);}
+if(json){o.onSuccess(json);}
+break;case"xml":o.onSuccess(o.xhr.responseXML);break;}}
+else{if(status===0&&o.timeout>0){o.onError(status,null,'timeout');}
+else{o.onError(status,null,statusText);}}
+o.onComplete(status,statusText,responses);}
+delete o.xhr;}};if(!o.async){callback();}
+else if(o.xhr.readyState===4){setTimeout(callback,0);}
+else{xhrCallbackHandle=++xhrCounter;if(fXHRAbortOnUnload){if(!oXHRCallbacks){oXHRCallbacks={};if(window.attachEvent){window.attachEvent("onunload",fXHRAbortOnUnload);}
+else{window["onunload"]=fXHRAbortOnUnload;}}
+oXHRCallbacks[xhrCallbackHandle]=callback;}
+o.xhr.onreadystatechange=callback;}};})(window,undefined);function $empty(){return function(){return true;}};function $getCookie(name){var reg=new RegExp("(^| )"+name+"(?:=([^;]*))?(;|$)"),val=document.cookie.match(reg);return val?(val[2]?unescape(val[2]):""):null;};function $getToken(skey){var skey=skey?skey:$getCookie("skey");return skey?$time33(skey):"";};function $makeUrl(data){var arr=[];for(var k in data){arr.push(k+"="+data[k]);};return arr.join("&");};function $namespace(name){for(var arr=name.split(','),r=0,len=arr.length;r<len;r++){for(var i=0,k,name=arr[r].split('.'),parent={};k=name[i];i++){i===0?eval('(typeof '+k+')==="undefined"?('+k+'={}):"";parent='+k):(parent=parent[k]=parent[k]||{});}}};function $time33(str){for(var i=0,len=str.length,hash=5381;i<len;++i){hash+=(hash<<5)+str.charAt(i).charCodeAt();};return hash&0x7fffffff;};function $xhrMaker(){var xhr;try{xhr=new XMLHttpRequest();}catch(e){try{xhr=new ActiveXObject("Msxml2.XMLHTTP");}catch(e){try{xhr=new ActiveXObject("Microsoft.XMLHTTP");}catch(e){xhr=null;}}};return xhr;};$namespace("MCH.footer");MCH.footer={searchChildMerchantTimer:'',searchChildMerchantName:'',protocolDG:'',protocolCbx:'',protocolBtn:''};MCH.footer.init=function(){footerThat=this;footerThat.bind();footerThat.changeVerify();MCH.footer.protocolDG=Common.getPop('MchProtocolDG');MCH.footer.protocolBtn=$('#MchProtocolBn');MCH.footer.protocolCbx=Common.getCbx({id:'MchProtocolCbx',onCheck:function(){MCH.footer.protocolBtn.removeClass('btn-default').addClass('btn-primary');},onUnCheck:function(){MCH.footer.protocolBtn.removeClass('btn-primary').addClass('btn-default');}});MCH.footer.checkSignProtocol();};MCH.footer.bind=function(){footerThat.bindChangeCheckimg();footerThat.bindDatepicker();MCH.header.bindCloseDialog();footerThat.bindSelect();$('#MchProtocolBn').on('click',function(){if(MCH.footer.protocolCbx.isCheck()){var postData=Common.getCrsfToken();var ret=false;$ajax({url:'/index.php/core/merchant/sign_mch_protocol',data:postData,method:'post',type:'json',async:false,onSuccess:function(data){MCH.header.handleAjax(data);if(data.errorcode!=0){ret=false;}else{ret=true;}},onError:function(msg){ret=false;}});if(!ret){MCH.header.showErrorAlertDialog('操作失败,请稍后重试');}else{MCH.footer.protocolDG.close();}}});};MCH.footer.changeVerify=function(){if($(".img-verify").size()>0){$(".img-verify").attr("src","https://ssl.captcha.qq.com/getimage?aid=755049101&rd="+Math.random());}};MCH.footer.bindChangeCheckimg=function(){$(".change-verify").on('click',function(){footerThat.changeVerify();});$(".checkimg-input").on('keydown',function(){var value=$(this).val();result=false;if(value.length==4){var token_name=$("#token").attr("name");var hash=$("#token").val();var post_data=token_name+'='+hash+'&verify_word='+value;$ajax({url:'/index.php/core/home/vaild_checkimg',data:post_data,method:'post',type:'json',async:false,onSuccess:function(data){if(data.errorcode==0){result=true;}else{}},onError:function(msg){result=false;}});}});};MCH.footer.bindDatepicker=function(timepicker){if($(".datepicker-input").size()<=0){return false;}
+false?$jqueryUi():'';timepicker=timepicker?true:false;var format='Y-m-d';if(timepicker){format='Y-m-d H:i';}
+$('.datepicker-input').datetimepicker({defaultTime:'00:00:00',step:1,format:format,lang:'ch',timepicker:timepicker,yearStart:1970,closeOnDateSelect:true});$("input.datepicker-input").next("i.ico-date").on('click',function(){$(this).prev('input.datepicker-input').focus();});};MCH.footer.bindSelect=function(){$("div.dropdown-menu").on('click',function(){$(this).addClass('open');});$("ul.dropdown-list").on('click','li',function(){var value=$(this).children("a").attr('data-target');var text=$(this).children("a").text();var drop_switch=$(this).parent().prev("a.dropdown-switch");drop_switch.attr('data-target',value);drop_switch.children('label').text(text);var id=drop_switch.children('label').attr('id');var name=drop_switch.children('label').html();$(this).parent().parent().removeClass('open');typeof SelectCallBack=='function'&&SelectCallBack(id,name);return false;});$("div.dropdown-menu").mouseleave(function(){if($(this).hasClass('open')){$(this).removeClass('open');}});};MCH.footer.searchChildMerchant=function(params){var obj=params['obj'];var value=obj.val();if(value!=MCH.footer.searchChildMerchantName){return false;}
+var merchants={};var curpage=params['curpage'];var total_page=1;var isAppend=params['isAppend'];var list=obj.parent().parent().children('ul.dropdown-list');if(!isAppend){list.children().remove();}
+var token_name=$("#token").attr("name");var hash=$("#token").val();var post_data=token_name+'='+hash+'&merchant_name='+value+'&page_num='+curpage;$ajax({url:'/index.php/extend/child_merchant/query_merchant_by_name',data:post_data,method:'post',type:'json',async:true,onSuccess:function(data){if(data.errorcode==0){merchants=data.data.list;curpage=data.data.curpage;total_page=data.data.total_page;for(var key in merchants){var model='<li><a href="#" data-target="'+key+'">'+merchants[key]+'</a></li>';list.append(model);}
+if(curpage<total_page){var nextPage=parseInt(curpage,10)+1;var model='<dl class="jsDropDownLiMerchantMore"><a href="#" data-target="'+nextPage+'">获取更多子商户</a></dl>';list.append(model);}}},onError:function(msg){}});};MCH.footer.checkSignProtocol=function(){var whiteUrl=['/index.php/core/home','/index.php/core/apply_progress','/index.php/core/apply_bank','/index.php/core/apply_sign','/index.php/core/merchantupgrading','/index.php/core/submerchant/create_sub_merchant','/index.php/public/cms'];var localtion=window.location.pathname;prefix='/index.php';if(localtion.substr(0,prefix.length)!=prefix){localtion=prefix+localtion;}
+for(var i=0;i<whiteUrl.length;i++){if(localtion.substr(0,whiteUrl[i].length)==whiteUrl[i]){return;}}
+var postData=Common.getCrsfToken();$ajax({url:'/index.php/public/merchant/check_sign_protocol',data:postData,method:'post',type:'json',async:true,onSuccess:function(data){MCH.header.handleAjax(data);if(data.errorcode!=0){MCH.footer.protocolDG.open();}},onError:function(msg){}});};MCH.footer.init();
+window['MCH.footer']='22125:20180801:20180801162700';
+window['MCH.footer.time'] && window['MCH.footer.time'].push(new Date());
+</script><!--[if !IE]>|xGv00|2bef725878e8c8895774eb9c399ec79b<![endif]-->
+<!--[if lt IE 9]>
+<script src="https://wx.gtimg.com/bower_components/json3/lib/json3.js"></script>
+<![endif]-->
+<script>
+    var qrcodeType = 1;// 登录
+</script>
+<script type="text/javascript" src="https://wx.gtimg.com/third/payjssecret/payjssecret.min.js"></script>
+<script src="https://wx.gtimg.com/third/qrcodejs/qrcode.min.js"></script>
+<script src="https://wx.gtimg.com/third/jquery/jquery-1.7.min.js"></script>
+<script src="https://wx.gtimg.com/pay/js/common/swiper2.7.6.min.js"></script>
+<script src="https://wx.gtimg.com/pay/js/common/jquery.backgroundcover.min.js"></script>
+<script>window["MCH.wechatLogin.time"]=[new Date()]</script>
+<script id="legos:22646" ver="22646:20190729:20190806154339" name="MCH.wechatLogin" crossorigin="anonymous" src="https://wx.gtimg.com/mch/js/ver/2019/07/mch.wechatLogin.20190729.js?t=20190806154339" charset="utf-8"></script><!--[if !IE]>|xGv00|ed8c9da0de4d1dc890b18e879eca40b4<![endif]-->
+<!-- 底部 ]] -->
+<script type="text/javascript">
+    //高度calc属性ie8失效，以下兼容ie8写法
+    var isIE = function(ver) {
+        var b = document.createElement('b')
+        b.innerHTML = '<!--[if IE ' + ver + ']><i></i><![endif]-->'
+        return b.getElementsByTagName('i').length === 1
+    }
+    if(isIE(7)||isIE(8)) {
+        var windowHeight = $(window).height()
+        var containerHeight = windowHeight - 92
+        $(".swiper-container").css("height", containerHeight)
+        $(".copyright").css("height", "60px")
+        $(".features-item").css("width", "33.311%")
+        $(".policy-hover").css("display","none");
+        $(".features-hover").css("display","none");
+        $(".policy-item").hover(function(){
+            $(this).find(".policy-hover").css("display","block"); //hover时效果
+        },function(){
+            $(this).find(".policy-hover").css("display","none");//非 hover时效果
+        });
+        $(".features-item").hover(function(){
+            $(this).find(".features-hover").css("display","block"); //hover时效果
+        },function(){
+            $(this).find(".features-hover").css("display","none");//非 hover时效果
+        });
+        //公告背景色兼容优化
+    } else {
+        $(".policy-hover").css("opacity","0");
+        $(".features-hover").css("opacity","0");
+        $(".policy-item").hover(function(){
+            $(this).find(".policy-hover").css("opacity","1"); //hover时效果
+        },function(){
+            $(this).find(".policy-hover").css("opacity","0");//非 hover时效果
+        });
+        $(".features-item").hover(function(){
+            $(this).find(".features-hover").css("opacity","1"); //hover时效果
+        },function(){
+            $(this).find(".features-hover").css("opacity","0");//非 hover时效果
+        });
+    }
+    $(function(){
+        var mySwiper = $('.swiper-container').swiper({
+            pagination: '.pagination',
+            paginationClickable: true,
+            mode: 'vertical',
+            mousewheelControl : true
+        });
+    })
+    $(".index-mask").css("display", "none")
+    $(document).ready(function () {
+        //页面加载完毕，添加解决兼容ie7/8backgroundsize问题类名
+        $(".banner ol li").css("behavior","url(PIE.htc)")
+        $(".notice").css("behavior","url(PIE.htc)")
+        $(".swiper-pagination-switch").css("behavior","url(PIE.htc)")
+        $(".swiper-active-switch").css("behavior","url(PIE.htc)")
+        $(".hover-list__line").css("behavior","url(PIE.htc)")
+        $(".policy-icon").css("behavior","url(PIE.htc)")
+        $(".swiper-pagination-switch").css("behavior","url(PIE.htc)")
+        $(".slider ul li").backgroundcover({safearea: "50%,50%,50%,50%"})
+        $(".policy-item").backgroundcover({safearea: "50%,50%,50%,50%"})
+        $(".features-item").backgroundcover({safearea: "50%,50%,50%,50%"})
+        $(".features-item").mouseenter(function(){
+            $(this).find(".features-hover__box").stop(true)
+            $(this).find(".features-hover__box").animate({bottom: "0",opacity:"1"},500)
+        })
+        $(".features-item").mouseleave(function(){
+            $(this).find(".features-hover__box").stop(true)
+            $(this).find(".features-hover__box").animate({bottom: "-444px",opacity:"0"},0)
+        })
+    }) 
+</script>
+
+</body>
+</html>
+<!--[if !IE]>|xGv00|aaa79bdd8338bbe29b88d8ebf187d4d2<![endif]-->

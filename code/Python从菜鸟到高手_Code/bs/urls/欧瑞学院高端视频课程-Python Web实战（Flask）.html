@@ -1,0 +1,592 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <meta name="csrf-param" content="_csrf" /> 
+  <meta name="csrf-token" content="a1RUQm5ySFUjZxoGXSgQeBJhEQEHMS4nBycXCgwXMBgELTF6DEchBQ==" /> 
+  <title>欧瑞学院高端视频课程-Python Web实战（Flask）</title> 
+  <link href="css/base.css?v=2.3.37" rel="stylesheet" />
+  <link href="css/activity_tab.css?v=1.02" rel="stylesheet" />
+  <link href="css/gen_top.css?v=2.2.41" rel="stylesheet" />
+  <link href="css/background_pub.css" rel="stylesheet" />
+  <link href="css/frontend_pub.css" rel="stylesheet" />
+  <link href="css/clist.css?v=1.0.3" rel="stylesheet" />
+  <link href="css/course.css?v=1.0.6" rel="stylesheet" /> 
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/prototype_create.js"></script>
+  <script src="js/plugins.js?v=1.0.3"></script>
+  <script src="js/mbox.js?v=1.0.1"></script>
+  <script src="js/autoload_list.js?v=1.0.2"></script>
+  <script src="js/base.js?v=1.1.8"></script>
+  <script type="text/javascript"> 
+        //平台、设备和操作系统 
+        var system = { 
+            win: false, 
+            mac: false, 
+            xll: false, 
+            ipad:false 
+        }; 
+        //检测平台 
+        var p = navigator.platform; 
+        system.win = p.indexOf("Win") == 0; 
+        system.mac = p.indexOf("Mac") == 0; 
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0); 
+        system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false; 
+        //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面 
+        if (system.win || system.mac || system.xll||system.ipad) { 
+ 
+        } else { 
+ 
+            window.location.href = "https://geekori.com/weixin/orishop/combo.php?combo=7"; 
+        } 
+</script> 
+  <link rel="stylesheet" href="css/moco.css" type="text/css" /> 
+  <link rel="stylesheet" href="css/moco.min.css" type="text/css" /> 
+  <link rel="stylesheet" href="css/course.css" type="text/css" />  
+  <link rel="stylesheet" href="css/index.css" type="text/css" />  
+  <link rel="stylesheet" href="./combo/list_v7_bf87458.css" />
+  <link rel="stylesheet" href="https://geekori.com/public/share/dist/needsharebutton.css">
+  <script src="js/share.js"></script>
+  <link rel="stylesheet" href="css/share_style0_16.css" />
+ </head> 
+ <body> 
+  <div class="Header3 white "> 
+   <div class="Page"> 
+    <div id="header"> 
+   <div class="page-container" id="nav" style="z-index: 1000;"> 
+    <div id="logo" class="logo">
+     <a href="http://geekori.com" target="_self" class="hide-text" title="首页">欧瑞学院</a>
+    </div> 
+    <button type="button" class="navbar-toggle visible-xs-block js-show-menu"> <i class="icon-menu"></i> </button> 
+    <ul class="nav-item"> 
+     <li class="set-btn visible-xs-block"></li> 
+     <li><a href="https://geekori.com/" target="_blank">问答社区</a></li> 
+     <li><a href="https://geekori.com/" target="_blank">博客</a></li>
+     <li><a href="field.php?v=combo" target="_blank">套餐</a></li>
+     <li><a href="field.php?v=member" target="_blank">会员</a></li>
+    </ul> 
+    <div id="login-area"> 
+     <ul class="header-unlogin clearfix"> 
+             <li class="shop-cart" id="shop-cart"> <a class="shop-cart-icon cart-c" target="_blank"><span>去购物车</span> </a></li>
+                <li class="header-signin"> <a href="#" id="js-signin-btn">登录</a> </li> 
+      <li class="header-signup"> <a href="#" id="js-signup-btn">注册</a> </li>     
+      
+      
+     </ul> 
+    </div> 
+    <div class="search-warp clearfix" style="min-width: 32px; height: 60px;"> 
+     <div class="pa searchTags"> 
+		<!-- 搜索在这里 -->
+     </div> 
+     <div class="search-area" data-search="top-banner"> 
+      <input class="search-input" data-suggest-trigger="suggest-trigger" autocomplete="off" type="text" /> 
+      <input class="btn_search" data-search-btn="search-btn" type="hidden" /> 
+      <ul class="search-area-result" data-suggest-result="suggest-result"> 
+      </ul> 
+     </div> 
+     <div class="showhide-search" data-show="no">
+      
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+   </div> 
+  </div> 
+  <input type="hidden" value="10399" id="cID" /> 
+  <input type="hidden" value="47" id="pID" /> 
+  <input type="hidden" value="" id="userID" /> 
+  <div class="course Top" style="z-index: 10;"> 
+   <div class="Page"> 
+    <div class="edu-ad" ad_id="231" info_id="10399" type="course" style="margin-bottom: 10px;"></div> 
+    <div class="Info"> 
+     <p class="roadLink"> <span>套餐</span> <span>&gt;</span> <a href="https://geekori.com/edu/field.php?v=combo&f_id=1">编程语言</a> <span>&gt;</span> <a href="https://geekori.com/edu/combo.php?c_id=7">Python Web实战（Flask）</a> </p> 
+     <div class="fl" style="width:500px;"> 
+      <div class="pic"> 
+       <img width="500" height="300" src="/images/weixinimg/17-11/uploadImg_628571510815354.jpg" alt="" /> 
+      </div> 
+      <!--<div class="acts"> 
+       <div class="download fl"> 
+        <p>下载课程</p> 
+        <div class="qrcode tc"> 
+         <img class="qrcode" src="https://static1.51cto.com/edu/images/whitestyle/appdownload90.png" /> 
+         <p>下载学院APP</p> 
+         <p>缓存视频离线看</p> 
+        </div> 
+       </div> 
+       <a href="" target="_blank" class="fl"></a> 
+       <a href="javascript:void(0)" class="fav fr " id="fav"><i class="icon"></i><span id="favFont">收藏</span>(<span id="favNum">14</span>)</a> 
+       <div class="bdsharebuttonbox fr bdshare-button-style0-16"> 
+        <a class="bds_more share" data-cmd="more" name="" style="line-height: 20px;margin: 0;padding-left: 24px;background: none;display: block;height: 20px;position: relative;font-size: 14px;"> <i class="icon"></i>分享 </a> 
+       </div> 
+       <div class="clear"></div> 
+      </div> -->
+     </div> 
+     <div class="main fr"> 
+      <h2 id="CourseTitle">Python Web实战（Flask）</h2> 
+      <!-- <p>适用人群： 适合所有Linux运维人员。</p>  -->
+      <div class="CourseTime"> 
+      <span></span>
+       <span>12个课程</span> 
+       <span>共31小时4分钟</span>
+       <div class="clear"></div> 
+      </div> 
+      <p class="red"> </p> 
+      <div class="price"> 
+       <dl> 
+        <dt>
+         价　　格
+        </dt> 
+        <dd> 
+         <p class="red fl f26">&yen;376</p> 
+         <div class="clear"></div> 
+        </dd> 
+       </dl> 
+       <!-- 会员95折 zjf20170605
+       <dl> 
+        <dt>
+         优惠活动
+        </dt> 
+        <dd> 
+         <p><span>会</span>会员95折</p> 
+        </dd> 
+       </dl>  --> 
+      </div> 
+      <div class="serve"> 
+       <p class="hasIcon">课时永久观看</p> 
+       <p class="hasIcon">立省：<b style="color:red;font-size:15px;">￥307</b></p> 
+       <div class="clear"></div> 
+      </div> 
+      <div class="Btns" id="buyBtns"> 
+             <div id="nologin" style="display:block;float:left;">
+        <a href="#" class="red" style="background-color:red;display:block;width:152px;height:45px;line-height:45px;float:left;color:#fff;font-size:20px;margin-right:20px;text-align:center;">立即购买</a>
+       </div>
+       
+      <div id="i-share" data-share-position="bottomCenter" class="need-share-button-default" style="float:right;margin-right:60px;">
+      分享此页 : 
+        <i class="i-share " aria-hidden="true"></i>
+   </div>
+
+      <script src="https://geekori.com/public/share/dist/needsharebutton.js"></script>
+      <script>
+        new needShareButton(document.getElementById('i-share'));
+      </script>
+       <!-- <button id="qqwaps">学习咨询</button>  -->
+         <script>
+  $(document).ready(function(){
+		
+		$("#js-signin-btn").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+		});	
+		$("#nologin").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+		});
+		$("#js-signup-btn").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+			$(".register").show()
+			$("#register").addClass("activered");
+			$(".login").hide();
+			$("#login").removeClass("activered");
+		});	
+		$(".close").click(function(){
+			$(".user").hide();
+			$(".loginb").hide();
+		});	
+		$("#login").click(function(){
+			$(".login").show();
+			$("#login").addClass("activered");
+			$(".register").hide();
+			$("#register").removeClass("activered");
+		});	
+		$("#register").click(function(){
+			$(".register").show()
+			$("#register").addClass("activered");
+			$(".login").hide();
+			$("#login").removeClass("activered");
+		});	
+		$(".vertify").blur(function(){
+			setInterval(chk,1000);
+		});
+		
+		function chk(){
+			var a=$(".vertify").val();
+			$.ajax({
+					url:"check.php",
+					data:{b:a},
+					success:function(data){
+						if(data==1){
+							$(".err").text("正确").css({"color":"green","float":"left"});
+							$(".btn2").attr("disabled",false);
+						}else{
+							$(".err").text("验证码错误").css({"color":"red","line-height":"70px"});
+							$(".btn2").attr("disabled",true);
+						}
+					}
+			});
+		}				
+			 
+	});
+  </script>
+   <script>
+		function trasaction(){
+					}
+	</script>    
+    <script>
+			$(document).ready(function(){
+				$(".cart-c").click(function(){
+					$(".user").show();
+					$(".loginb").show();
+				});	
+				$(".add").click(function(){
+					$.ajax({url:"addcourse.php?id=50",success:function(){
+						alert('加入购物车成功！');		
+						}});
+					$(".add").hide();
+				});
+			});		
+	</script>  
+       <div class="clear"></div> 
+      </div> 
+     </div> 
+     <div class="clear"></div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="Page course" style="z-index: 9;"> 
+  <div class="topic" style="display: block;">
+    <dl>
+      <dt>
+        <p class="cur spec" style="display: block;">相关套餐</p>
+        <div class="spec fr" id="specBtns">
+          <i class="icon next"></i>
+          <i class="icon prev"></i>
+        </div>
+      </dt>
+      <dd>
+        <div class="topicList spec" style="display: block;">
+          <ul id="Spec" style="width: 2370px;">
+          	          	<li><a href="combo.php?c_id=7" class="pic fl"><img src="/images/weixinimg/17-11/uploadImg_628571510815354.jpg"></a><div class="fl main"><a href="combo.php?c_id=7" class="f16 title" >Python Web实战（Flask）</a><div class="clear"></div><p class="fl">立省<span class="red">￥307</span></p><a href="combo.php?c_id=7" class="btn fr">去购买</a><div class="clear"></div></div></li>
+        	          </ul>
+        </div>
+      </dd>
+    </dl>
+  </div>
+   <div class="topic"> 
+    <dl> 
+     <dt> 
+      <p class="cur spec">相关专题</p> 
+      <p class="pxb">微职位学习</p> 
+      <div class="spec fr" id="specBtns"> 
+       <i class="icon next"></i> 
+       <i class="icon prev"></i> 
+      </div> 
+     </dt> 
+     <dd> 
+      <div class="topicList spec"> 
+       <ul id="Spec"></ul> 
+      </div> 
+     </dd> 
+    </dl> 
+   </div> 
+   <script type="text/javascript">
+		$(document).ready(function(){
+				$(".kcjs").click(function(){
+					$(".intro").show();
+					$(".syllabus").hide();
+				});
+				$(".kcdg").click(function(){
+					$(".intro").hide();
+					$(".syllabus").show();
+				});
+			});
+   </script>
+   <div class="Course"> 
+    <div class="Left"> 
+     <dl class="tabs"> 
+      <dt class="tabsTil" id="tabsTil"> 
+       <p class="kcjs">套餐介绍</p> 
+       <p class="kcdg">学习路径</p> 
+       </dt> 
+      <dd class="tabsCon"> 
+       <div class="tabsConItem intro" style="display:block;"> 
+        <dl> 
+        	        </dl> 
+       </div> 
+       <div class="tabsConItem syllabus" style="display:none;"> 
+         <div class="path"> 
+       <h2>学习路径</h2> 
+       <div class="contain"> 
+       
+        
+                <div class="path-level"> 
+         <h3 class="type_1">Python基础知识</h3> 
+         <div class="path-course"> 
+          <ul> 
+                     <li class="course"> 
+           <a href="course.php?c_id=32" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-09/uploadImg_326231505709461.jpg" alt="跟李宁老师学Python视频教程（1）：初识Python" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=32" target="_blank">跟李宁老师学Python视频教程（1）：初识Python</a> 
+           </p> 
+           <p class="description">本课程会对Python做一个简要的介绍、然后会演示如何安装Python开发环境，以及如何在IDE中调试Python程序。
+本系列课程一共20套，每一套视频课程会深入讲解Python的一类知识点。Python是当今炙手可热的编程语言，可用于多个领域，人工智能、大数据、Web开发、移动开发、运维等。而且学习Python，将会更容易找到工作。本系列课程深入介绍了Python语言的方方面面，也是李宁老师其他课程的基础，如深度学习、科学计算、Web开发（Django Web框架）、全站开发、运维等。</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共10课时</p> 
+            </div> </li> 
+                       <li class="course"> 
+           <a href="course.php?c_id=33" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-09/uploadImg_880411505710651.jpg" alt="跟李宁老师学Python视频教程（2）：Python基础知识视频课程" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=33" target="_blank">跟李宁老师学Python视频教程（2）：Python基础知识视频课程</a> 
+           </p> 
+           <p class="description">本课程会对Python的基础知识做了深入的介绍，如Python模块、声明变量、数字、进制转换、获取用户输入、长字符串等。
+本系列课程一共20套，每一套视频课程会深入讲解Python的一类知识点。Python是当今炙手可热的编程语言，可用于多个领域，人工智能、大数据、Web开发、移动开发、运维等。而且学习Python，将会更容易找到工作。本系列课程深入介绍了Python语言的方方面面，也是李宁老师其他课程的基础，如深度学习、科学计算、Web开发（Django Web框架）、全站开发、运维等。
+</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共15课时</p> 
+            </div> </li> 
+                       <li class="course"> 
+           <a href="course.php?c_id=35" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-11/uploadImg_609551510021236.jpg" alt="跟李宁老师学Python视频课程（3）： Python条件、Python循环和Python其他语句" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=35" target="_blank">跟李宁老师学Python视频课程（3）： Python条件、Python循环和Python其他语句</a> 
+           </p> 
+           <p class="description">本课程会对Python语言中的代码块、条件语句和循环语句的应用，以及print、exec和eval函数的用法进行详细介绍。
+本系列课程一共20套，每一套视频课程会深入讲解Python的一类知识点。Python是当今炙手可热的编程语言，可用于多个领域，人工智能、大数据、Web开发、移动开发、运维等。而且学习Python，将会更容易找到工作。本系列课程深入介绍了Python语言的方方面面，也是李宁老师其他课程的基础，如深度学习、科学计算、Web开发（Django Web框架）、全站开发、运维等。</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共15课时</p> 
+            </div> </li> 
+                       <li class="course"> 
+           <a href="course.php?c_id=36" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-11/uploadImg_121191510021888.jpg" alt="跟李宁老师学Python视频课程（4）—Python中的列表和元组" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=36" target="_blank">跟李宁老师学Python视频课程（4）—Python中的列表和元组</a> 
+           </p> 
+           <p class="description">本课程会对Python语言的列表和元组进行详细的介绍，包括Python序列的基本操作，Python列表的基本操作和方法，以及Python元组的相关操作。
+本系列课程一共20套，每一套视频课程会深入讲解Python的一类知识点。Python是当今炙手可热的编程语言，可用于多个领域，人工智能、大数据、Web开发、移动开发、运维等。而且学习Python，将会更容易找到工作。本系列课程深入介绍了Python语言的方方面面，也是李宁老师其他课程的基础，如深度学习、科学计算、Web开发（Django Web框架）、全站开发、运维等。
+</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共13课时</p> 
+            </div> </li> 
+                       <li class="course"> 
+           <a href="course.php?c_id=37" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-11/uploadImg_922351510022541.jpg" alt="跟李宁老师学Python视频课程（5）—Python字符串" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=37" target="_blank">跟李宁老师学Python视频课程（5）—Python字符串</a> 
+           </p> 
+           <p class="description">本课程会对Python语言的字符串进行详细的介绍，包括Python字符串格式化的三种方式，Python语言与字符串相关的核心方法的使用和案例分析等。
+本系列课程一共20套，每一套视频课程会深入讲解Python的一类知识点。Python是当今炙手可热的编程语言，可用于多个领域，人工智能、大数据、Web开发、移动开发、运维等。而且学习Python，将会更容易找到工作。本系列课程深入介绍了Python语言的方方面面，也是李宁老师其他课程的基础，如深度学习、科学计算、Web开发（Django Web框架）、全站开发、运维等。</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共17课时</p> 
+            </div> </li> 
+                       <li class="course"> 
+           <a href="course.php?c_id=38" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-11/uploadImg_771411510022908.jpg" alt="跟李宁老师学Python视频课程（6）：Python字典" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=38" target="_blank">跟李宁老师学Python视频课程（6）：Python字典</a> 
+           </p> 
+           <p class="description">本课程会对Python语言的字典进行详细讲解，包括字典的概念，字典的创建和使用、字典格式化字符串、序列与迭代、字典中常用方法等。
+本系列课程一共20套，每一套视频课程会深入讲解Python的一类知识点。Python是当今炙手可热的编程语言，可用于多个领域，人工智能、大数据、Web开发、移动开发、运维等。而且学习Python，将会更容易找到工作。本系列课程深入介绍了Python语言的方方面面，也是李宁老师其他课程的基础，如深度学习、科学计算、Web开发（Django Web框架）、全站开发、运维等。</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共17课时</p> 
+            </div> </li> 
+                       <li class="course"> 
+           <a href="course.php?c_id=39" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-11/uploadImg_303551510023166.jpg" alt="跟李宁老师学Python视频课程（7）：函数" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=39" target="_blank">跟李宁老师学Python视频课程（7）：函数</a> 
+           </p> 
+           <p class="description">本课程会对Python语言的函数进行讲解，函数的创建、文档注释、改变函数参数值、可变参数、关键字参数、参数默认值、将序列中的元素值作为函数对应的参数值传递、递归等。
+    本系列课程一共20套，每一套视频课程会深入讲解Python的一类知识点。Python是当今炙手可热的编程语言，可用于多个领域，人工智能、大数据、Web开发、移动开发、运维等。而且学习Python，将会更容易找到工作。本系列课程深入介绍了Python语言的方方面面，也是李宁老师其他课程的基础，如深度学习、科学计算、Web开发（Django Web框架）、全站开发、运维等。</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共13课时</p> 
+            </div> </li> 
+                       <li class="course"> 
+           <a href="course.php?c_id=40" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-11/uploadImg_633021510023455.jpg" alt="跟李宁老师学Python视频课程（8）：类和对象" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=40" target="_blank">跟李宁老师学Python视频课程（8）：类和对象</a> 
+           </p> 
+           <p class="description">本课程的主要内容如下：
+1:了解什么是对象和类;2:了解类的3个主要特征：继承、封装和多态;3:掌握创建类的方法;4:掌握如何为类添加私有方法;5:掌握如何继承一个或多个类（多继承）;6:掌握如何检测类之间的继承关系
+      本系列课程一共20套，每一套视频课程会深入讲解Python的一类知识点。Python是当今炙手可热的编程语言，可用于多个领域，人工智能、大数据、Web开发、移动开发、运维等。而且学习Python，将会更容易找到工作。本系列课程深入介绍了Python语言的方方面面，也是李宁老师其他课程的基础，如深度学习、科学计算、Web开发（Django Web框架）、全站开发、运维等。</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共9课时</p> 
+            </div> </li> 
+                       <li class="course"> 
+           <a href="course.php?c_id=41" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-11/uploadImg_333831510024048.jpg" alt="跟李宁老师学Python视频课程（9）：异常" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=41" target="_blank">跟李宁老师学Python视频课程（9）：异常</a> 
+           </p> 
+           <p class="description">本课程的主要内容如下：
+1:了解异常的概念;2:掌握如何主动抛出异常（raise语句的用法）;3:掌握自定义异常类;4:掌握如何使用try…except…语句捕捉异常;5:掌握try语句的else子句的使用方法;6:掌握try语句的finally子句的使用方法以及注意事项;7:了解异常栈跟踪;8:了解如何更好地使用异常捕捉;
+   本系列课程一共20套，每一套视频课程会深入讲解Python的一类知识点。Python是当今炙手可热的编程语言，可用于多个领域，人工智能、大数据、Web开发、移动开发、运维等。而且学习Python，将会更容易找到工作。本系列课程深入介绍了Python语言的方方面面，也是李宁老师其他课程的基础，如深度学习、科学计算、Web开发（Django Web框架）、全站开发、运维等。</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共11课时</p> 
+            </div> </li> 
+                       <li class="course"> 
+           <a href="course.php?c_id=42" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-11/uploadImg_612581510024328.jpg" alt="跟李宁老师学Python视频课程（10）：方法、属性和迭代" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=42" target="_blank">跟李宁老师学Python视频课程（10）：方法、属性和迭代</a> 
+           </p> 
+           <p class="description">本课程的详细内容如下：
+1:了解构造方法的基础知识;
+2:掌握如何重写构造方法和普通方法;
+3:掌握super函数的使用方法;
+4:掌握如何自定义序列;
+5:掌握监控属性的读写和删除操作的方法;
+6:了解静态方法和类方法的区别;
+7:掌握如何定义静态方法和类方法;
+8:掌握如何使用迭代器;
+9:了解什么是生成器;
+10:掌握使用普通生成器和递归生成器的方法;
+      本系列课程一共20套，每一套视频课程会深入讲解Python的一类知识点。Python是当今炙手可热的编程语言，可用于多个领域，人工智能、大数据、Web开发、移动开发、运维等。而且学习Python，将会更容易找到工作。本系列课程深入介绍了Python语言的方方面面，也是李宁老师其他课程的基础，如深度学习、科学计算、Web开发（Django Web框架）、全站开发、运维等。</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共15课时</p> 
+            </div> </li> 
+                      </ul> 
+         </div> 
+        </div> 
+                <div class="path-level"> 
+         <h3 class="type_1">Flask Web框架深入讲解</h3> 
+         <div class="path-course"> 
+          <ul> 
+                     <li class="course"> 
+           <a href="course.php?c_id=49" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-11/uploadImg_38301510815007.jpg" alt="征服Python Flask视频课程" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=49" target="_blank">征服Python Flask视频课程</a> 
+           </p> 
+           <p class="description">本课程的内容包括Python Flask开发环境安装，Python Flask的基础知识（request、response、cookie、session、重定向、静态资源等），Jinja2模板、数据库（MySQL和NoSQL数据库）、web表单、电子邮件等内容。通过对本课程的学习，以及利用项目实战课程《美团网》，可以更深如掌握Flask Web框架的使用方法，并可以实际开发Web应用。</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共23课时</p> 
+            </div> </li> 
+                      </ul> 
+         </div> 
+        </div> 
+                <div class="path-level"> 
+         <h3 class="type_1">Flask项目实战</h3> 
+         <div class="path-course"> 
+          <ul> 
+                     <li class="course"> 
+           <a href="course.php?c_id=50" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-11/uploadImg_963701510816556.jpg" alt="项目实战视频课程：美团网（Vue2+Python+Flask）" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=50" target="_blank">项目实战视频课程：美团网（Vue2+Python+Flask）</a> 
+           </p> 
+           <p class="description"> 课程实现了美团网的核心部分。采用异步的方式，通过AJAX从服务端获取数据，并使用Vue2和jQuery动态更新数据。美团网实现的功能包括首页分类显示、注册登录、商品页面、套餐页面、购物，支付（从零使用Python实现）、个人中心等。</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共38课时</p> 
+            </div> </li> 
+                      </ul> 
+         </div> 
+        </div> 
+               </div> 
+      </div> 
+       </div> 
+       <div class="tabsConItem files"> 
+        	
+       </div> 
+       <div class="tabsConItem comment"> 
+        <div class="myAppraise"> 
+        	<div class="clear"></div> 
+        </div> 
+        </div> 
+      </dd> 
+     </dl> 
+         
+    </div> 
+    <div class="Right"> 
+     <div class="Pack"> 
+      <div class="couponList" id="couponList"></div> 
+     </div> 
+     <div class="Pack"> 
+      <p class="tit">讲师介绍</p> 
+      <div class="lecInfo"> 
+       <a href="#" target="_blank"> <img class="fl avatar"  src="https://geekori.com/weixin/orishop/images/dfgirl.png" /> </a> 
+       <div class="main fr"> 
+        <h2><a href="#">李宁</a></h2> 
+      
+       </div> 
+       <div class="clear"></div> 
+       <p>东北大学计算机专业硕士，51CTO专家博主，51CTO学院特级讲师，曾任沈阳东软股份项目经理，从事软件研究和开发近20年。长久以来一直从事Java、Android（应用和底层）、JavaScript、Node.js、大数据（Hadoop、Spark等）、微信小程序、微信公众号、C++、Swift、Objective-C以及跨平台游戏引擎（Cocos2d-x、Unity3D等）的开发和技术指导工作。对国内外相关领域的技术、理论和实践有很深的理解和研究。 主要著作包括《小程序开发精要》、《Swift 权威指南》、《Android开发权威指南（第二版）》等畅销书。</p> 
+      </div> 
+     </div> 
+     </div> 
+   </div> 
+  </div> 
+
+  <div class="mask" id="EvaluateMask"></div> 
+  <div class="evaluate" id="Evaluate"> 
+   
+   
+  </div> 
+   
+ <div class="container-types clearfix">
+	<div class="user">
+		<h2><span id="login" class="activered">登录</span><span id="register" class="">注册</span><span class="close"></span></h2>
+		<div class="login">
+			<form name="form1" method="post" action="login.php">
+				<input type="text" name="username" placeholder="请输入登录账号"/>
+				<input type="password" name="password" placeholder="请输入登录密码"/>
+				<input type="submit" value="登录" class="btn1">
+				<a href="https://geekori.com/weixinUpload/ticket.php?login=pcori" style="height:30px;line-height:30px;"><img style="width:30px;height:25px;" alt="weixin" src="images/weixin.jpg"><span style="height:35px;line-height:30px;font-size:18px;">微信登录</span></a>
+			</form>
+		</div>
+		<div class="register">
+			<form name="form2" method="post" action="register.php">
+				<input type="text" name="username" placeholder="请输入注册账号"/>
+				<input type="password" name="password" placeholder="请输入注册密码"/>
+				<input type="text" name="rpassword" placeholder="请再次输入注册密码"/>
+				<input type="text" name="vertify" class="vertify" placeholder="请输入验证码"/><img src="vertifycode.php"><span class="err"></span>
+				<input type="submit" value="注册" class="btn2" disabled="disabled">
+			</form>
+		</div>
+   </div>
+   <div class="loginb"></div>
+  </div>
+  <script src="js/nice_select.js?v=1.0.1"></script>
+  <script src="js/course.js?v=1.0.7"></script> 
+  <div class="footer_bg"> 
+   <div class="footer"> 
+     <div class="clear"></div> 
+   </div> 
+   <div class="footer-copyright"> 
+     	<p style="text-align:center;">Copyright&copy;&nbsp;2016-2017 edu.geekori.com 辽ICP备 16003609号 (如果疑问请加qq群：一群：264268059已满；二群：221665034)  </p> 
+     </div>
+  </div> 
+  <div class="mask disp-n" id="AdviceMask"></div> 
+  <span style="display:none;"> <script src="js/count.js"></script> </span> 
+ 
+ </body>
+</html>

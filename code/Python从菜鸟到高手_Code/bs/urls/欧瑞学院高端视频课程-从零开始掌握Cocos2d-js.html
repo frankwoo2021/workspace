@@ -1,0 +1,575 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <meta name="csrf-param" content="_csrf" /> 
+  <meta name="csrf-token" content="a1RUQm5ySFUjZxoGXSgQeBJhEQEHMS4nBycXCgwXMBgELTF6DEchBQ==" /> 
+  <title>欧瑞学院高端视频课程-从零开始掌握Cocos2d-js</title> 
+  <link href="css/base.css?v=2.3.37" rel="stylesheet" />
+  <link href="css/activity_tab.css?v=1.02" rel="stylesheet" />
+  <link href="css/gen_top.css?v=2.2.41" rel="stylesheet" />
+  <link href="css/background_pub.css" rel="stylesheet" />
+  <link href="css/frontend_pub.css" rel="stylesheet" />
+  <link href="css/clist.css?v=1.0.3" rel="stylesheet" />
+  <link href="css/course.css?v=1.0.6" rel="stylesheet" /> 
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/prototype_create.js"></script>
+  <script src="js/plugins.js?v=1.0.3"></script>
+  <script src="mbox.js?v=1.0.1"></script>
+  <script src="js/autoload_list.js?v=1.0.2"></script>
+  <script src="js/base.js?v=1.1.8"></script>
+  <script type="text/javascript"> 
+        //平台、设备和操作系统 
+        var system = { 
+            win: false, 
+            mac: false, 
+            xll: false, 
+            ipad:false 
+        }; 
+        //检测平台 
+        var p = navigator.platform; 
+        system.win = p.indexOf("Win") == 0; 
+        system.mac = p.indexOf("Mac") == 0; 
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0); 
+        system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false; 
+        //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面 
+        if (system.win || system.mac || system.xll||system.ipad) { 
+ 
+        } else { 
+ 
+            window.location.href = "https://geekori.com/weixin/orishop/spxq.php?id=18&vcode=e667f3db8c064d43840847e9f352b8f2"; 
+        } 
+</script> 
+  <link rel="stylesheet" href="css/moco.css" type="text/css" /> 
+  <link rel="stylesheet" href="css/moco.min.css" type="text/css" /> 
+  <link rel="stylesheet" href="css/course.css" type="text/css" />  
+  <link rel="stylesheet" href="css/index.css" type="text/css" />  
+  <link rel="stylesheet" href="https://geekori.com/public/share/dist/needsharebutton.css">
+  <script src="js/share.js"></script>
+  <link rel="stylesheet" href="css/share_style0_16.css" />
+ </head> 
+ <body style="background:#fff;"> 
+  <div class="Header3 white "> 
+   <div class="Page"> 
+    <div id="header"> 
+   <div class="page-container" id="nav" style="z-index: 1000;"> 
+    <div id="logo" class="logo">
+     <a href="http://geekori.com" target="_self" class="hide-text" title="首页">欧瑞学院</a>
+    </div> 
+    <button type="button" class="navbar-toggle visible-xs-block js-show-menu"> <i class="icon-menu"></i> </button> 
+    <ul class="nav-item"> 
+     <li class="set-btn visible-xs-block"></li> 
+     <li><a href="https://geekori.com/" target="_blank">问答社区</a></li> 
+     <li><a href="https://geekori.com/" target="_blank">博客</a></li>
+     <li><a href="field.php?v=combo" target="_blank">套餐</a></li>
+     <li><a href="field.php?v=member" target="_blank">会员</a></li>
+    </ul> 
+    <div id="login-area"> 
+     <ul class="header-unlogin clearfix"> 
+            <li class="shop-cart" id="shop-cart"> <a class="shop-cart-icon cart-c" target="_blank"><span>去购物车</span> </a></li>
+         
+             <li class="header-signin"> <a href="#" id="js-signin-btn">登录</a> </li> 
+      <li class="header-signup"> <a href="#" id="js-signup-btn">注册</a> </li>     
+      
+      
+     </ul> 
+    </div> 
+    <div class="search-warp clearfix" style="min-width: 32px; height: 60px;"> 
+     <div class="pa searchTags"> 
+		<!-- 搜索在这里 -->
+     </div> 
+     <div class="search-area" data-search="top-banner"> 
+      <input class="search-input" data-suggest-trigger="suggest-trigger" autocomplete="off" type="text" /> 
+      <input class="btn_search" data-search-btn="search-btn" type="hidden" /> 
+      <ul class="search-area-result" data-suggest-result="suggest-result"> 
+      </ul> 
+     </div> 
+     <div class="showhide-search" data-show="no">
+      
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+   </div> 
+  </div> 
+  <input type="hidden" value="10399" id="cID" /> 
+  <input type="hidden" value="47" id="pID" /> 
+  <input type="hidden" value="" id="userID" /> 
+  <div class="course Top" style="z-index: 10;"> 
+   <div class="Page"> 
+    <div class="edu-ad" ad_id="231" info_id="10399" type="course" style="margin-bottom: 10px;"></div> 
+    <div class="Info"> 
+     <p class="roadLink"> <span>视频课程</span> <span>&gt;</span> <a href="https://geekori.com/edu/field.php?v=course&f_id=11">游戏开发</a> <span>&gt;</span> <a href="https://geekori.com/edu/field.php?v=course&f_id=11&sf_id=79">Cocos2d-x/Cocos2d-js</a> <span>&gt;</span> <a href="https://geekori.com/edu/course.php?c_id=18">从零开始掌握Cocos2d-js</a> </p> 
+     <div class="fl" style="width:500px;"> 
+      <div class="pic"> 
+       <img width="500" height="300" src="/images/weixinimg/17-08/p18.png" alt="" /> 
+      </div> 
+      <!--<div class="acts"> 
+       <div class="download fl"> 
+        <p>下载课程</p> 
+        <div class="qrcode tc"> 
+         <img class="qrcode" src="https://static1.51cto.com/edu/images/whitestyle/appdownload90.png" /> 
+         <p>下载学院APP</p> 
+         <p>缓存视频离线看</p> 
+        </div> 
+       </div> 
+       <a href="" target="_blank" class="fl"></a> 
+       <a href="javascript:void(0)" class="fav fr " id="fav"><i class="icon"></i><span id="favFont">收藏</span>(<span id="favNum">14</span>)</a> 
+       <div class="bdsharebuttonbox fr bdshare-button-style0-16"> 
+        <a class="bds_more share" data-cmd="more" name="" style="line-height: 20px;margin: 0;padding-left: 24px;background: none;display: block;height: 20px;position: relative;font-size: 14px;"> <i class="icon"></i>分享 </a> 
+       </div> 
+       <div class="clear"></div> 
+      </div> -->
+     </div> 
+     <div class="main fr"> 
+      <h2 id="CourseTitle">从零开始掌握Cocos2d-js</h2> 
+      <!-- <p>适用人群： 适合所有Linux运维人员。</p>  -->
+      <div class="CourseTime"> 
+      <span>中级</span>
+       <span>2893人学习</span> 
+       <span>共15小时29分钟</span> 
+       <div class="clear"></div> 
+      </div> 
+      <p class="red"> </p> 
+      <div class="price"> 
+       <dl> 
+        <dt>
+         价　　格
+        </dt> 
+        <dd> 
+         <p class="red fl f26">&yen;266<span style="font-size:15px;background-color:#F5F5F5;color:#818181;margin-left:5px;">[原价：499]</span></p> 
+         <div class="clear"></div> 
+        </dd> 
+       </dl> 
+       <!-- 会员95折 zjf20170605
+       <dl> 
+        <dt>
+         优惠活动
+        </dt> 
+        <dd> 
+         <p><span>会</span>会员95折</p> 
+        </dd> 
+       </dl>  --> 
+      </div> 
+      <div class="serve"> 
+       <p class="hasIcon">课时永久观看</p> 
+       <div class="clear"></div> 
+      </div> 
+      <div class="Btns" id="buyBtns"> 
+             <div id="nologin" style="display:block;float:left;">
+        <a href="#" class="red" onclick="trasaction()" style="background-color:red;display:block;width:152px;height:45px;line-height:45px;float:left;color:#fff;font-size:20px;margin-right:20px;text-align:center;">立即购买</a>
+        <button class="red2 addCart">加入购物车</button> 
+        </div>
+         
+        <div id="i-share" data-share-position="bottomCenter" class="need-share-button-default" style="float:right;margin-right:60px;">
+      分享此页 : 
+        <i class="i-share " aria-hidden="true"></i>
+   </div>
+
+      <script src="https://geekori.com/public/share/dist/needsharebutton.js"></script>
+      <script>
+        new needShareButton(document.getElementById('i-share'));
+      </script>
+       <!-- <button id="qqwaps">学习咨询</button>  -->
+         <script>
+  $(document).ready(function(){
+		
+		$("#js-signin-btn").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+		});	
+		$(".cart-c").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+		});	
+		$("#nologin").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+		});
+		$("#js-signup-btn").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+			$(".register").show()
+			$("#register").addClass("activered");
+			$(".login").hide();
+			$("#login").removeClass("activered");
+		});	
+		$(".close").click(function(){
+			$(".user").hide();
+			$(".loginb").hide();
+		});	
+		$("#login").click(function(){
+			$(".login").show();
+			$("#login").addClass("activered");
+			$(".register").hide();
+			$("#register").removeClass("activered");
+		});	
+		$("#register").click(function(){
+			$(".register").show()
+			$("#register").addClass("activered");
+			$(".login").hide();
+			$("#login").removeClass("activered");
+		});	
+		$(".vertify").blur(function(){
+			setInterval(chk,1000);
+		});
+		
+		function chk(){
+			var a=$(".vertify").val();
+			$.ajax({
+					url:"check.php",
+					data:{b:a},
+					success:function(data){
+						if(data==1){
+							$(".err").text("正确").css({"color":"green","float":"left"});
+							$(".btn2").attr("disabled",false);
+						}else{
+							$(".err").text("验证码错误").css({"color":"red","line-height":"70px"});
+							$(".btn2").attr("disabled",true);
+						}
+					}
+			});
+		}				
+			 
+	});
+  </script>
+   <script>
+		function trasaction(){
+					}
+	</script>    
+    <script>
+			$(document).ready(function(){
+					
+				$(".add").click(function(){
+					$.ajax({url:"addcourse.php?id=18",success:function(){
+						alert('加入购物车成功！');		
+						}});
+					$(".add").hide();
+				});
+				$(".clist").mouseenter(function(){
+					//alert("123");
+					$(this).find(".free").hide();
+					$(this).find("button").show();
+				});
+				$(".clist").mouseleave(function(){
+					//alert("123");
+					$(this).find(".free").show();
+					$(this).find("button").hide();
+				});
+			});		
+	</script>  
+       <div class="clear"></div> 
+      </div> 
+     </div> 
+     <div class="clear"></div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="Page course" style="z-index: 9;"> 
+  <div class="topic" style="display: block;">
+    <dl>
+      <dt>
+        <p class="cur spec" style="display: block;">相关套餐</p>
+        <div class="spec fr" id="specBtns">
+          <i class="icon next"></i>
+          <i class="icon prev"></i>
+        </div>
+      </dt>
+      <dd>
+        <div class="topicList spec" style="display: block;">
+          <ul id="Spec" style="width: 2370px;">
+          	          </ul>
+        </div>
+      </dd>
+    </dl>
+  </div>
+   <div class="topic"> 
+    <dl> 
+     <dt> 
+      <p class="cur spec">相关专题</p> 
+      <p class="pxb">微职位学习</p> 
+      <div class="spec fr" id="specBtns"> 
+       <i class="icon next"></i> 
+       <i class="icon prev"></i> 
+      </div> 
+     </dt> 
+     <dd> 
+      <div class="topicList spec"> 
+       <ul id="Spec"></ul> 
+      </div> 
+     </dd> 
+    </dl> 
+   </div> 
+   <script type="text/javascript">
+		$(document).ready(function(){
+				$(".kcjs").click(function(){
+					$(".intro").show();
+					$(".syllabus").hide();
+				});
+				$(".kcdg").click(function(){
+					$(".intro").hide();
+					$(".syllabus").show();
+				});
+			});
+   </script>
+   <div class="Course"> 
+    <div class="Left"> 
+     <dl class="tabs"> 
+      <dt class="tabsTil" id="tabsTil"> 
+       <p class="kcjs">课程介绍</p> 
+       <p class="kcdg">课程大纲</p> 
+       </dt> 
+      <dd class="tabsCon"> 
+       <div class="tabsConItem intro" style="display:block;"> 
+        <dl> 
+        	        </dl> 
+       </div> 
+       <div class="tabsConItem syllabus" style="display:none;"> 
+                   <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第1章:  Cocos2d-JS基础</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"><a href="video.php?vcode=e667f3db8c064d43840847e9f352b8f2&c_id=18&cd=1422" class="J-media-item">第1节： cocos2d-js简介<span class="free" style="color:red;float:left">[免费观看]</span> <button class="r moco-btn moco-btn-red preview-btn" style="display:none">开始学习</button> </a> </li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"><a href="video.php?vcode=20320b44236c4904ba3f9edf9df0ee82&c_id=18&cd=1423" class="J-media-item">第2节： cocos2d-js开发环境<span class="free" style="color:red;float:left">[免费观看]</span> <button class="r moco-btn moco-btn-red preview-btn" style="display:none">开始学习</button> </a> </li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"><a href="video.php?vcode=9d0d5a5b915447efba8ff4ab9fd7d7cb&c_id=18&cd=1424" class="J-media-item">第3节： 编译和运行demo<span class="free" style="color:red;float:left">[免费观看]</span> <button class="r moco-btn moco-btn-red preview-btn" style="display:none">开始学习</button> </a> </li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"><a href="video.php?vcode=9e804d4cd60c4d7b8f13e4c2fb023254&c_id=18&cd=1425" class="J-media-item">第4节： 工程结构<span class="free" style="color:red;float:left">[免费观看]</span> <button class="r moco-btn moco-btn-red preview-btn" style="display:none">开始学习</button> </a> </li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"><a href="video.php?vcode=d45381558f8a431e9a33834c5f31d14f&c_id=18&cd=1426" class="J-media-item">第5节： 设计尺寸<span class="free" style="color:red;float:left">[免费观看]</span> <button class="r moco-btn moco-btn-red preview-btn" style="display:none">开始学习</button> </a> </li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"><a href="video.php?vcode=3d658557277840209a1fd31d93f575ca&c_id=18&cd=1427" class="J-media-item">第6节： 本套视频Demo工程结构介绍<span class="free" style="color:red;float:left">[免费观看]</span> <button class="r moco-btn moco-btn-red preview-btn" style="display:none">开始学习</button> </a> </li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"><a href="video.php?vcode=6ee959a81e994c0285e9a23e1522131c&c_id=18&cd=1428" class="J-media-item">第7节： 场景<span class="free" style="color:red;float:left">[免费观看]</span> <button class="r moco-btn moco-btn-red preview-btn" style="display:none">开始学习</button> </a> </li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第8节： 颜色图层（LayerColor） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第9节： 图层的颜色混合 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第10节： 颜色渐变图层 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第2章:  精灵（Sprite）</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： Sprite基础 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： spritebatchnode <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： zorder <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： 锚点 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： 精灵的水平和垂直镜像 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： 纹理缓冲 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第7节： 设置精灵的颜色和透明度 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第3章:  标签（Label）</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： LabelAtlas标签 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： LabelBMFont标签 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： 多行LabelBMFont <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： LabelTTF的用法以及对齐方式 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： 为标签添加阴影和轮廓- <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： 旋转标签文本的单个字符 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第4章:  菜单（Menu）</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： MenuItemSprite菜单 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： MenuItemImage菜单 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： MenuItemLabel菜单 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： MenuItemFont <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： MenuItemToggle <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第5章:  控件（Control）</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： Button <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： CheckBox <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： ImageView <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： Label <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： TextField <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： RichText <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第7节： Slider <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第8节： 图层控件（Layout） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第9节： ListView <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第6章:  事件处理（Event）</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： 单点触摸（OneByOne） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： 多点触摸 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： 加速传感器事件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： 鼠标事件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： 键盘事件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第7章:  动作（Action）</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： 移动动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： 缩放动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： 旋转动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： 旋转XY动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： 跳跃动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： 贝塞尔曲线动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第7节： 样条曲线动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第8节： CatmullRom样条曲线动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第9节： 闪烁动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第10节： 淡入淡出动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第11节： 颜色变化动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第12节： 动画动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第13节： 照相机动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第14节： CallFunc动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第15节： 顺序执行动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第16节： 并发执行动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第17节： 无限循环动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第18节： Repeat动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第8章:  调度（Schedule）</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： update调度 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： 可以设置调度时间和调度方法的调度器 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： 卸载调度器 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第9章:  Ease动作</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： 幂加速减速动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： 指数加速减速动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： 正弦加速减速动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： 弹性加速减速动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： 弹跳加速减速动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： 回退加速减速动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第7节： Circle加速减速动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第8节： Cubic加速减速动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第10章:  Progress动作</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： Radial进度动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： 水平进度动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： 垂直进度动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第11章:  Effect动作</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： 3D震动动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： 3D波浪动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： 水平3D翻转动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： 垂直3D翻转动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： 3D透镜动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： 3D波纹动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第7节： 流体动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第8节： 2D波浪动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第9节： 旋转变形动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第10节： 3D瓦片震动动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第11节： 3D瓦片破碎动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第12节： 3D瓦片洗牌动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第13节： 3D瓦片淡出动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第14节： 瓦片关闭动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第15节： 3D波浪瓦片动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第16节： 3D瓦片弹跳动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第17节： 拆分行和拆分列动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第18节： 3D翻页动作 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第12章:  地图</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： 地图的种类和用途 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： tiled <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： 使用tiled编辑地图 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： 装载和显示地图 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： 显示和隐藏图层 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： 获取图块属性 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第7节： 编辑图块 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第8节： 在地图上添加精灵 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第9节： 移动地图 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第13章:  粒子系统</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： 粒子系统概述 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： 粒子特效设计器 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： 粒子特效：群星闪烁 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： 粒子特效：幽灵鬼火 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： 粒子特效：群星爆炸 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： 粒子系统属性详解 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第7节： 粒子特效：五彩旋转圆环 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第8节： 从零开始实现一个例子特效：放大版的群星闪烁 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第9节： 使用PList文件设置粒子系统属性 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第10节： 使用PList文件实现放大版的群星闪烁 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第11节： 燃烧的圣火 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第14章:  物理引擎</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： 物理引擎概述 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： Cocos2d-js中的物理引擎 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： 下落的彩色方块 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： 碰撞检测 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： 关节 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： 浮力 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第7节： 游戏：不要碰铅笔 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第8节： 如果添加新的菜单项 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+               </div> 
+       <script>
+			$(document).ready(function(){
+				$(".nopay").click(function(){
+					alert("请先去购买，才可以观看！（欧瑞学院所有视频教程均为离线播放！）");
+				});
+			});
+       </script>
+       <div class="tabsConItem files"> 
+        	
+       </div> 
+       <div class="tabsConItem comment"> 
+        <div class="myAppraise"> 
+        	<div class="clear"></div> 
+        </div> 
+        </div> 
+      </dd> 
+     </dl> 
+         
+    </div> 
+    <div class="Right"> 
+     <div class="Pack"> 
+      <div class="couponList" id="couponList"></div> 
+     </div> 
+     <div class="Pack"> 
+      <p class="tit">讲师介绍</p> 
+      <div class="lecInfo"> 
+       <a href="#" target="_blank"> <img class="fl avatar"  src="https://geekori.com/weixin/orishop/images/dfgirl.png" /> </a> 
+       <div class="main fr"> 
+        <h2><a href="#">李宁</a></h2> 
+      
+       </div> 
+       <div class="clear"></div> 
+       <p>东北大学计算机专业硕士，51CTO专家博主，51CTO学院特级讲师，曾任沈阳东软股份项目经理，从事软件研究和开发近20年。长久以来一直从事Java、Android（应用和底层）、JavaScript、Node.js、大数据（Hadoop、Spark等）、微信小程序、微信公众号、C++、Swift、Objective-C以及跨平台游戏引擎（Cocos2d-x、Unity3D等）的开发和技术指导工作。对国内外相关领域的技术、理论和实践有很深的理解和研究。 主要著作包括《小程序开发精要》、《Swift 权威指南》、《Android开发权威指南（第二版）》等畅销书。</p> 
+      </div> 
+     </div> 
+     </div> 
+   </div> 
+  </div> 
+
+  <div class="mask" id="EvaluateMask"></div> 
+  <div class="evaluate" id="Evaluate"> 
+   
+   
+  </div> 
+   
+ <div class="container-types clearfix">
+	<div class="user">
+		<h2><span id="login" class="activered">登录</span><span id="register" class="">注册</span><span class="close"></span></h2>
+		<div class="login">
+			<form name="form1" method="post" action="login.php">
+				<input type="text" name="username" placeholder="请输入登录账号"/>
+				<input type="password" name="password" placeholder="请输入登录密码"/>
+				<input type="submit" value="登录" class="btn1">
+				<a href="https://geekori.com/weixinUpload/ticket.php?login=pcori" style="height:30px;line-height:30px;"><img style="width:30px;height:25px;" alt="weixin" src="images/weixin.jpg"><span style="height:35px;line-height:30px;font-size:18px;">微信登录</span></a>
+			</form>
+		</div>
+		<div class="register">
+			<form name="form2" method="post" action="register.php">
+				<input type="text" name="username" placeholder="请输入注册账号"/>
+				<input type="password" name="password" placeholder="请输入注册密码"/>
+				<input type="text" name="rpassword" placeholder="请再次输入注册密码"/>
+				<input type="text" name="vertify" class="vertify" placeholder="请输入验证码"/><img src="vertifycode.php"><span class="err"></span>
+				<input type="submit" value="注册" class="btn2" disabled="disabled">
+			</form>
+		</div>
+   </div>
+   <div class="loginb"></div>
+  </div>
+  <script src="js/nice_select.js?v=1.0.1"></script>
+  <script src="js/course.js?v=1.0.7"></script> 
+  <div class="footer_bg"> 
+   <div class="footer"> 
+     <div class="clear"></div> 
+   </div> 
+   <div class="footer-copyright"> 
+     	<p style="text-align:center;">Copyright&copy;&nbsp;2016-2017 edu.geekori.com 辽ICP备 16003609号 (如果疑问请加qq群：一群：264268059已满；二群：221665034)  </p> 
+     </div>
+  </div> 
+  <div class="mask disp-n" id="AdviceMask"></div> 
+  <span style="display:none;"> <script src="js/count.js"></script> </span> 
+      
+ </body>
+</html>

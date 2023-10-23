@@ -1,0 +1,118 @@
+﻿
+<html>
+<head>
+<title>微信扫码登录</title>
+<link rel="shortcut icon" href="https://geekori.com/images/logo2.png">
+<script src="../js/jquery-1.7.2.min.js"></script>
+<style>
+*{
+	padding:0;
+	margin:0;
+}
+.ewm{
+	width:300px;
+	height:350px;
+	margin:0 auto;
+	padding:0;
+	margin-top:200px;
+}
+.ewm img{
+	width:100%;
+	height:300px;
+	float:left;
+}
+.ewm p{
+	width:100%;
+	height:50px;
+	padding:0;
+	margin:0 auto;
+	text-align:center;
+}
+</style>
+</head>
+<body>
+<div class="ewm">
+<img alt="二维码" src="https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQEW8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAycGNIdDBiWllmeDIxUExwNHh4MXEAAgRv37phAwSAOgkA&id=12345" >
+<p>扫描二维码登录<a href="https://geekori.com">极客起源</a></p>
+
+</div>
+<center>
+<input onclick="rember(this)" type="checkbox">记住登录状态(保存一周)
+</center>
+<script>
+function rember(obj){
+	//记住登录状态
+	if(obj.checked){
+		document.cookie='vx_rember=12138'; 
+	}
+	else{
+		delCookie('vx_rember');
+	}
+}
+function delCookie(name){
+    //为了删除指定名称的cookie，可以将其过期时间设定为一个过去的时间
+    var date = new Date();
+    date.setTime(date.getTime() - 10000);
+    document.cookie = name + "=a; expires=" + date.toGMTString();
+}
+$(document).ready(function(){
+	run();
+});
+function getQueryString(name) {
+	    var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+	    var r = window.location.search.substr(1).match(reg);
+	    if (r != null) {
+	        return unescape(r[2]);
+	    }
+	    return null;
+	}
+
+function run() 
+{  
+	var a=0;
+	var run=setInterval(function(){
+		$.ajax({
+		url:"ajax.php",
+		data:{id:"64383",ticket:"gQEW8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAycGNIdDBiWllmeDIxUExwNHh4MXEAAgRv37phAwSAOgkA"},
+		dataType:"TEXT",
+		type:"POST",
+		success:function(data){
+			// alert(data);
+			if(data==1){
+				var b=getQueryString("login");
+				if(b="pcori"){
+					$("p").text("登录成功！");
+					window.location.href="http://edu.geekori.com";
+				}
+					$("p").text("登录成功！");
+					window.location.href="https://geekori.com";
+				
+			}
+		}
+	});	
+		a=a+1;
+		if(a>60){
+			clearInterval(run);
+			$.ajax({
+				url:"timeout.php",
+				data:{id:"64383"},
+				dataType:"TEXT",
+				type:"POST",
+				success:function(data){
+					if(data==1){
+						$("p").text("请求超时，请刷新页面！").css({"color":"red"});
+					}
+				}
+				});
+			}
+		}, 1000);
+		
+}  
+function chat()
+{	
+	// alert('111');
+	
+}
+</script>
+</body>
+</html>

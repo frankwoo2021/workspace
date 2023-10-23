@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" >
+        <base href="https://security.tencent.com/" >
+        <!--[if lte IE 6]></base><![endif]-->
+        
+        
+        <title>
+            企业微信安全响应中心        </title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta name="description" content="腾讯安全应急响应中心,Tencent Security Response Center,TSRC,企业微信安全响应中心">
+        <meta name="keywords" content="腾讯,Tencent,安全团队,应急响应,腾讯安全应急响应中心,Tencent Security Response Center,TSRC,企业微信安全响应中心">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="icon" type="image/png" sizes="16x16" href="/uploadimg_dir/qywx/qywx-logo-16.png">
+        <link rel="stylesheet" href="static/v2.0/css/main.min.css?t=20160310">
+        <!--[if (gte IE 6)&(lte IE 8)]>
+        <script type="text/javascript" src="static/plugins/selectivizr.min.js"></script>
+        <script type="text/javascript" src="static/plugins/respond.min.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="static/plugins/jquery.js"></script>
+    </head>
+    <script type="text/javascript">
+        $(function(){
+
+            // 登录事件
+            seajs.use('modules/utils', function(m) {
+
+                // 设置登录url
+                var cur_url = encodeURIComponent(location.href);
+                $('.login-qq').attr('href', 'index.php/login/in?type=qq&redirect_uri='+cur_url);
+                $('.login-wx').attr('href', 'index.php/login/in?type=wx&redirect_uri='+cur_url);
+
+                // 如果是在微信上访问，则使用授权登录
+                if (m.iswechat()) {
+                    $('.login-wx').attr('href', 'index.php/login/in?type=wxgz&redirect_uri='+cur_url);
+                }
+
+                // 绑定退出登录事件
+                m.logout_bind('logout');
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        .header {background-color: #051122;}
+        .header .logo {margin-top:10px;}
+        .header .logo img {width: 119px;height: 28px;}
+        .header>div .userpanel .userpanel_login {line-height: 60px;}
+        .header>div .userpanel .userpanel_user .user_arrow, .header>div .userpanel .userpanel_user .user_avatar, .header>div .userpanel .userpanel_user .user_username {line-height: 60px;}
+        .header>div .userpanel:before {width:0px;}
+        .qywx-login-btn {display: inline-block;min-width: 58px;height: 28px;padding: 0 15px;border: 1px solid #5FC9EC;border-radius: 2px;line-height: 27px;color: #5FC9EC;font-size: 15px;text-align: center;-webkit-font-smoothing: antialiased;}
+        .qywx-login-btn:hover {color:#A2E8FF;;border-color: #A2E8FF;}
+
+        .header>div .userpanel .userpanel_user .user_username {color:#63d1f6;}
+        .header > div .userpanel .userpanel_user:hover .user_username {color:#A2E8FF;}
+        .header>div .userpanel .userpanel_user .user_menu {top:87%;}
+    </style>
+    <body>
+
+        <div class="header">
+            <div>
+                <a href="qywx">
+                    <div class="logo"><img src="/uploadimg_dir/qywx/qywx-logo@2x.png"></div>
+                </a>
+
+                <div class="userpanel">
+                    <div class="userpanel_login" style="display:block">
+                        <a class="qywx-login-btn login-wx" href="">微信登录</a>
+                        <a class="qywx-login-btn login-qq" href="">QQ 登录</a>
+                    </div>
+                    <div class="userpanel_user" style="display:none">
+                        <img class="user_avatar mod-avatar-30" src="" alt="">
+                        <span class="user_username"><i class="i-header-message" style="display:none"></i></span>
+                        <i class="user_arrow"></i>
+                        <div class="user_menu">
+                            <ul class="menu_list">
+                                <li class="list_item list_item-user">
+                                    <a href="index.php/user">
+                                        <i class="item_icon"></i>
+                                        <span class="item_text">个人主页</span>
+                                    </a>
+                                </li>
+                                <li class="list_item list_item-message">
+                                    <a href="index.php/user/message">
+                                        <i class="item_icon"></i>
+                                        <span class="item_text">消息中心</span>
+                                        <i class="item_icon-message" style="display:none"></i>
+                                    </a>
+                                </li>
+                                <li class="list_item list_item-account">
+                                    <a href="index.php/user/info">
+                                        <i class="item_icon"></i>
+                                        <span class="item_text">账户设置</span>
+                                    </a>
+                                </li>
+                                <li class="list_item list_item-logout">
+                                    <a id="logout" href="javascript:void(0)">
+                                        <i class="item_icon"></i>
+                                        <span class="item_text">退出</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<style type="text/css">
+    .qywx-anno {margin-top:50px;}
+    .anno_list li {width: 100%;line-height: 48px;border-bottom: 1px solid #ededed;}
+    .anno_list li .list_title {font-size: 15px;color: #666;}
+    .anno_list li .list_date {float: right;font-size: 14px;color: #999;}
+    .anno_list li:hover .list_title,.anno_list li:hover .list_date {color: #007cfa; }
+</style>
+
+<div class="container container-home" style="margin-top:0px;">
+
+    <div>
+
+        <!-- section-banner -->
+        <div class="section section-banner">
+
+            <!-- 背景大图 -->
+            <div class="stargroup" style="background-image:url(/uploadimg_dir/qywx/qywx-pc-bg.png)">
+            </div>
+
+            <div class="section_banner" style="padding-top:174px;color: #63d1f6;">
+                
+                <div class="banner_name" style="margin-bottom:25px;">
+                    <p>企业微信安全响应中心</p>
+                </div>
+                <div class="banner_welcome">
+                    <p>诚邀广大安全专家共捍千万企业和用户的安全</p>
+                </div>
+                <div class="banner_submit">
+                    <a href="qywx/report/add">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section qywx-anno">
+            <div class="section_rank">
+                <div class="mod-introduce">
+                    <!-- title -->
+                    <div style="font-size:33px;text-align:center;">安全公告</div>
+                    <!-- icongroup -->
+                    <div class="introduce_icongroup">
+                        <span class="icongroup_line"></span>
+                        <i class="icongroup_icon"></i>
+                        <span class="icongroup_line"></span>
+                    </div>
+                    <!-- descript -->
+                    <div class="introduce_description">
+                        <p>各路安全专家长期关注腾讯安全，帮助企业微信提高了产品安全水平，保障了千万企业和用户的安全。</p>
+                    </div>
+                    <!-- more -->
+                    <div class="introduce_more">
+                        <a class="mod-btn mod-btn-black" href="javascript:void(0)">暂无公告</a>                        
+                    </div>
+                </div>
+
+                <!-- 下半部分 -->
+                <div class="anno_list">
+                    <ul>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+        <style type="text/css">
+        .footer {background-color: #07162c;margin-top: 50px;}
+        .footer>div {height: 100px;}
+        .footer>div .footer_about, .footer>div .footer_contact {margin-top: 10px;}
+        .footer>div .footer_about .about_link>a{    color: #5A607B;}
+        .footer>div .footer_about .about_copyright {color: #5A607B;}
+        .footer>div .footer_about .about_link {color: #5A607B;}
+        .footer>div>.footer_contact>a>span {color: #5A607B;}
+        </style>    
+    
+        <!-- 确认弹窗 -->
+        <div id="base-confirm" class="mod-popup mod-popup-report">
+            <div class="popup_mask">
+            </div>
+            <div class="popup_body">
+                <div class="body_content">
+                    <p class="content_title"></p>
+                    <p class="content_text"></p>
+                </div>
+                <div class="body_btns">
+                    <a class="mod-btn mod-btn-blue" href="javascript:void(0)">确定</a>
+                    <a class="mod-btn mod-btn-black" href="javascript:void(0)">取消</a>
+                </div>
+                <i class="i-close"></i>
+            </div>
+        </div>
+
+        <!-- 提示弹窗 -->
+        <div id="base-alert" class="mod-popup mod-popup-success">
+            <div class="popup_mask">
+            </div>
+            <div class="popup_body">
+                <div class="body_content">
+                    <p class="content_pic"></p>
+                    <p class="content_text">捐款成功，感谢您的无私奉献</p>
+                </div>
+                <div class="i-close"></div>
+            </div>
+        </div>
+
+        <!-- 登录弹窗 -->
+        <div id="base-login-box" class="mod-popup mod-popup-report">
+            <div class="popup_mask">
+            </div>
+            <div class="popup_body">
+                <div class="body_content">
+                    <p class="content_title">登录提醒</p>
+                    <p class="content_text" style="text-align:center;">
+                        系统检测到您还未登录或登录态已失效，请先登录
+                    </p>
+                    <div class="body_btns">
+                        <a href="" class="mod-btn mod-btn-black login-wx" style="border-color:#007cfa;color:#007cfa">微信 登录</a>
+                        <a href="" class="mod-btn mod-btn-black login-qq" style="border-color:#007cfa;color:#007cfa">QQ 登录</a>
+                    </div>
+                </div>
+                <i class="i-close"></i>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <div class="footer">
+            <div>
+                <div class="footer_about">
+                    <p class="about_link">
+                        <a href="http://www.tencent.com/" target="_blank">关于腾讯</a>
+                        |
+                        <a href="http://www.tencent.com/index_e.shtml" target="_blank">About Tencent</a>
+                        |
+                        <a href="http://www.qq.com/contract.shtml" target="_blank">服务条款</a>
+                        |
+                        <a href="index.php/about#joinus">加入我们</a>
+                        |
+                        <a href="index.php/report/add">报告漏洞</a>
+                        |
+                        <a href="index.php/about#friends">合作伙伴</a>
+                        |
+                        <a href="http://service.qq.com/" target="_blank">腾讯客服</a>
+                    </p>
+                    <p class="about_copyright">
+                        <span>Copyright &copy; 1998 - 2021 Tencent. All Rights Reserved</span>
+                        <span>power by tsrc</span>
+                    </p>
+                </div>
+
+                <div class="footer_contact">
+                    <a class="contact_icon-email" href="mailto:security@tencent.com"><i></i><span>专用邮箱</span>|</a>
+                    <a class="contact_icon-weibo-sina" href="http://weibo.com/u/1363173330" target="_blank"><i></i><span>新浪微博</span>|</a>
+                    <!-- <a class="contact_weibo-tencent" href="javascript:void(0)" target="_blank"><i></i><span>腾讯微博</span>|</a> -->
+                    <a class="contact_icon-weixin mod-qrcode" href="javascript:void(0)">
+                        <i></i><span>微信公众号</span>
+                        <div class="qrcode">
+                            <div class="qrcode_pic">
+                                <img src="uploadimg_dir/other/tsrc-qrcode.jpg" alt="">
+                            </div>
+                            <span class="qrcode_text">扫一扫关注 TSRC 公众号</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- csrc_token -->
+    <div id="csrf_div">
+                <form action="https://security.tencent.com/index.php/qywx" method="post" accept-charset="utf-8" class="form_horizontal"><div style="display:none">
+<input type="hidden" name="csrf_token" value="b47e026afdeda07fcb12ec9125473399" />
+</div>        </form>    </div>
+
+    <script type="text/javascript" src="static/plugins/sea.js?t=20151230"></script>
+    <script type="text/javascript" src="static/v2.0/js/config.js?t=20161129"></script>
+    <script type="text/javascript">
+        $(function() {
+            $.getScript("https://pingjs.qq.com/tcss.fixedcgi.https.js", function() {
+                var pgvInterv = window.setInterval(function() {
+                    window.clearInterval(pgvInterv);
+                    if (typeof(pgvMain) == 'function') {
+                        pgvMain();
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</html>

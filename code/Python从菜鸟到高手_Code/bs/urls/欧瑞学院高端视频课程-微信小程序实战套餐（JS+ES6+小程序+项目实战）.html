@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <meta name="csrf-param" content="_csrf" /> 
+  <meta name="csrf-token" content="a1RUQm5ySFUjZxoGXSgQeBJhEQEHMS4nBycXCgwXMBgELTF6DEchBQ==" /> 
+  <title>欧瑞学院高端视频课程-微信小程序实战套餐（JS+ES6+小程序+项目实战）</title> 
+  <link href="css/base.css?v=2.3.37" rel="stylesheet" />
+  <link href="css/activity_tab.css?v=1.02" rel="stylesheet" />
+  <link href="css/gen_top.css?v=2.2.41" rel="stylesheet" />
+  <link href="css/background_pub.css" rel="stylesheet" />
+  <link href="css/frontend_pub.css" rel="stylesheet" />
+  <link href="css/clist.css?v=1.0.3" rel="stylesheet" />
+  <link href="css/course.css?v=1.0.6" rel="stylesheet" /> 
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/prototype_create.js"></script>
+  <script src="js/plugins.js?v=1.0.3"></script>
+  <script src="js/mbox.js?v=1.0.1"></script>
+  <script src="js/autoload_list.js?v=1.0.2"></script>
+  <script src="js/base.js?v=1.1.8"></script>
+  <script type="text/javascript"> 
+        //平台、设备和操作系统 
+        var system = { 
+            win: false, 
+            mac: false, 
+            xll: false, 
+            ipad:false 
+        }; 
+        //检测平台 
+        var p = navigator.platform; 
+        system.win = p.indexOf("Win") == 0; 
+        system.mac = p.indexOf("Mac") == 0; 
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0); 
+        system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false; 
+        //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面 
+        if (system.win || system.mac || system.xll||system.ipad) { 
+ 
+        } else { 
+ 
+            window.location.href = "https://geekori.com/weixin/orishop/combo.php?combo=1"; 
+        } 
+</script> 
+  <link rel="stylesheet" href="css/moco.css" type="text/css" /> 
+  <link rel="stylesheet" href="css/moco.min.css" type="text/css" /> 
+  <link rel="stylesheet" href="css/course.css" type="text/css" />  
+  <link rel="stylesheet" href="css/index.css" type="text/css" />  
+  <link rel="stylesheet" href="./combo/list_v7_bf87458.css" />
+  <link rel="stylesheet" href="https://geekori.com/public/share/dist/needsharebutton.css">
+  <script src="js/share.js"></script>
+  <link rel="stylesheet" href="css/share_style0_16.css" />
+ </head> 
+ <body> 
+  <div class="Header3 white "> 
+   <div class="Page"> 
+    <div id="header"> 
+   <div class="page-container" id="nav" style="z-index: 1000;"> 
+    <div id="logo" class="logo">
+     <a href="http://geekori.com" target="_self" class="hide-text" title="首页">欧瑞学院</a>
+    </div> 
+    <button type="button" class="navbar-toggle visible-xs-block js-show-menu"> <i class="icon-menu"></i> </button> 
+    <ul class="nav-item"> 
+     <li class="set-btn visible-xs-block"></li> 
+     <li><a href="https://geekori.com/" target="_blank">问答社区</a></li> 
+     <li><a href="https://geekori.com/" target="_blank">博客</a></li>
+     <li><a href="field.php?v=combo" target="_blank">套餐</a></li>
+     <li><a href="field.php?v=member" target="_blank">会员</a></li>
+    </ul> 
+    <div id="login-area"> 
+     <ul class="header-unlogin clearfix"> 
+             <li class="shop-cart" id="shop-cart"> <a class="shop-cart-icon cart-c" target="_blank"><span>去购物车</span> </a></li>
+                <li class="header-signin"> <a href="#" id="js-signin-btn">登录</a> </li> 
+      <li class="header-signup"> <a href="#" id="js-signup-btn">注册</a> </li>     
+      
+      
+     </ul> 
+    </div> 
+    <div class="search-warp clearfix" style="min-width: 32px; height: 60px;"> 
+     <div class="pa searchTags"> 
+		<!-- 搜索在这里 -->
+     </div> 
+     <div class="search-area" data-search="top-banner"> 
+      <input class="search-input" data-suggest-trigger="suggest-trigger" autocomplete="off" type="text" /> 
+      <input class="btn_search" data-search-btn="search-btn" type="hidden" /> 
+      <ul class="search-area-result" data-suggest-result="suggest-result"> 
+      </ul> 
+     </div> 
+     <div class="showhide-search" data-show="no">
+      
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+   </div> 
+  </div> 
+  <input type="hidden" value="10399" id="cID" /> 
+  <input type="hidden" value="47" id="pID" /> 
+  <input type="hidden" value="" id="userID" /> 
+  <div class="course Top" style="z-index: 10;"> 
+   <div class="Page"> 
+    <div class="edu-ad" ad_id="231" info_id="10399" type="course" style="margin-bottom: 10px;"></div> 
+    <div class="Info"> 
+     <p class="roadLink"> <span>套餐</span> <span>&gt;</span> <a href="https://geekori.com/edu/field.php?v=combo&f_id=1">编程语言</a> <span>&gt;</span> <a href="https://geekori.com/edu/combo.php?c_id=1">微信小程序实战套餐（JS+ES6+小程序+项目实战）</a> </p> 
+     <div class="fl" style="width:500px;"> 
+      <div class="pic"> 
+       <img width="500" height="300" src="https://geekori.com/weixin/orishop/images/c1.png" alt="" /> 
+      </div> 
+      <!--<div class="acts"> 
+       <div class="download fl"> 
+        <p>下载课程</p> 
+        <div class="qrcode tc"> 
+         <img class="qrcode" src="https://static1.51cto.com/edu/images/whitestyle/appdownload90.png" /> 
+         <p>下载学院APP</p> 
+         <p>缓存视频离线看</p> 
+        </div> 
+       </div> 
+       <a href="" target="_blank" class="fl"></a> 
+       <a href="javascript:void(0)" class="fav fr " id="fav"><i class="icon"></i><span id="favFont">收藏</span>(<span id="favNum">14</span>)</a> 
+       <div class="bdsharebuttonbox fr bdshare-button-style0-16"> 
+        <a class="bds_more share" data-cmd="more" name="" style="line-height: 20px;margin: 0;padding-left: 24px;background: none;display: block;height: 20px;position: relative;font-size: 14px;"> <i class="icon"></i>分享 </a> 
+       </div> 
+       <div class="clear"></div> 
+      </div> -->
+     </div> 
+     <div class="main fr"> 
+      <h2 id="CourseTitle">微信小程序实战套餐（JS+ES6+小程序+项目实战）</h2> 
+      <!-- <p>适用人群： 适合所有Linux运维人员。</p>  -->
+      <div class="CourseTime"> 
+      <span></span>
+       <span>4个课程</span> 
+       <span>共49小时18分钟</span>
+       <div class="clear"></div> 
+      </div> 
+      <p class="red"> </p> 
+      <div class="price"> 
+       <dl> 
+        <dt>
+         价　　格
+        </dt> 
+        <dd> 
+         <p class="red fl f26">&yen;551</p> 
+         <div class="clear"></div> 
+        </dd> 
+       </dl> 
+       <!-- 会员95折 zjf20170605
+       <dl> 
+        <dt>
+         优惠活动
+        </dt> 
+        <dd> 
+         <p><span>会</span>会员95折</p> 
+        </dd> 
+       </dl>  --> 
+      </div> 
+      <div class="serve"> 
+       <p class="hasIcon">课时永久观看</p> 
+       <p class="hasIcon">立省：<b style="color:red;font-size:15px;">￥445</b></p> 
+       <div class="clear"></div> 
+      </div> 
+      <div class="Btns" id="buyBtns"> 
+             <div id="nologin" style="display:block;float:left;">
+        <a href="#" class="red" style="background-color:red;display:block;width:152px;height:45px;line-height:45px;float:left;color:#fff;font-size:20px;margin-right:20px;text-align:center;">立即购买</a>
+       </div>
+       
+      <div id="i-share" data-share-position="bottomCenter" class="need-share-button-default" style="float:right;margin-right:60px;">
+      分享此页 : 
+        <i class="i-share " aria-hidden="true"></i>
+   </div>
+
+      <script src="https://geekori.com/public/share/dist/needsharebutton.js"></script>
+      <script>
+        new needShareButton(document.getElementById('i-share'));
+      </script>
+       <!-- <button id="qqwaps">学习咨询</button>  -->
+         <script>
+  $(document).ready(function(){
+		
+		$("#js-signin-btn").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+		});	
+		$("#nologin").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+		});
+		$("#js-signup-btn").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+			$(".register").show()
+			$("#register").addClass("activered");
+			$(".login").hide();
+			$("#login").removeClass("activered");
+		});	
+		$(".close").click(function(){
+			$(".user").hide();
+			$(".loginb").hide();
+		});	
+		$("#login").click(function(){
+			$(".login").show();
+			$("#login").addClass("activered");
+			$(".register").hide();
+			$("#register").removeClass("activered");
+		});	
+		$("#register").click(function(){
+			$(".register").show()
+			$("#register").addClass("activered");
+			$(".login").hide();
+			$("#login").removeClass("activered");
+		});	
+		$(".vertify").blur(function(){
+			setInterval(chk,1000);
+		});
+		
+		function chk(){
+			var a=$(".vertify").val();
+			$.ajax({
+					url:"check.php",
+					data:{b:a},
+					success:function(data){
+						if(data==1){
+							$(".err").text("正确").css({"color":"green","float":"left"});
+							$(".btn2").attr("disabled",false);
+						}else{
+							$(".err").text("验证码错误").css({"color":"red","line-height":"70px"});
+							$(".btn2").attr("disabled",true);
+						}
+					}
+			});
+		}				
+			 
+	});
+  </script>
+   <script>
+		function trasaction(){
+					}
+	</script>    
+    <script>
+			$(document).ready(function(){
+				$(".cart-c").click(function(){
+					$(".user").show();
+					$(".loginb").show();
+				});	
+				$(".add").click(function(){
+					$.ajax({url:"addcourse.php?id=26",success:function(){
+						alert('加入购物车成功！');		
+						}});
+					$(".add").hide();
+				});
+			});		
+	</script>  
+       <div class="clear"></div> 
+      </div> 
+     </div> 
+     <div class="clear"></div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="Page course" style="z-index: 9;"> 
+  <div class="topic" style="display: block;">
+    <dl>
+      <dt>
+        <p class="cur spec" style="display: block;">相关套餐</p>
+        <div class="spec fr" id="specBtns">
+          <i class="icon next"></i>
+          <i class="icon prev"></i>
+        </div>
+      </dt>
+      <dd>
+        <div class="topicList spec" style="display: block;">
+          <ul id="Spec" style="width: 2370px;">
+          	          	<li><a href="combo.php?c_id=1" class="pic fl"><img src="https://geekori.com/weixin/orishop/images/c1.png"></a><div class="fl main"><a href="combo.php?c_id=1" class="f16 title" >微信小程序实战套餐（JS+ES6+小程序+项目实战）</a><div class="clear"></div><p class="fl">立省<span class="red">￥445</span></p><a href="combo.php?c_id=1" class="btn fr">去购买</a><div class="clear"></div></div></li>
+        	          	<li><a href="combo.php?c_id=5" class="pic fl"><img src="/images/weixinimg/17-11/uploadImg_648161510796430.jpg"></a><div class="fl main"><a href="combo.php?c_id=5" class="f16 title" >JavaScript全栈开发专题</a><div class="clear"></div><p class="fl">立省<span class="red">￥1493</span></p><a href="combo.php?c_id=5" class="btn fr">去购买</a><div class="clear"></div></div></li>
+        	          	<li><a href="combo.php?c_id=6" class="pic fl"><img src="/images/weixinimg/17-11/uploadImg_190811510814125.jpg"></a><div class="fl main"><a href="combo.php?c_id=6" class="f16 title" >Web和小程序项目实战系列专题</a><div class="clear"></div><p class="fl">立省<span class="red">￥308</span></p><a href="combo.php?c_id=6" class="btn fr">去购买</a><div class="clear"></div></div></li>
+        	          </ul>
+        </div>
+      </dd>
+    </dl>
+  </div>
+   <div class="topic"> 
+    <dl> 
+     <dt> 
+      <p class="cur spec">相关专题</p> 
+      <p class="pxb">微职位学习</p> 
+      <div class="spec fr" id="specBtns"> 
+       <i class="icon next"></i> 
+       <i class="icon prev"></i> 
+      </div> 
+     </dt> 
+     <dd> 
+      <div class="topicList spec"> 
+       <ul id="Spec"></ul> 
+      </div> 
+     </dd> 
+    </dl> 
+   </div> 
+   <script type="text/javascript">
+		$(document).ready(function(){
+				$(".kcjs").click(function(){
+					$(".intro").show();
+					$(".syllabus").hide();
+				});
+				$(".kcdg").click(function(){
+					$(".intro").hide();
+					$(".syllabus").show();
+				});
+			});
+   </script>
+   <div class="Course"> 
+    <div class="Left"> 
+     <dl class="tabs"> 
+      <dt class="tabsTil" id="tabsTil"> 
+       <p class="kcjs">套餐介绍</p> 
+       <p class="kcdg">学习路径</p> 
+       </dt> 
+      <dd class="tabsCon"> 
+       <div class="tabsConItem intro" style="display:block;"> 
+        <dl> 
+        	        </dl> 
+       </div> 
+       <div class="tabsConItem syllabus" style="display:none;"> 
+         <div class="path"> 
+       <h2>学习路径</h2> 
+       <div class="contain"> 
+       
+        
+                <div class="path-level"> 
+         <h3 class="type_1">基础</h3> 
+         <div class="path-course"> 
+          <ul> 
+                     <li class="course"> 
+           <a href="course.php?c_id=1" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-08/p1.png" alt="征服ES6（JavaScript）" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=1" target="_blank">征服ES6（JavaScript）</a> 
+           </p> 
+           <p class="description">本课程包含了几乎所有的ECMAScript6核心内容，包括let、const、变量的解构赋值，字符串扩展、正则扩展、数值扩展、数组扩展、函数扩展、对象扩展、Symbol、Proxy和Reflect、Generator函数、Promise对象、异步操作和async函数、Class、修饰器、Module等内容。</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共97课时</p> 
+            </div> </li> 
+                       <li class="course"> 
+           <a href="course.php?c_id=2" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-08/p2.png" alt="征服JavaScript" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=2" target="_blank">征服JavaScript</a> 
+           </p> 
+           <p class="description">React Native是Facebook于2015年推出的跨平台开发工具，可用于开发Android和iOS App，并且同时具有混合开发的优点（热更新，跨平台）以及本地App的性能。</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共120课时</p> 
+            </div> </li> 
+                      </ul> 
+         </div> 
+        </div> 
+                <div class="path-level"> 
+         <h3 class="type_1">中等</h3> 
+         <div class="path-course"> 
+          <ul> 
+                     <li class="course"> 
+           <a href="course.php?c_id=25" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-08/p25.png" alt="征服微信小程序" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=25" target="_blank">征服微信小程序</a> 
+           </p> 
+           <p class="description">本课程从微信小程序的基础开始讲解，深入浅出，包括开发环境的搭建，程序接口，API、UI、实战案例等。</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共93课时</p> 
+            </div> </li> 
+                       <li class="course"> 
+           <a href="course.php?c_id=26" class="pic" target="_blank"> 
+           	<img src="/images/weixinimg/17-08/p26.png" alt="小程序项目实战合集" id="9" />
+           </a> 
+           <p class="title">
+            <a href="course.php?c_id=26" target="_blank">小程序项目实战合集</a> 
+           </p> 
+           <p class="description">本课程通包含3个小程序项目：iOS计算器、电影订票和快递查询，学员通过该课程可以了解小程序开发的基本步骤和方法</p>
+           <p class="name"></p>
+            <div class="path-lesson-list"> 
+             <p class="gather get_lesson_data" data-id="9" data-type="39">共20课时</p> 
+            </div> </li> 
+                      </ul> 
+         </div> 
+        </div> 
+               </div> 
+      </div> 
+       </div> 
+       <div class="tabsConItem files"> 
+        	
+       </div> 
+       <div class="tabsConItem comment"> 
+        <div class="myAppraise"> 
+        	<div class="clear"></div> 
+        </div> 
+        </div> 
+      </dd> 
+     </dl> 
+         
+    </div> 
+    <div class="Right"> 
+     <div class="Pack"> 
+      <div class="couponList" id="couponList"></div> 
+     </div> 
+     <div class="Pack"> 
+      <p class="tit">讲师介绍</p> 
+      <div class="lecInfo"> 
+       <a href="#" target="_blank"> <img class="fl avatar"  src="https://geekori.com/weixin/orishop/images/dfgirl.png" /> </a> 
+       <div class="main fr"> 
+        <h2><a href="#">李宁</a></h2> 
+      
+       </div> 
+       <div class="clear"></div> 
+       <p>东北大学计算机专业硕士，51CTO专家博主，51CTO学院特级讲师，曾任沈阳东软股份项目经理，从事软件研究和开发近20年。长久以来一直从事Java、Android（应用和底层）、JavaScript、Node.js、大数据（Hadoop、Spark等）、微信小程序、微信公众号、C++、Swift、Objective-C以及跨平台游戏引擎（Cocos2d-x、Unity3D等）的开发和技术指导工作。对国内外相关领域的技术、理论和实践有很深的理解和研究。 主要著作包括《小程序开发精要》、《Swift 权威指南》、《Android开发权威指南（第二版）》等畅销书。</p> 
+      </div> 
+     </div> 
+     </div> 
+   </div> 
+  </div> 
+
+  <div class="mask" id="EvaluateMask"></div> 
+  <div class="evaluate" id="Evaluate"> 
+   
+   
+  </div> 
+   
+ <div class="container-types clearfix">
+	<div class="user">
+		<h2><span id="login" class="activered">登录</span><span id="register" class="">注册</span><span class="close"></span></h2>
+		<div class="login">
+			<form name="form1" method="post" action="login.php">
+				<input type="text" name="username" placeholder="请输入登录账号"/>
+				<input type="password" name="password" placeholder="请输入登录密码"/>
+				<input type="submit" value="登录" class="btn1">
+				<a href="https://geekori.com/weixinUpload/ticket.php?login=pcori" style="height:30px;line-height:30px;"><img style="width:30px;height:25px;" alt="weixin" src="images/weixin.jpg"><span style="height:35px;line-height:30px;font-size:18px;">微信登录</span></a>
+			</form>
+		</div>
+		<div class="register">
+			<form name="form2" method="post" action="register.php">
+				<input type="text" name="username" placeholder="请输入注册账号"/>
+				<input type="password" name="password" placeholder="请输入注册密码"/>
+				<input type="text" name="rpassword" placeholder="请再次输入注册密码"/>
+				<input type="text" name="vertify" class="vertify" placeholder="请输入验证码"/><img src="vertifycode.php"><span class="err"></span>
+				<input type="submit" value="注册" class="btn2" disabled="disabled">
+			</form>
+		</div>
+   </div>
+   <div class="loginb"></div>
+  </div>
+  <script src="js/nice_select.js?v=1.0.1"></script>
+  <script src="js/course.js?v=1.0.7"></script> 
+  <div class="footer_bg"> 
+   <div class="footer"> 
+     <div class="clear"></div> 
+   </div> 
+   <div class="footer-copyright"> 
+     	<p style="text-align:center;">Copyright&copy;&nbsp;2016-2017 edu.geekori.com 辽ICP备 16003609号 (如果疑问请加qq群：一群：264268059已满；二群：221665034)  </p> 
+     </div>
+  </div> 
+  <div class="mask disp-n" id="AdviceMask"></div> 
+  <span style="display:none;"> <script src="js/count.js"></script> </span> 
+ 
+ </body>
+</html>

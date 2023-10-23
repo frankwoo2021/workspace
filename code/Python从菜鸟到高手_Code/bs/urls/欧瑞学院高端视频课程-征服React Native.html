@@ -1,0 +1,577 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <meta name="csrf-param" content="_csrf" /> 
+  <meta name="csrf-token" content="a1RUQm5ySFUjZxoGXSgQeBJhEQEHMS4nBycXCgwXMBgELTF6DEchBQ==" /> 
+  <title>欧瑞学院高端视频课程-征服React Native</title> 
+  <link href="css/base.css?v=2.3.37" rel="stylesheet" />
+  <link href="css/activity_tab.css?v=1.02" rel="stylesheet" />
+  <link href="css/gen_top.css?v=2.2.41" rel="stylesheet" />
+  <link href="css/background_pub.css" rel="stylesheet" />
+  <link href="css/frontend_pub.css" rel="stylesheet" />
+  <link href="css/clist.css?v=1.0.3" rel="stylesheet" />
+  <link href="css/course.css?v=1.0.6" rel="stylesheet" /> 
+  
+  <script src="js/jquery.min.js"></script>
+  <script src="js/prototype_create.js"></script>
+  <script src="js/plugins.js?v=1.0.3"></script>
+  <script src="mbox.js?v=1.0.1"></script>
+  <script src="js/autoload_list.js?v=1.0.2"></script>
+  <script src="js/base.js?v=1.1.8"></script>
+  <script type="text/javascript"> 
+        //平台、设备和操作系统 
+        var system = { 
+            win: false, 
+            mac: false, 
+            xll: false, 
+            ipad:false 
+        }; 
+        //检测平台 
+        var p = navigator.platform; 
+        system.win = p.indexOf("Win") == 0; 
+        system.mac = p.indexOf("Mac") == 0; 
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0); 
+        system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false; 
+        //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面 
+        if (system.win || system.mac || system.xll||system.ipad) { 
+ 
+        } else { 
+ 
+            window.location.href = "https://geekori.com/weixin/orishop/spxq.php?id=5&vcode=1cc074b7e04e4a64a772152678a5dec8"; 
+        } 
+</script> 
+  <link rel="stylesheet" href="css/moco.css" type="text/css" /> 
+  <link rel="stylesheet" href="css/moco.min.css" type="text/css" /> 
+  <link rel="stylesheet" href="css/course.css" type="text/css" />  
+  <link rel="stylesheet" href="css/index.css" type="text/css" />  
+  <link rel="stylesheet" href="https://geekori.com/public/share/dist/needsharebutton.css">
+  <script src="js/share.js"></script>
+  <link rel="stylesheet" href="css/share_style0_16.css" />
+ </head> 
+ <body style="background:#fff;"> 
+  <div class="Header3 white "> 
+   <div class="Page"> 
+    <div id="header"> 
+   <div class="page-container" id="nav" style="z-index: 1000;"> 
+    <div id="logo" class="logo">
+     <a href="http://geekori.com" target="_self" class="hide-text" title="首页">欧瑞学院</a>
+    </div> 
+    <button type="button" class="navbar-toggle visible-xs-block js-show-menu"> <i class="icon-menu"></i> </button> 
+    <ul class="nav-item"> 
+     <li class="set-btn visible-xs-block"></li> 
+     <li><a href="https://geekori.com/" target="_blank">问答社区</a></li> 
+     <li><a href="https://geekori.com/" target="_blank">博客</a></li>
+     <li><a href="field.php?v=combo" target="_blank">套餐</a></li>
+     <li><a href="field.php?v=member" target="_blank">会员</a></li>
+    </ul> 
+    <div id="login-area"> 
+     <ul class="header-unlogin clearfix"> 
+            <li class="shop-cart" id="shop-cart"> <a class="shop-cart-icon cart-c" target="_blank"><span>去购物车</span> </a></li>
+         
+             <li class="header-signin"> <a href="#" id="js-signin-btn">登录</a> </li> 
+      <li class="header-signup"> <a href="#" id="js-signup-btn">注册</a> </li>     
+      
+      
+     </ul> 
+    </div> 
+    <div class="search-warp clearfix" style="min-width: 32px; height: 60px;"> 
+     <div class="pa searchTags"> 
+		<!-- 搜索在这里 -->
+     </div> 
+     <div class="search-area" data-search="top-banner"> 
+      <input class="search-input" data-suggest-trigger="suggest-trigger" autocomplete="off" type="text" /> 
+      <input class="btn_search" data-search-btn="search-btn" type="hidden" /> 
+      <ul class="search-area-result" data-suggest-result="suggest-result"> 
+      </ul> 
+     </div> 
+     <div class="showhide-search" data-show="no">
+      
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+   </div> 
+  </div> 
+  <input type="hidden" value="10399" id="cID" /> 
+  <input type="hidden" value="47" id="pID" /> 
+  <input type="hidden" value="" id="userID" /> 
+  <div class="course Top" style="z-index: 10;"> 
+   <div class="Page"> 
+    <div class="edu-ad" ad_id="231" info_id="10399" type="course" style="margin-bottom: 10px;"></div> 
+    <div class="Info"> 
+     <p class="roadLink"> <span>视频课程</span> <span>&gt;</span> <a href="https://geekori.com/edu/field.php?v=course&f_id=9">移动开发</a> <span>&gt;</span> <a href="https://geekori.com/edu/field.php?v=course&f_id=9&sf_id=67">iOS</a> <span>&gt;</span> <a href="https://geekori.com/edu/course.php?c_id=5">征服React Native</a> </p> 
+     <div class="fl" style="width:500px;"> 
+      <div class="pic"> 
+       <img width="500" height="300" src="/images/weixinimg/17-08/p5.png" alt="" /> 
+      </div> 
+      <!--<div class="acts"> 
+       <div class="download fl"> 
+        <p>下载课程</p> 
+        <div class="qrcode tc"> 
+         <img class="qrcode" src="https://static1.51cto.com/edu/images/whitestyle/appdownload90.png" /> 
+         <p>下载学院APP</p> 
+         <p>缓存视频离线看</p> 
+        </div> 
+       </div> 
+       <a href="" target="_blank" class="fl"></a> 
+       <a href="javascript:void(0)" class="fav fr " id="fav"><i class="icon"></i><span id="favFont">收藏</span>(<span id="favNum">14</span>)</a> 
+       <div class="bdsharebuttonbox fr bdshare-button-style0-16"> 
+        <a class="bds_more share" data-cmd="more" name="" style="line-height: 20px;margin: 0;padding-left: 24px;background: none;display: block;height: 20px;position: relative;font-size: 14px;"> <i class="icon"></i>分享 </a> 
+       </div> 
+       <div class="clear"></div> 
+      </div> -->
+     </div> 
+     <div class="main fr"> 
+      <h2 id="CourseTitle">征服React Native</h2> 
+      <!-- <p>适用人群： 适合所有Linux运维人员。</p>  -->
+      <div class="CourseTime"> 
+      <span>中级</span>
+       <span>3000人学习</span> 
+       <span>共23小时48分钟</span> 
+       <div class="clear"></div> 
+      </div> 
+      <p class="red"> </p> 
+      <div class="price"> 
+       <dl> 
+        <dt>
+         价　　格
+        </dt> 
+        <dd> 
+         <p class="red fl f26">&yen;399<span style="font-size:15px;background-color:#F5F5F5;color:#818181;margin-left:5px;">[原价：599]</span></p> 
+         <div class="clear"></div> 
+        </dd> 
+       </dl> 
+       <!-- 会员95折 zjf20170605
+       <dl> 
+        <dt>
+         优惠活动
+        </dt> 
+        <dd> 
+         <p><span>会</span>会员95折</p> 
+        </dd> 
+       </dl>  --> 
+      </div> 
+      <div class="serve"> 
+       <p class="hasIcon">课时永久观看</p> 
+       <div class="clear"></div> 
+      </div> 
+      <div class="Btns" id="buyBtns"> 
+             <div id="nologin" style="display:block;float:left;">
+        <a href="#" class="red" onclick="trasaction()" style="background-color:red;display:block;width:152px;height:45px;line-height:45px;float:left;color:#fff;font-size:20px;margin-right:20px;text-align:center;">立即购买</a>
+        <button class="red2 addCart">加入购物车</button> 
+        </div>
+         
+        <div id="i-share" data-share-position="bottomCenter" class="need-share-button-default" style="float:right;margin-right:60px;">
+      分享此页 : 
+        <i class="i-share " aria-hidden="true"></i>
+   </div>
+
+      <script src="https://geekori.com/public/share/dist/needsharebutton.js"></script>
+      <script>
+        new needShareButton(document.getElementById('i-share'));
+      </script>
+       <!-- <button id="qqwaps">学习咨询</button>  -->
+         <script>
+  $(document).ready(function(){
+		
+		$("#js-signin-btn").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+		});	
+		$(".cart-c").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+		});	
+		$("#nologin").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+		});
+		$("#js-signup-btn").click(function(){
+			$(".user").show();
+			$(".loginb").show();
+			$(".register").show()
+			$("#register").addClass("activered");
+			$(".login").hide();
+			$("#login").removeClass("activered");
+		});	
+		$(".close").click(function(){
+			$(".user").hide();
+			$(".loginb").hide();
+		});	
+		$("#login").click(function(){
+			$(".login").show();
+			$("#login").addClass("activered");
+			$(".register").hide();
+			$("#register").removeClass("activered");
+		});	
+		$("#register").click(function(){
+			$(".register").show()
+			$("#register").addClass("activered");
+			$(".login").hide();
+			$("#login").removeClass("activered");
+		});	
+		$(".vertify").blur(function(){
+			setInterval(chk,1000);
+		});
+		
+		function chk(){
+			var a=$(".vertify").val();
+			$.ajax({
+					url:"check.php",
+					data:{b:a},
+					success:function(data){
+						if(data==1){
+							$(".err").text("正确").css({"color":"green","float":"left"});
+							$(".btn2").attr("disabled",false);
+						}else{
+							$(".err").text("验证码错误").css({"color":"red","line-height":"70px"});
+							$(".btn2").attr("disabled",true);
+						}
+					}
+			});
+		}				
+			 
+	});
+  </script>
+   <script>
+		function trasaction(){
+					}
+	</script>    
+    <script>
+			$(document).ready(function(){
+					
+				$(".add").click(function(){
+					$.ajax({url:"addcourse.php?id=5",success:function(){
+						alert('加入购物车成功！');		
+						}});
+					$(".add").hide();
+				});
+				$(".clist").mouseenter(function(){
+					//alert("123");
+					$(this).find(".free").hide();
+					$(this).find("button").show();
+				});
+				$(".clist").mouseleave(function(){
+					//alert("123");
+					$(this).find(".free").show();
+					$(this).find("button").hide();
+				});
+			});		
+	</script>  
+       <div class="clear"></div> 
+      </div> 
+     </div> 
+     <div class="clear"></div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="Page course" style="z-index: 9;"> 
+  <div class="topic" style="display: block;">
+    <dl>
+      <dt>
+        <p class="cur spec" style="display: block;">相关套餐</p>
+        <div class="spec fr" id="specBtns">
+          <i class="icon next"></i>
+          <i class="icon prev"></i>
+        </div>
+      </dt>
+      <dd>
+        <div class="topicList spec" style="display: block;">
+          <ul id="Spec" style="width: 2370px;">
+          	          	<li><a href="combo.php?c_id=5" class="pic fl"><img src="/images/weixinimg/17-11/uploadImg_648161510796430.jpg"></a><div class="fl main"><a href="combo.php?c_id=5" class="f16 title" >JavaScript全栈开发专题</a><div class="clear"></div><p class="fl">立省<span class="red">￥1493</span></p><a href="combo.php?c_id=5" class="btn fr">去购买</a><div class="clear"></div></div></li>
+        	          	<li><a href="combo.php?c_id=11" class="pic fl"><img src="/images/weixinimg/17-11/uploadImg_884251510819403.jpg"></a><div class="fl main"><a href="combo.php?c_id=11" class="f16 title" >React Native跨平台App开发系列套餐</a><div class="clear"></div><p class="fl">立省<span class="red">￥527</span></p><a href="combo.php?c_id=11" class="btn fr">去购买</a><div class="clear"></div></div></li>
+        	          </ul>
+        </div>
+      </dd>
+    </dl>
+  </div>
+   <div class="topic"> 
+    <dl> 
+     <dt> 
+      <p class="cur spec">相关专题</p> 
+      <p class="pxb">微职位学习</p> 
+      <div class="spec fr" id="specBtns"> 
+       <i class="icon next"></i> 
+       <i class="icon prev"></i> 
+      </div> 
+     </dt> 
+     <dd> 
+      <div class="topicList spec"> 
+       <ul id="Spec"></ul> 
+      </div> 
+     </dd> 
+    </dl> 
+   </div> 
+   <script type="text/javascript">
+		$(document).ready(function(){
+				$(".kcjs").click(function(){
+					$(".intro").show();
+					$(".syllabus").hide();
+				});
+				$(".kcdg").click(function(){
+					$(".intro").hide();
+					$(".syllabus").show();
+				});
+			});
+   </script>
+   <div class="Course"> 
+    <div class="Left"> 
+     <dl class="tabs"> 
+      <dt class="tabsTil" id="tabsTil"> 
+       <p class="kcjs">课程介绍</p> 
+       <p class="kcdg">课程大纲</p> 
+       </dt> 
+      <dd class="tabsCon"> 
+       <div class="tabsConItem intro" style="display:block;"> 
+        <dl> 
+        	<dt>课程目标</dt><dd><br></dd><dd>让学员系统学习React Native的相关知识，并达到能使用React Native开发Android和iOS App的目的。</dd><dt><br></dt><dt>适用人群</dt><dd><br></dd><dd>Android程序员,iOS程序员,JavaScript程序员,React.js程序员</dd><dt><br></dt><dt>课程简介</dt><dd><p>React Native是Facebook于2015年推出的跨平台开发工具，可用于开发Android和iOS App，并且同时具有混合开发的优点（热更新，跨平台）以及本地App的性能。</p><p>本课程采用最新的ES6开发，主要内容包括ReactNative的基础知识，ReactNative的布局，组件，API，封装本地API和组件，发布ReactNative App（本地装载），本地与ReactNative深度结合</p><p>此课程基于3.7版本，但是源代码版本会不断升级中，会升级到4.0</p></dd><p><br></p>        </dl> 
+       </div> 
+       <div class="tabsConItem syllabus" style="display:none;"> 
+                   <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第1章:  React-Native基础</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"><a href="video.php?vcode=1cc074b7e04e4a64a772152678a5dec8&c_id=5&cd=388" class="J-media-item">第1节： 视频课程简介<span class="free" style="color:red;float:left">[免费观看]</span> <button class="r moco-btn moco-btn-red preview-btn" style="display:none">开始学习</button> </a> </li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"><a href="video.php?vcode=0a325137ca5f4146b6d93ee884380828&c_id=5&cd=389" class="J-media-item">第2节： React Native简介<span class="free" style="color:red;float:left">[免费观看]</span> <button class="r moco-btn moco-btn-red preview-btn" style="display:none">开始学习</button> </a> </li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"><a href="video.php?vcode=4344bb9792974018b963021c29d1c347&c_id=5&cd=390" class="J-media-item">第3节： 安装和配置React Native（Mac OS X）<span class="free" style="color:red;float:left">[免费观看]</span> <button class="r moco-btn moco-btn-red preview-btn" style="display:none">开始学习</button> </a> </li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"><a href="video.php?vcode=1a95121e184c4c48a47d5346df464fcd&c_id=5&cd=391" class="J-media-item">第4节： 安装和配置React Native（Windows）<span class="free" style="color:red;float:left">[免费观看]</span> <button class="r moco-btn moco-btn-red preview-btn" style="display:none">开始学习</button> </a> </li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"><a href="video.php?vcode=b5eb84ad87264cb8a3c7827ffe9c8866&c_id=5&cd=392" class="J-media-item">第5节： React-Native工程的创建和运行<span class="free" style="color:red;float:left">[免费观看]</span> <button class="r moco-btn moco-btn-red preview-btn" style="display:none">开始学习</button> </a> </li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第2章:  FlexBox布局</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"><a href="video.php?vcode=52b129e4699e4f5d9a3ef44a0a0440f9&c_id=5&cd=393" class="J-media-item">第1节： React-Native布局简介<span class="free" style="color:red;float:left">[免费观看]</span> <button class="r moco-btn moco-btn-red preview-btn" style="display:none">开始学习</button> </a> </li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"><a href="video.php?vcode=060b852bf7e5444696d9b2f870011874&c_id=5&cd=394" class="J-media-item">第2节： 改变主轴的方向（flexDirection）<span class="free" style="color:red;float:left">[免费观看]</span> <button class="r moco-btn moco-btn-red preview-btn" style="display:none">开始学习</button> </a> </li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： 水平折行(flexWrap) <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： justifyContent(伸缩项目的对齐方式) <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： alignItems(交叉轴的对齐关系) <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： flex（让伸缩项目尽可能充满右侧空间） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第3章:  组件</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： View组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： Text组件：嵌套文本 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： Text组件：numberOfLines属性 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： Text组件：onPress和onLongPress事件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： Text组件：onLayout（获取组件的尺寸和位置信息） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： TextInput组件：autoCapitalize属性（字母自动大写） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第7节： TextInput组件：autoCorrect【自动修正】和autoFocus【自动焦点】 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第8节： TextInput组件：keyboardType属性（设置软键盘类型） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第9节： TextInput组件：returnKeyType属性（设置返回键类型） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第10节： TextInput组件：设置最大输入字符数和允许多行输入 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第11节： TextInput组件：设置提示文字和颜色 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第12节： TextInput组件：输入密码、焦点选中和选中颜色 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第13节： TextInput组件：editable、value和defaultValue属性 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第14节： TextInput组件：其他属性 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第15节： TextInput组件：文本变化事件(onChange和onChangeText) <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第16节： TextInput组件：获取输入的文本 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第17节： TextInput组件：自动提示列表 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第18节： Image组件：从本地装载图像 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第19节： Image组件：屏幕适配 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第20节： Image组件：从App中装载图像 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第21节： Image组件：装载网络图像 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第22节： TouchableHighlight组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第23节： TouchableNativeFeedback组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第24节： TouchableOpacity组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第25节： ListView组件：基本用法 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第26节： ListView组件：自动参数Item <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第27节： ListView组件：实现图文混排效果 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第28节： ListView组件：实现图文横向排列 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第29节： Switch组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第30节： Picker组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第31节： PickerIOS组件(实现联动效果) <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第32节： DatePickerIOS组件(显示和设置日期和时间) <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第33节： Slider组件（滑块组件） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第34节： ProgressBarAndroid组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第35节： ProgressViewIOS组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第36节： Navigator组件1 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第37节： Navigator组件2 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第38节： Navigator组件：图像浏览 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第39节： Navigator组件：NavigationBar <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第40节： NavigatorIOS组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第41节： StatusBar组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第42节： TabBarIOS组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第43节： ToolbarAndroid组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第44节： ViewPagerAndroid组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第45节： RefreshControl组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第46节： ScrollView组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第47节： DrawerLayoutAndroid组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第48节： MapView组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第49节： Modal组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第50节： SegmentedControlIOS组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第51节： WebView组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第4章:  API</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： AppRegistry <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： AsyncStorage（异步存储） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： AppState（监听App的active、background和inactive状态） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： Alert <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： AlertIOS <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： ActionSheetIOS <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第7节： Animated（淡入动画） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第8节： Animated动画（并行和串行组合动画） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第9节： Animated动画（混合动画） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第10节： Animated动画（循环动画） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第11节： BackAndroid <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第12节： Clipboard（剪贴板） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第13节： DatePickerAndroid（显示日期选择对话框） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第14节： TimePickerAndroid（显示时间选择器） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第15节： Dimensions（获取窗口的宽度和高度） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第16节： InteractionManager <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第17节： LayoutAnimation(视图动画） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第18节： Linking（打开不同类型的Url） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第19节： NetInfo（获得与网络相关的信息） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第20节： PixelRatio（获取像素信息） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第21节： ToastAndroid <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第22节： Vibration（震动效果） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第23节： XMLHttpRequest的应用 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第24节： fetch <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第25节： WebSocket（全双工数据交互） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第5章:  本地模块（iOS）</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： echo模块 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： 如何让本地模块方法暴露不同的名字 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： 日期类型参数（入住日期和离店日期演示） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： NSDictionary类型参数 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： 通过回调函数从OC返回值到JavaScript <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： 本地API向JavaScript同步返回值 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第7节： 导出常量 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第8节： 导出枚举类型 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第9节： 本地API调用JavaScript事件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第10节： 访问Swift API（计算阶乘） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第6章:  本地模块（Android）</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： Echo <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： 带图像的Toast <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： callback（演示了日期类型参数和回调） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： 触发JavaScript中的事件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： 同步获取本地模块方法的返回值 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： 拨打电话（本地窗口和React Native窗口相结合） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第7节： 显示自定义窗口，并回去返回值 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第8节： 监测窗口（Activity）的生命周期 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第7章:  封装本地组件（iOS）</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： 封装本地组件基本步骤和封装的初步实现 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： 映射同名属性 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： 映射普通属性 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： 映射对象类型的属性 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： 映射事件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第8章:  封装本地组件（Android）</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： 封装本地组件基础 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： 封装简单属性 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： 封装颜色属性（titleColor） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： 利用onTouch事件设置高亮文本颜色 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： 封装图像类型属性 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： 封装单击事件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第9章:  发布React Native App</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： 从App中装载React Native代码（iOS） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： 动态更新和装载React Native代码（iOS） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： 从App中装载React Native代码（Android） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： 动态更新和装载React Native代码（Android） <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第10章:  本地与React Native的深度结合开发</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： iOS本地窗口和react native窗口结合 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： React Native如何关闭当前窗口 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第3节： React Native如何使用不同的入口文件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第4节： Android本地窗口和React Native窗口结合 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第5节： Android如何控制React Native视图 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第6节： Android如何用JavaScript代码关闭当前窗口 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第7节： Android使用不同的组件 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+                 <h3 style="padding:20px 0;font-size:20px;"> <span class=" js-close js-open"></span> <strong> 第11章:  其他React Native技术</strong></h3> 
+         <ul class="video"> 
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第1节： 调试React Native App <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                  <li class="clist" data-media-id="49" style="height:40px;line-height:40px;"> <a href="#" class="J-media-item nopay">第2节： 直接设置组件的属性 <button class="r moco-btn moco-btn-red preview-btn" style="display:none">请购买课程</button></a></li>
+                 </ul> 
+               </div> 
+       <script>
+			$(document).ready(function(){
+				$(".nopay").click(function(){
+					alert("请先去购买，才可以观看！（欧瑞学院所有视频教程均为离线播放！）");
+				});
+			});
+       </script>
+       <div class="tabsConItem files"> 
+        	
+       </div> 
+       <div class="tabsConItem comment"> 
+        <div class="myAppraise"> 
+        	<div class="clear"></div> 
+        </div> 
+        </div> 
+      </dd> 
+     </dl> 
+         
+    </div> 
+    <div class="Right"> 
+     <div class="Pack"> 
+      <div class="couponList" id="couponList"></div> 
+     </div> 
+     <div class="Pack"> 
+      <p class="tit">讲师介绍</p> 
+      <div class="lecInfo"> 
+       <a href="#" target="_blank"> <img class="fl avatar"  src="https://geekori.com/weixin/orishop/images/dfgirl.png" /> </a> 
+       <div class="main fr"> 
+        <h2><a href="#">李宁</a></h2> 
+      
+       </div> 
+       <div class="clear"></div> 
+       <p>东北大学计算机专业硕士，51CTO专家博主，51CTO学院特级讲师，曾任沈阳东软股份项目经理，从事软件研究和开发近20年。长久以来一直从事Java、Android（应用和底层）、JavaScript、Node.js、大数据（Hadoop、Spark等）、微信小程序、微信公众号、C++、Swift、Objective-C以及跨平台游戏引擎（Cocos2d-x、Unity3D等）的开发和技术指导工作。对国内外相关领域的技术、理论和实践有很深的理解和研究。 主要著作包括《小程序开发精要》、《Swift 权威指南》、《Android开发权威指南（第二版）》等畅销书。</p> 
+      </div> 
+     </div> 
+     </div> 
+   </div> 
+  </div> 
+
+  <div class="mask" id="EvaluateMask"></div> 
+  <div class="evaluate" id="Evaluate"> 
+   
+   
+  </div> 
+   
+ <div class="container-types clearfix">
+	<div class="user">
+		<h2><span id="login" class="activered">登录</span><span id="register" class="">注册</span><span class="close"></span></h2>
+		<div class="login">
+			<form name="form1" method="post" action="login.php">
+				<input type="text" name="username" placeholder="请输入登录账号"/>
+				<input type="password" name="password" placeholder="请输入登录密码"/>
+				<input type="submit" value="登录" class="btn1">
+				<a href="https://geekori.com/weixinUpload/ticket.php?login=pcori" style="height:30px;line-height:30px;"><img style="width:30px;height:25px;" alt="weixin" src="images/weixin.jpg"><span style="height:35px;line-height:30px;font-size:18px;">微信登录</span></a>
+			</form>
+		</div>
+		<div class="register">
+			<form name="form2" method="post" action="register.php">
+				<input type="text" name="username" placeholder="请输入注册账号"/>
+				<input type="password" name="password" placeholder="请输入注册密码"/>
+				<input type="text" name="rpassword" placeholder="请再次输入注册密码"/>
+				<input type="text" name="vertify" class="vertify" placeholder="请输入验证码"/><img src="vertifycode.php"><span class="err"></span>
+				<input type="submit" value="注册" class="btn2" disabled="disabled">
+			</form>
+		</div>
+   </div>
+   <div class="loginb"></div>
+  </div>
+  <script src="js/nice_select.js?v=1.0.1"></script>
+  <script src="js/course.js?v=1.0.7"></script> 
+  <div class="footer_bg"> 
+   <div class="footer"> 
+     <div class="clear"></div> 
+   </div> 
+   <div class="footer-copyright"> 
+     	<p style="text-align:center;">Copyright&copy;&nbsp;2016-2017 edu.geekori.com 辽ICP备 16003609号 (如果疑问请加qq群：一群：264268059已满；二群：221665034)  </p> 
+     </div>
+  </div> 
+  <div class="mask disp-n" id="AdviceMask"></div> 
+  <span style="display:none;"> <script src="js/count.js"></script> </span> 
+      
+ </body>
+</html>
